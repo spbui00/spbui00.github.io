@@ -3,27 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Han</title>
+  <title>Thai Ha Bui</title>
+  <link rel="icon" href="assets/icons/spark.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/8ac6948fc8.js" crossorigin="anonymous"></script>
+  <script type="module" src="js/main.js" defer></script>  
 </head>
 <body>
   <main>
+    <!-- Navigation links -->
+    <nav>
+      <ul>
+        <!-- Make it such that clicking would open a different component, not a whole page -->
+        <li id="academy"><i class="fa-solid fa-book-open-reader"></i>Academy</li>
+        <li id="work"><i class="fa-solid fa-suitcase"></i>Work</li>
+        <li id="personality"><i class="fa-solid fa-user-ninja"></i>Personality</li>
+        <li id="contact"><i class="fa-solid fa-at"></i>Contact</li>
+      </ul>
+    </nav>
 
+    <!-- Content container -->
+    <div id="content-container"></div>
+    
     <footer>
       <p>&copy; 2023 Han's Portfolio. All rights reserved.</p>
     </footer>
   </main>
-    <!-- Navigation links -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  
-  <script src="js/main.js"></script>
+
 </body>
 </html>
 
