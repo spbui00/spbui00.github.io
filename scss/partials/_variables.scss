@@ -1,0 +1,68 @@
+$color-light-orange: #EB5E28;
+$color-background: #141517;
+$color-dark: #141517;
+$color-dark-grey: #1D1E1F;
+$color-medium-grey: #303137;
+$color-medium: #403D39;
+$color-light: #F1F2EB;
+$color-white: #FFFFFF;
+
+// spacing
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
+
+
+// box shadows
+$boxShadowSmall: 0px 2px 8px rgba(0, 0, 0, 0.5);
+$boxShadowMedium: 0px 5px 15px rgba(0, 0, 0, 0.2);
+$boxShadowLarge: 0px 8px 30px rgba(0, 0, 0, 0.2);
+
+
+// borders
+$borderRadiusSmall: 4px;
+$borderRadiusMedium: 8px;
+$borderRadiusLarge: 12px;
+
+$borderWidthSmall: 1px;
+$borderWidthMedium: 2px;
+$borderWidthLarge: 4px;
+
+// line height
+$lineHeightSmall: 1.2;
+$lineHeightMedium: 1.5;
+$lineHeightLarge: 2;
+
+// breakpoints
+$breakpoint-sm: 576px;   // small screens
+$breakpoint-md: 768px;   // medium screens
+$breakpoint-lg: 992px;   // large screens
+$breakpoint-xl: 1200px;  // extra-large screens
+
+// Max-widths
+$xs-max: 540px;
+$sm-max: 720px;
+$md-max: 960px;
+$lg-max: 1100px;
+$xl-max: 1340px;
+
+// Min-widths
+$xs-min: 320px;
+$sm-min: 540px;
+$md-min: 730px;
+$lg-min: 1000px;
+
+// Opacity values
+$opacity-low: 0.5;
+$opacity-medium: 0.8;
+$opacity-high: 0.95;
+
+// transitions
+$transition: all 0.2s ease-in-out;
+$transition-slow: all 0.5s ease-in-out;
+$transition-fast: all 0.1s ease-in-out;
+$animation-duration-short: 0.3s;
+$animation-duration-medium: 0.5s;
+$animation-duration-long: 1s;

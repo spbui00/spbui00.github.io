@@ -1,0 +1,43 @@
+nav {
+  @include flex-container(flex-start, center, row);
+  width: 13%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: $transition;
+
+  ul {
+    @include flex-container(space-between, flex-start, column);
+    width: 100%;
+  }
+  
+  li {
+    color: $color-white;
+    width: 100%;
+    padding: 10px 0;
+    opacity: 0.5;
+    @include flex-container(flex-start, center, row);
+    gap: 10px;
+    transition: $transition;
+
+    &.active {
+      opacity: 1;
+      color: $color-white;
+
+      &:hover, &:focus {
+        opacity: 1;
+        color: $color-white;
+        cursor: default;
+      }
+    }
+
+    &:hover, &:focus {
+      opacity: 1;
+      color: $color-light-orange;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+}

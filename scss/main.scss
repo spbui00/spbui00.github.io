@@ -1,0 +1,46 @@
+
+body {
+  margin: 0;
+  @include flex-container(flex-start, center, row);
+  background: $color-background;
+  padding: $spacing-md;
+  transition: $transition;
+}
+
+main {
+  @include flex-container(center, center, column);
+  width: 87%;
+  height: 90vh;
+  transition: $transition;
+}
+
+// reset all ul, ol, li styles
+ul, ol, li, a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: $color-white;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+footer {
+  @include flex-container(flex-start, end, row); 
+  transition: $transition;
+  position: fixed;
+  bottom: 0;
+}
+
+.orange {
+  color: $color-light-orange;
+}
+
+.orange-bg {
+  background-color: $color-light-orange;
+}

@@ -1,0 +1,99 @@
+$dot-width: 20px;
+$dot-width-larger: 24px;
+
+.academy {
+  @include flex-container(flex-start, flex-start, column);
+  gap: $spacing-lg;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: $color-light-orange $color-dark-grey;
+  scrollbar-width: thin;
+  transition: $transition;
+  width: 100%;
+  margin-top: 20px;
+  
+  .timeline {
+    @include flex-container(flex-start, flex-start, column);
+
+    .period {
+      @include flex-container(flex-start, flex-start, column);
+      position: relative;
+      padding: 0;
+      padding-left: $spacing-md;
+      padding-right: $spacing-md;
+      padding-bottom: $spacing-xl;
+      margin-left: $spacing-sm;
+      border-left: $borderWidthLarge solid $color-white;
+
+      &.no-border {
+        border-color: transparent;
+      }
+
+      h2 {
+        margin: 0;
+        margin-bottom: $spacing-sm;
+      }
+
+      .dot {
+        height: $dot-width;
+        width: $dot-width;
+        background-color: $color-white;
+        border-radius: 50%;
+        position: absolute;
+        margin-left: - (calc($dot-width/2) + $spacing-md + calc($borderWidthLarge / 2));
+        transition: $transition;
+
+        &.orange-bg {
+          background-color: $color-light-orange;
+        }
+
+        &:hover, &:focus {
+          cursor: pointer;
+          width: $dot-width-larger;
+          height: $dot-width-larger;
+          margin-left: - (calc($dot-width-larger/2) + $spacing-md + calc($borderWidthLarge / 2));
+        }
+      }
+
+      @keyframes pullDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-10%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .details {
+        @include flex-container(flex-start, flex-start, column);
+        background-color: $color-medium-grey;
+        z-index: 1000;
+        padding: $spacing-sm;
+        margin-top: $spacing-sm;
+        border-radius: $borderRadiusLarge;
+        display: none;
+
+        h3 {
+          margin: 0;
+          margin-bottom: $spacing-sm;
+        }
+
+        &.show {
+          display: block;
+          animation: pullDown $animation-duration-medium ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+a {
+  color: $color-light;
+  transition: $transition;
+
+  &:hover, &:focus {
+    color: $color-white;
+  }
+}

@@ -1,0 +1,43 @@
+/* Typography styles */
+
+@font-face {
+  font-family: 'Default Nutino';
+  src: url('../fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-stretch: 1 100%;
+}
+
+@font-face {
+  font-family: 'Default Nunito';
+  src: url('../fonts/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-stretch: 1 100%;
+}
+
+body {
+  color: $color-white;
+  font-family: 'Default Nutino', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}

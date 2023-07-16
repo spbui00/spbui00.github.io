@@ -1,0 +1,20 @@
+#content-container {
+  @include flex-container(flex-start, flex-start, column);
+  width: 100%;
+  max-width: $lg-max;
+  max-height: 80vh;
+  padding: $spacing-xl;
+  // overflow: scroll;
+  // scroll-behavior: smooth;
+  // scrollbar-width: none;
+  transition: $transition;
+}
+
+.head {
+  margin-bottom: $spacing-lg;
+  
+  .note {
+    font-style: italic;
+    color: $color-light;
+  }
+}

@@ -1,0 +1,26 @@
+.buttons {
+  @include flex-container(center, center, row);
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+button {
+  @include flex-container(center, center, row);
+  padding: $spacing-xs $spacing-sm;
+  gap: 10px;
+  border-radius: $borderRadiusMedium;
+  background-color: $color-medium-grey;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: $boxShadowSmall;
+  transition: $transition-fast;
+
+  &:hover {
+    cursor: pointer;
+    padding: $spacing-xs $spacing-sm;
+    background-color: $color-dark-grey;
+    box-shadow: $boxShadowMedium;
+    color: $color-light;
+  }
+}

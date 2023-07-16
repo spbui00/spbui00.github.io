@@ -31,12 +31,6 @@ yarn-error.log*
 # Ignore compiled CSS
 *.css
 
-# Ignore compiled JavaScript
-*.js
-
-# Ignore compiled SCSS
-*.scss
-
 # Ignore image thumbnails
 *.thumb
 
