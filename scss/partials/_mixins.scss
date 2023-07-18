@@ -12,3 +12,25 @@
   flex-basis: $flex-basis;
   flex-shrink: $flex-shrink;
 }
+
+@mixin scrollable($scrollbar-color: $color-light-orange $color-dark-grey, $scrollbar-width: thin) {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: $scrollbar-color;
+  scrollbar-width: $scrollbar-width;
+}
+
+@mixin scrollable-x($scrollbar-color: $color-light-orange $color-dark-grey, $scrollbar-width: thin) {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: $scrollbar-color;
+  scrollbar-width: $scrollbar-width;
+}
+
+@mixin scrollable-y($scrollbar-color: $color-light-orange $color-dark-grey, $scrollbar-width: thin) {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: $scrollbar-color;
+  scrollbar-width: $scrollbar-width;
+}
+

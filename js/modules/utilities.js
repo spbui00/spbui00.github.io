@@ -25,3 +25,19 @@ export async function fetchHTML(page, container, callback) {
     console.error('There has been a problem with your fetch operation:', error);
   }
 }
+
+export function createElement(tag, classes, id, attributes) {
+  const el = document.createElement(tag);
+  if (classes) {
+    el.classList.add(classes);
+  }
+  if (id) {
+    el.setAttribute('id', id);
+  }
+  if (attributes) {
+    attributes.forEach((attribute) => {
+      el.setAttribute(attribute[0], attribute[1]);
+    });
+  }
+  return el;
+}

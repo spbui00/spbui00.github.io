@@ -44,3 +44,11 @@ footer {
 .orange-bg {
   background-color: $color-light-orange;
 }
+
+a {
+  opacity: 0.7;
+
+  &:hover, &:focus {
+    opacity: 1;
+  }
+}

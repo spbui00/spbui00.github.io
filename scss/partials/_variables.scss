@@ -1,4 +1,6 @@
 $color-light-orange: #EB5E28;
+$color-light-blue: #2876EB;
+$color-light-purple: #B828EB;
 $color-background: #141517;
 $color-dark: #141517;
 $color-dark-grey: #1D1E1F;
@@ -17,8 +19,8 @@ $spacing-xl: 48px;
 
 // box shadows
 $boxShadowSmall: 0px 2px 8px rgba(0, 0, 0, 0.5);
-$boxShadowMedium: 0px 5px 15px rgba(0, 0, 0, 0.2);
-$boxShadowLarge: 0px 8px 30px rgba(0, 0, 0, 0.2);
+$boxShadowMedium: 0px 5px 15px rgba(0, 0, 0, 0.5);
+$boxShadowLarge: 0px 8px 30px rgba(0, 0, 0, 0.5);
 
 
 // borders
@@ -66,3 +68,6 @@ $transition-fast: all 0.1s ease-in-out;
 $animation-duration-short: 0.3s;
 $animation-duration-medium: 0.5s;
 $animation-duration-long: 1s;
+$scale-sm: 1.05;
+$scale-md: 1.15;
+$scale-lg: 1.25;

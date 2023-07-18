@@ -3,17 +3,15 @@ $dot-width-larger: 24px;
 
 .academy {
   @include flex-container(flex-start, flex-start, column);
+  @include scrollable;
   gap: $spacing-lg;
-  overflow: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: $color-light-orange $color-dark-grey;
-  scrollbar-width: thin;
   transition: $transition;
   width: 100%;
   margin-top: 20px;
   
   .timeline {
     @include flex-container(flex-start, flex-start, column);
+    padding-top: $spacing-xs;
 
     .period {
       @include flex-container(flex-start, flex-start, column);
@@ -49,9 +47,7 @@ $dot-width-larger: 24px;
 
         &:hover, &:focus {
           cursor: pointer;
-          width: $dot-width-larger;
-          height: $dot-width-larger;
-          margin-left: - (calc($dot-width-larger/2) + $spacing-md + calc($borderWidthLarge / 2));
+          transform: scale($scale-lg); 
         }
       }
 

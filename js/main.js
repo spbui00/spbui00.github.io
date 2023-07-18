@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const contentContainer = document.querySelector('#content-container');
   const navLinks = document.querySelectorAll('nav ul li');
 
-  // start with the academy page
-  const startPage = "academy";
+  // page that is loaded by default
+  const startPage = "work";
   const startLink = document.querySelector(`#${startPage}`);
   fetchHTML(startPage, contentContainer, removeActives(navLinks, startLink));
 

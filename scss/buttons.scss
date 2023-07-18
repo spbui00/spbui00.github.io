@@ -22,5 +22,6 @@ button {
     background-color: $color-dark-grey;
     box-shadow: $boxShadowMedium;
     color: $color-light;
+    transform: scale($scale-md);
   }
 }
