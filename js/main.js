@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
   navLinks.forEach(function(link) {
+    if (link.classList.contains('deactivated')) {
+      return;
+    };
     link.addEventListener('click', async e => {
       e.preventDefault();
       if (link.classList.contains('active')) {
