@@ -1,1 +1,79 @@
-
+{
+  projects: [
+    {
+      name: 'Hospital Queue Simulation',
+      icon: '',
+      description: 'Simulated a hospital queue system with different types of patients, arrival and service distributions. Suggested improvements to the system using mathematical analysis of stochastic system and simulation results.',
+      longDescription: '',
+      link: '',
+      report: 'https://drive.google.com/file/d/168QeVsklklqe2JRNFq-J06rQyW71kGz_/view?usp=sharing',
+      images: '', 
+      tags: ['Python', 'Math', 'Simulation'],
+      date: 'July 2023'
+    },
+    {
+      name: 'Water Level Prediction',
+      icon: '',
+      description: 'Using Fourier transform to convert the data from time domain to frequency domain and then using a linear regression model to predict the water level in Westerschelde.',
+      longDescription: '',
+      link: '',
+      report: 'https://drive.google.com/file/d/1FSszfcKppPnnDykvmrg09DaU4EB3p6HV/view?usp=sharing',
+      images: '',
+      tags: ['Python', 'Machine Learning', 'Math'],
+      date: 'April 2023'
+    },
+    {
+      name: 'Graph Isomorphism',
+      icon: '',
+      description: 'Implemented a graph isomorphism algorithm to decide whether two graphs are isomorphic or not. Additionally, for a single graph it can count the number of automorphisms of that graph. We used fast partition refinement and branching techniques to find the isomorphisms.',
+      longDescription: '',
+      link: '',
+      report: '',
+      images: '',
+      tags: ['Python', 'Math'],
+      date: 'April 2023'
+    },
+    {
+      name: 'Visol (ships schedui)',
+      icon: '',
+      description: 'Designed and coded a schedule for ship containers using SCSS and Javascript.',
+      longDescription: '',
+      link: '',
+      report: '',
+      images: 'Visol',
+      tags: ['SCSS', 'Javascript', 'HTML'],
+      date: 'June 2022'
+    },
+    {
+      name: 'Multi-hop ad-hoc chat',
+      icon: '',
+      description: 'Design and implement a fully distributed multi-hop ad-hoc chat application using emulated wireless communication.',
+      longDescription: '',
+      link: '',
+      images: '',
+      tags: ['Java', 'Networking'],
+      date: 'March 2022'
+    },
+    {
+      name: 'Pentago Game',
+      icon: '',
+      description: 'Two player board game. The game is played on a 6x6 board divided into four 3x3 quadrants. Each player is represented by a mark of colour black or white, usually the player with black mark starts. Two players take turns and place their mark on an empty field, then choose one of the quadrants to rotate it 90 degrees clockwise or counterclockwise. A player wins by getting five of their marks in a vertical, horizontal or diagonal direction after quadrant rotation in their move. In case both players win after a quadrant rotation, the game is a draw. If the board is full and no one wins, the game is a draw.\nImplemented the game logic and server/client system and an AI player.',
+      longDescription: '',
+      link: '',
+      report: '',
+      images: 'Pentago',
+      tags: ['Java', 'Networking', 'AI'],
+      date: 'December 2021'    
+    },
+    {
+      name: 'Topdown Game on Raspberry Pi',
+      icon: '',
+      description: 'Coded a obstacles avoiding topdown game in Python. Final presentation was a Raspberry Pi with a small screen with a joystick.',
+      longDescription: '',
+      link: '',
+      report: '',
+      images: 'Gamestart',
+      tags: ['Python', 'Raspberry Pi'],
+      date: 'November 2022'
+    },
+}
