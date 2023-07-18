@@ -34,3 +34,13 @@
   scrollbar-width: $scrollbar-width;
 }
 
+// break points 
+@mixin respond-to($breakpoint) {
+  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+    @media (max-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint `#{$breakpoint}` does not exist in $breakpoints map.";
+  }
+}

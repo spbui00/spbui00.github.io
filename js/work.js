@@ -60,7 +60,7 @@ export function handleWork() {
         popupContainer.appendChild(popupName);
 
         // tags
-        popupContainer.appendChild(itemTags);
+        popupContainer.appendChild(itemTags.cloneNode(true));
 
         const popupChildren = createElement('div', 'popup-children');
 

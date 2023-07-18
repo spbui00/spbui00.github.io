@@ -42,6 +42,12 @@ $breakpoint-sm: 576px;   // small screens
 $breakpoint-md: 768px;   // medium screens
 $breakpoint-lg: 992px;   // large screens
 $breakpoint-xl: 1200px;  // extra-large screens
+$breakpoints: (
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl
+);
 
 // Max-widths
 $xs-max: 540px;

@@ -12,6 +12,10 @@ main {
   width: 87%;
   height: 90vh;
   transition: $transition;
+
+  @include respond-to(sm) {
+    width: 100%;
+  }
 }
 
 // reset all ul, ol, li styles
@@ -39,6 +43,10 @@ footer {
 
 .orange {
   color: $color-light-orange;
+}
+
+.grey {
+  color: $color-medium-grey;
 }
 
 .orange-bg {

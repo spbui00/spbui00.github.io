@@ -10,34 +10,79 @@ nav {
   ul {
     @include flex-container(space-between, flex-start, column);
     width: 100%;
-  }
-  
-  li {
-    color: $color-white;
-    width: 100%;
-    padding: 10px 0;
-    opacity: 0.5;
-    @include flex-container(flex-start, center, row);
-    gap: 10px;
-    transition: $transition;
-
-    &.active {
-      opacity: 1;
+      
+    li {
       color: $color-white;
+      width: 100%;
+      padding: 10px 0;
+      opacity: 0.5;
+      @include flex-container(flex-start, center, row);
+      gap: 10px;
+      transition: $transition;
+
+      &.active {
+        opacity: 1;
+        color: $color-white;
+
+        &:hover, &:focus {
+          opacity: 1;
+          color: $color-white;
+          cursor: default;
+        }
+      }
 
       &:hover, &:focus {
         opacity: 1;
-        color: $color-white;
-        cursor: default;
+        color: $color-light-orange;
+        outline: none;
+        cursor: pointer;
       }
-    }
-
-    &:hover, &:focus {
-      opacity: 1;
-      color: $color-light-orange;
-      outline: none;
-      cursor: pointer;
     }
   }
 
+
+  .brand {
+    display: none;
+  }
+
+  $nav-height: 40px;
+  @include respond-to(sm) {
+    @include flex-container(center, center, column);
+    background-color: $color-dark-grey;
+    position: fixed;
+    width: 100vw;
+    height: $nav-height;
+    z-index: 1000;
+
+    ul {
+      @include flex-container(center, center, column);
+      display: none;
+      width: 100%; 
+      height: 100%;
+      position: fixed;
+      top: $nav-height;
+      left: 0;
+      background-color: $color-dark-grey;
+
+      li {
+        width: auto;
+        animation: popUp $animation-duration-short ease-in-out;
+      }
+
+      &.show {
+        display: flex;
+      }
+    }
+
+    .brand {
+      @include flex-container(center, center, row);
+      gap: $spacing-xs;
+      color: $color-white;
+      z-index: 800;
+
+      &:hover, &:focus {
+        cursor: pointer;
+      }
+    }
+  }
 }

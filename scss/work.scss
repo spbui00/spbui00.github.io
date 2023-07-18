@@ -31,8 +31,9 @@
     }
 
     .items {
-      @include flex-container(space-between, flex-start, row);
-      @include scrollable;
+      @include flex-container(flex-start, flex-start, row);
+      // @include scrollable;
+      flex-wrap: wrap;
       gap: $spacing-md;
       padding: $spacing-xs $spacing-xs;
 
@@ -91,6 +92,8 @@
     &#projects {
       subsection {
         .items {
+          flex-wrap: nowrap;
+          @include scrollable;
           .item {
             @include flex-container(flex-start, flex-start, column);
             @include scrollable-y;
@@ -98,7 +101,7 @@
             border-radius: $borderRadiusMedium;
             padding: $spacing-sm;
             width: 330px;
-            height: 150px;
+            height: 155px;
             gap: 10px;
 
             .item-name {
@@ -160,6 +163,7 @@
     max-width: $lg-max;
     max-height: 70%;
     padding: $spacing-md $spacing-lg;
+    animation: popUp $animation-duration-short ease-in-out;
     
     .popup-children {
       @include flex-container(space-between, flex-start, row);
