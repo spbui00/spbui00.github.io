@@ -60,3 +60,7 @@ a {
     opacity: 1;
   }
 }
+
+.flex-row {
+  @include flex-container(space-between, center, row);
+}

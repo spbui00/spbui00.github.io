@@ -11,11 +11,8 @@ export function handleWork() {
       // TODO: add sorting and filtering
 
       projects.forEach((project) => {
-        const projectItem = document.createElement('div');
-        projectItem.classList.add('item');
-        projectItem.setAttribute('data-target', project.id);
-        const itemName = document.createElement('div');
-        itemName.classList.add('item-name');
+        const projectItem = createElement('div', 'item', ['data-target', project.id]);
+        const itemName = createElement('div', 'item-name');
 
         if (projects.icon) {
           addIcon(itemName, project.icon);  
@@ -24,18 +21,15 @@ export function handleWork() {
         itemName.innerHTML += project.name;
         projectItem.appendChild(itemName);
 
-        const itemTags = document.createElement('div');
-        itemTags.classList.add('item-tags');
+        const itemTags = createElement('div', 'item-tags');
         project.tags.sort().forEach((tag) => {
-          const itemTag = document.createElement('span');
-          itemTag.classList.add('item-tag');
+          const itemTag = createElement('span', 'item-tag');
           itemTag.innerHTML = tag;
           itemTags.appendChild(itemTag);
         });
         projectItem.appendChild(itemTags);
 
-        const itemDescription = document.createElement('div'); 
-        itemDescription.classList.add('item-description');
+        const itemDescription = createElement('div', 'item-description');
         itemDescription.innerHTML = project.description;
         projectItem.appendChild(itemDescription);
 

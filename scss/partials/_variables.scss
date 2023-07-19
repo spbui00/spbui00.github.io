@@ -41,7 +41,7 @@ $lineHeightLarge: 2;
 $breakpoint-sm: 576px;   // small screens
 $breakpoint-md: 768px;   // medium screens
 $breakpoint-lg: 992px;   // large screens
-$breakpoint-xl: 1200px;  // extra-large screens
+$breakpoint-xl: 1230px;  // extra-large screens
 $breakpoints: (
   sm: $breakpoint-sm,
   md: $breakpoint-md,
@@ -54,7 +54,7 @@ $xs-max: 540px;
 $sm-max: 720px;
 $md-max: 960px;
 $lg-max: 1100px;
-$xl-max: 1340px;
+$xl-max: 1200px;
 
 // Min-widths
 $xs-min: 320px;
