@@ -28,9 +28,6 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# Ignore compiled CSS
-*.css
-
 # Ignore image thumbnails
 *.thumb
 
