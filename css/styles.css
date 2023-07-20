@@ -553,7 +553,6 @@ a:hover, a:focus {
   scrollbar-color: #EB5E28 #1D1E1F;
   scrollbar-width: thin;
   background-color: #303137;
-  border-radius: 8px;
   padding: 16px;
   width: 330px;
   height: 155px;
@@ -565,8 +564,32 @@ a:hover, a:focus {
 @media (max-width: 576px) {
   .work section#projects subsection .items .item {
     width: 270px;
-    height: 180px;
+    height: 150px;
   }
+}
+.work section#business .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: #EB5E28 #1D1E1F;
+  scrollbar-width: thin;
+  background-color: #F1F2EB;
+  color: black;
+  width: 400px;
+  height: 100%;
+  gap: 0;
+}
+.work section#business .item .item-icon {
+  box-sizing: border-box;
+  padding: 8px 0;
+  width: 35%;
+  object-fit: contain;
+}
+.work section#business .item .item-name {
+  font-weight: 900;
 }
 .work .flex-row {
   position: relative;

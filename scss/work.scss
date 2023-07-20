@@ -100,7 +100,6 @@
             @include flex-container(flex-start, flex-start, column);
             @include scrollable-y;
             background-color: $color-medium-grey;
-            border-radius: $borderRadiusMedium;
             padding: $spacing-sm;
             width: 330px;
             height: 155px;
@@ -112,12 +111,37 @@
 
             @include respond-to(sm) {
               width: 270px;
-              height: 180px;
+              height: 150px;
             }
 
           }
         }
       }
+    }
+
+    &#business {
+      .item {
+        @include flex-container(flex-start, flex-start, column);
+        @include scrollable-y;
+        background-color: $color-light;
+        color: black;
+        width: 400px;
+        height: 100%;
+        gap: 0;
+
+        .item-icon {
+          box-sizing: border-box;
+          padding: $spacing-xs 0;
+          width: 35%;
+          object-fit: contain;
+        }
+      
+        .item-name {
+          font-weight: 900;
+        }
+
+      }
+
     }
   }
 
