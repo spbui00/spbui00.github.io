@@ -9,9 +9,17 @@ body {
 
 main {
   @include flex-container(center, center, column);
-  width: 87%;
+  width: 85%;
   height: 90vh;
   transition: $transition;
+
+  @include respond-to(xxl) {
+    width: 80%;
+  }
+
+  @include respond-to(md) {
+    width: 75%;
+  }
 
   @include respond-to(sm) {
     width: 100%;

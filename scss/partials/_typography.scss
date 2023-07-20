@@ -12,6 +12,10 @@ html {
   font-style: normal;
   line-height: 1.5;
   color: $color-white;
+
+  @include respond-to(sm) {
+    font-size: $fontSize-sm;
+  }
 }
 
 @font-face {

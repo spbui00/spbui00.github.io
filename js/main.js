@@ -28,12 +28,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   // if screen is phone size, close nav when link is clicked
-  if (window.innerWidth < 576) {
-    const nav = document.querySelector('.brand');
-    nav.addEventListener('click', () => {
-      ul.classList.toggle('show');
-    });
-  };
+  const nav = document.querySelector('.brand');
+  console.log(nav);
+  nav.addEventListener('click', () => {
+    ul.classList.toggle('show');
+  });
 });
 
 
