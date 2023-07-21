@@ -9,16 +9,16 @@ body {
 
 main {
   @include flex-container(center, center, column);
-  width: 85%;
+  width: 80%;
   height: 90vh;
   transition: $transition;
 
   @include respond-to(xxl) {
-    width: 80%;
+    width: 78%;
   }
 
   @include respond-to(md) {
-    width: 75%;
+    width: 73%;
   }
 
   @include respond-to(sm) {

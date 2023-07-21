@@ -1,6 +1,7 @@
-/* mixins.scss */ /* Typography styles */
+/* mixins.scss */
+/* Typography styles */
 html {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Default Nutino", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -134,18 +135,18 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 85%;
+  width: 80%;
   height: 90vh;
   transition: all 0.2s ease-in-out;
 }
 @media (max-width: 1400px) {
   main {
-    width: 80%;
+    width: 78%;
   }
 }
 @media (max-width: 768px) {
   main {
-    width: 75%;
+    width: 73%;
   }
 }
 @media (max-width: 576px) {
@@ -210,7 +211,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  width: 15%;
+  width: 17%;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -391,7 +392,7 @@ button:hover {
   background-color: #FFFFFF;
   border-radius: 50%;
   position: absolute;
-  margin-left: -36px;
+  margin-left: -calc($dot-width/2)24pxcalc($borderWidthLarge / 2);
   transition: all 0.2s ease-in-out;
 }
 .academy .timeline .period .dot.orange-bg {
@@ -756,9 +757,11 @@ a:hover, a:focus {
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
+  box-sizing: border-box;
   max-width: 1200px;
   max-height: 80vh;
-  padding: 48px;
+  padding: 8px 32px;
+  padding-bottom: 0%;
   transition: all 0.2s ease-in-out;
 }
 

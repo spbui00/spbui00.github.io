@@ -1,9 +1,11 @@
 #content-container {
   @include flex-container(flex-start, flex-start, column);
   width: 100%;
+  box-sizing: border-box;
   max-width: $xl-max;
   max-height: 80vh;
-  padding: $spacing-xl;
+  padding: $spacing-xs $spacing-lg;
+  padding-bottom: 0%;
   transition: $transition;
 }
 
