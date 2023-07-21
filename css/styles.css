@@ -584,7 +584,7 @@ a:hover, a:focus {
   padding: 0;
   padding-bottom: 16px;
 }
-.work section#business subsection, .work section#business .items {
+.work section#business subsection {
   padding: 0;
 }
 .work section#business .item {
