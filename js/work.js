@@ -143,6 +143,47 @@ export function handleWork() {
         document.querySelector('.work').appendChild(popup);
       });
     });
+
+  // business links 
+  const businessLinks = document.querySelectorAll('#business .item');
+  businessLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      const url = link.getAttribute('url');
+      window.open(url, '_blank');
+    });
+  });
+
+  // fetch reviews 
+  const reviewsContainer = document.querySelector('#ratings .items');
+  fetch('../assets/data/ratings.json')
+    .then((response) => response.json())
+    .then((data) => {
+      const reviews = data.ratings;
+      reviews.forEach((review) => {
+        const reviewItem = createElement('div', 'item');
+        reviewItem.classList.add('rating');
+        const reviewHeading = createElement('div', 'heading');
+        const reviewName = createElement('div', 'heading-name');
+        const reviewOrigin = createElement('div', 'heading-origin');
+        reviewName.innerHTML = review.name;
+        reviewOrigin.innerHTML = review.origin;
+        reviewHeading.appendChild(reviewName);
+        reviewHeading.appendChild(reviewOrigin);
+        reviewItem.appendChild(reviewHeading);
+
+        const reviewContainer = createElement('div', 'review');
+        const reviewText = createElement('div', 'review-text'); 
+        reviewText.innerHTML = review.review;
+        reviewContainer.appendChild(reviewText);
+        reviewItem.appendChild(reviewContainer);
+
+        const reviewDate = createElement('div', 'date');
+        reviewDate.innerHTML = review.date;
+        reviewItem.appendChild(reviewDate);
+
+        reviewsContainer.appendChild(reviewItem);
+      });
+    });
 }
 
 function addIcon(el, icon) {

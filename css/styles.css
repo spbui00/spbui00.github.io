@@ -1,5 +1,4 @@
-/* mixins.scss */
-/* Typography styles */
+/* mixins.scss */ /* Typography styles */
 html {
   font-size: 14px;
   font-family: "Default Nutino", sans-serif;
@@ -108,7 +107,7 @@ p {
 @keyframes popUp {
   0% {
     transform: scale(0.9);
-    opacity: 0;
+    opacity: 1;
   }
   50% {
     transform: scale(1.05);
@@ -392,7 +391,7 @@ button:hover {
   background-color: #FFFFFF;
   border-radius: 50%;
   position: absolute;
-  margin-left: -calc($dot-width/2)24pxcalc($borderWidthLarge / 2);
+  margin-left: -36px;
   transition: all 0.2s ease-in-out;
 }
 .academy .timeline .period .dot.orange-bg {
@@ -455,6 +454,11 @@ a:hover, a:focus {
   transition: all 0.2s ease-in-out;
   width: 100%;
 }
+@media (max-width: 576px) {
+  .work {
+    padding-right: 0;
+  }
+}
 .work section {
   display: flex;
   justify-content: flex-start;
@@ -494,6 +498,14 @@ a:hover, a:focus {
   flex-wrap: wrap;
   gap: 24px;
   padding: 8px 8px;
+  box-sizing: border-box;
+  padding-bottom: 24px;
+}
+@media (max-width: 576px) {
+  .work section .items {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 .work section .items .item {
   display: flex;
@@ -502,7 +514,6 @@ a:hover, a:focus {
   flex-direction: row;
   border-radius: 8px;
   padding: 8px 16px;
-  margin-bottom: 16px;
   gap: 24px;
 }
 .work section .items .item .levels {
@@ -564,9 +575,17 @@ a:hover, a:focus {
 }
 @media (max-width: 576px) {
   .work section#projects subsection .items .item {
-    width: 270px;
+    width: 200px;
     height: 150px;
   }
+}
+.work section#business {
+  background-color: transparent;
+  padding: 0;
+  padding-bottom: 16px;
+}
+.work section#business subsection, .work section#business .items {
+  padding: 0;
 }
 .work section#business .item {
   display: flex;
@@ -579,9 +598,9 @@ a:hover, a:focus {
   scrollbar-width: thin;
   background-color: #F1F2EB;
   color: black;
-  width: 400px;
-  height: 100%;
-  gap: 0;
+  width: 350px;
+  height: 130px;
+  gap: 0px;
 }
 .work section#business .item .item-icon {
   box-sizing: border-box;
@@ -591,6 +610,86 @@ a:hover, a:focus {
 }
 .work section#business .item .item-name {
   font-weight: 900;
+}
+@media (max-width: 768px) {
+  .work section#business .item {
+    width: 280px;
+    height: 130px;
+  }
+}
+@media (max-width: 576px) {
+  .work section#business .item {
+    width: 250px;
+    height: 110px;
+  }
+}
+.work section#ratings {
+  background-color: transparent;
+  padding: 0;
+  padding-bottom: 16px;
+  position: relative;
+  width: 100%;
+}
+.work section#ratings subsection .items {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: #EB5E28 #1D1E1F;
+  scrollbar-width: thin;
+  padding: 0;
+  padding-bottom: 24px;
+  flex-wrap: nowrap;
+}
+.work section#ratings subsection .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: #EB5E28 #1D1E1F;
+  scrollbar-width: thin;
+  background-color: #403D39;
+  width: 350px;
+  height: 200px;
+}
+.work section#ratings subsection .item:hover {
+  cursor: default;
+  animation: none;
+  transform: none;
+  box-shadow: none;
+}
+.work section#ratings subsection .item.rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.work section#ratings subsection .item.rating .heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.work section#ratings subsection .item.rating .heading-name {
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+.work section#ratings subsection .item.rating .heading-origin {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+.work section#ratings subsection .item.rating .review {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  font-style: italic;
+}
+.work section#ratings subsection .item.rating .date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
 }
 .work .flex-row {
   position: relative;
@@ -615,7 +714,7 @@ a:hover, a:focus {
 .work .item:hover {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  transform: scale(1.05);
+  transform: scale(1.04);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -759,10 +858,16 @@ a:hover, a:focus {
   width: 100%;
   box-sizing: border-box;
   max-width: 1200px;
-  max-height: 80vh;
+  max-height: 85vh;
+  margin-top: 24px;
   padding: 8px 32px;
   padding-bottom: 0%;
   transition: all 0.2s ease-in-out;
+}
+@media (max-width: 576px) {
+  #content-container {
+    padding: 8px;
+  }
 }
 
 .head {

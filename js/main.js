@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // if screen is phone size, close nav when link is clicked
   const nav = document.querySelector('.brand');
-  console.log(nav);
   nav.addEventListener('click', () => {
     ul.classList.toggle('show');
   });

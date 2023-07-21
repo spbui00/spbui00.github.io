@@ -3,10 +3,15 @@
   width: 100%;
   box-sizing: border-box;
   max-width: $xl-max;
-  max-height: 80vh;
+  max-height: 85vh;
+  margin-top: $spacing-md;
   padding: $spacing-xs $spacing-lg;
   padding-bottom: 0%;
   transition: $transition;
+  
+  @include respond-to(sm) {
+    padding: $spacing-xs;
+  }
 }
 
 .head {

@@ -5,6 +5,10 @@
   padding-right: $spacing-md;
   transition: $transition;
   width: 100%;
+
+  @include respond-to(sm) {
+    padding-right: 0;
+  }
   
   section {
     @include flex-container(flex-start, flex-start, column);
@@ -38,12 +42,18 @@
       flex-wrap: wrap;
       gap: $spacing-md;
       padding: $spacing-xs $spacing-xs;
+      box-sizing: border-box;
+      padding-bottom: $spacing-md;
+
+      @include respond-to(sm) {
+        padding-right: 0;
+        padding-left: 0;
+      }
 
       .item {
         @include flex-container(flex-start, center, row);
         border-radius: $borderRadiusMedium;
         padding: $spacing-xs $spacing-sm;
-        margin-bottom: $spacing-sm;
         gap: $spacing-md;
 
         .levels {
@@ -110,7 +120,7 @@
             }
 
             @include respond-to(sm) {
-              width: 270px;
+              width: 200px;
               height: 150px;
             }
 
@@ -120,14 +130,22 @@
     }
 
     &#business {
+      background-color: transparent;
+      padding: 0;
+      padding-bottom: $spacing-sm;
+
+      subsection, .items {
+        padding: 0;
+      }
+
       .item {
         @include flex-container(flex-start, flex-start, column);
         @include scrollable-y;
         background-color: $color-light;
         color: black;
-        width: 400px;
-        height: 100%;
-        gap: 0;
+        width: 350px;
+        height: 130px;
+        gap:0px;
 
         .item-icon {
           box-sizing: border-box;
@@ -140,8 +158,75 @@
           font-weight: 900;
         }
 
-      }
+        @include respond-to(md) {
+          width: 280px;
+          height: 130px;
+        }
 
+        @include respond-to(sm) {
+          width: 250px;
+          height: 110px;
+        }
+
+      }
+    }
+
+    &#ratings {
+      background-color: transparent;
+      padding: 0;
+      padding-bottom: $spacing-sm;
+      position: relative;
+      width: 100%;
+     
+      subsection {
+        .items {
+          @include scrollable;
+          padding: 0;
+          padding-bottom: $spacing-md;
+          flex-wrap: nowrap;
+        }
+        
+        .item {
+          @include flex-container(flex-start, flex-start, column);
+          @include scrollable;
+          background-color: $color-medium;
+          width: 350px; 
+          height: 200px;
+
+          &:hover {
+            cursor: default;
+            animation: none;
+            transform: none;
+            box-shadow: none;
+          }
+
+          &.rating {
+            @include flex-container(flex-start, flex-start, column);
+
+            .heading {
+              @include flex-container(flex-start, flex-start, column);
+              &-name {
+                font-weight: 900;
+                font-size: $fontSize-lg;
+              }
+              &-origin {
+                font-size: $fontSize-sm;
+                font-style: italic;
+              }
+            }
+
+            .review {
+              @include flex-container(flex-start, flex-start, column);
+              font-style: italic;
+            }
+
+            .date {
+              @include flex-container(flex-end, flex-end, row);
+            }
+          }
+        }
+
+      }
     }
   }
 
@@ -169,7 +254,7 @@
     &:hover {
       cursor: pointer;
       transition: $transition;
-      transform: scale($scale-sm);
+      transform: scale(1.04);
       box-shadow: $boxShadowMedium;
     }
   }
