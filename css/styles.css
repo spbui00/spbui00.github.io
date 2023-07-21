@@ -869,6 +869,111 @@ section#ratings subsection .item.rating .date {
   object-fit: cover;
 }
 
+#contact-container {
+  overflow: visible;
+  width: 70%;
+  align-self: center;
+}
+@media (max-width: 576px) {
+  #contact-container {
+    width: 100%;
+  }
+  #contact-container button {
+    width: 100%;
+  }
+}
+#contact-container .headings {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 16px;
+  gap: 8px;
+  font-size: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+}
+#contact-container .headings h1 {
+  font-size: 3rem;
+}
+#contact-container .headings .status {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+}
+#contact-container form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+}
+#contact-container form .row-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  #contact-container form .row-group {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  #contact-container form .row-group {
+    flex-direction: column;
+  }
+}
+#contact-container form .form-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+#contact-container form .form-group input, #contact-container form .form-group textarea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 8px;
+  color: #F1F2EB;
+  background-color: #303137;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+#contact-container form .form-group input:focus, #contact-container form .form-group textarea:focus {
+  outline: none;
+  background-color: #1D1E1F;
+}
+#contact-container form .form-group input::placeholder, #contact-container form .form-group textarea::placeholder {
+  color: #F1F2EB;
+  opacity: 0.5;
+}
+#contact-container form .form-group:hover, #contact-container form .form-group:focus-within {
+  opacity: 1;
+  outline: none;
+}
+#contact-container form p {
+  font-size: 3rem;
+  color: #F1F2EB;
+  transition: all 0.2s ease-in-out;
+}
+
 #personality section {
   padding: 0;
   background-color: transparent;

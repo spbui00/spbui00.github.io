@@ -1,0 +1,95 @@
+#contact-container {
+  overflow: visible;
+  width: 70%;
+  align-self: center;
+
+  @include respond-to(sm) {
+    width: 100%;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .headings {
+    @include flex-container(flex-start, flex-start, column);
+    margin-bottom: $spacing-sm;
+    gap: $spacing-xs;
+    font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: $spacing-xs;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .status {
+      @include flex-container(flex-start, center, row);
+      gap: $spacing-xs;
+    }
+  }
+
+  form {
+    @include flex-container(flex-start, flex-start, column);
+    gap: $spacing-md;
+    width: 100%;
+    box-sizing: border-box;
+    padding: $spacing-xs;
+
+    .row-group {
+      @include flex-container(flex-start, flex-start, row);
+      gap: $spacing-md;
+      width: 100%;
+
+      @include respond-to(sm) {
+        flex-direction: column;
+      }
+
+      @include respond-to(md) {
+        flex-direction: column;
+      }
+    }
+
+    .form-group {
+      @include flex-container(flex-start, flex-start, column);
+      gap: $spacing-xs;
+      width: 100%;
+      opacity: $opacity-low;
+      transition: $transition;
+
+      input, textarea {
+        @include flex-container(flex-start, center, row);
+        width: 100%;
+        box-sizing: border-box;
+        padding: $spacing-sm;
+        border-radius: $borderRadiusMedium;
+        color: $color-light;
+        background-color: $color-medium-grey;
+        transition: $transition;
+        border: none;
+
+        &:focus {
+          outline: none;
+          background-color: $color-dark-grey;
+        }
+
+        &::placeholder {
+          color: $color-light;
+          opacity: $opacity-low;
+        }
+      }
+
+      &:hover, &:focus-within {
+        opacity: 1;
+        outline: none;
+      }
+    }
+
+    p {
+      font-size: 3rem;
+      color: $color-light;
+      transition: $transition;
+    }
+  }
+}

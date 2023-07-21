@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const ul = document.querySelector('nav ul');
 
   // page that is loaded by default
-  const startPage = "personality";
+  const startPage = "contact";
   const startLink = document.querySelector(`#${startPage}`);
   fetchHTML(startPage, contentContainer, removeActives(navLinks, startLink));
 
