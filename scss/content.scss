@@ -1,6 +1,7 @@
 #content-container {
   @include flex-container(flex-start, flex-start, column);
   width: 100%;
+  height:max-content;
   box-sizing: border-box;
   max-width: $xl-max;
   max-height: 85vh;
@@ -10,7 +11,7 @@
   transition: $transition;
   
   @include respond-to(sm) {
-    padding: $spacing-xs;
+    padding: 3px;
   }
 }
 

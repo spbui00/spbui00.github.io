@@ -1,0 +1,123 @@
+#personality {
+  section {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.scrollable-container {
+  @include flex-container(flex-start, flex-start, column);
+  @include scrollable-y;
+  width: 100%;
+  height: max-content;
+  gap: $spacing-md;
+}
+
+.hello {
+  h1 {
+    font-size: 3rem;
+  }
+
+  @include respond-to(sm) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.traits {
+  @include flex-container(flex-start, flex-start, column);
+  width: 100%;
+}
+
+.infographics-bars {
+  @include flex-container(space-between, flex-start, row);
+  box-sizing: border-box;
+  margin-top: $spacing-sm;
+  gap: $spacing-md;
+  width: 100%;
+  height: 170px;
+  max-width: $md-max;
+
+  .bar-names, .bar-containers, .bar-values {
+    @include flex-container(space-between, flex-start, column);
+    height: 100%;
+  }
+
+  .bar-containers {
+    width: 100%;
+    height: 100%;
+
+    .bar-container {
+      box-sizing: border-box;
+      padding: 4px;
+      width: 100%;
+      height: 13%;
+      border-radius: $borderRadiusLarge;
+      background-color: $color-medium;
+
+      .bar-width {
+        height: 100%;
+        border-radius: $borderRadiusLarge;
+
+        &#openness {
+          @include growFromLeft(73); 
+        } 
+
+        &#conscientiousness {
+          @include growFromLeft(56); 
+        }
+
+        &#extraversion {
+          @include growFromLeft(87.5); 
+        }
+
+        &#agreeableness {
+          @include growFromLeft(71); 
+        }
+
+        &#neuroticism {
+          @include growFromLeft(10); 
+        }
+      }
+    }
+  }
+}
+
+.hobbies {
+  @include flex-container(flex-start, flex-start, column);
+  width: 100%;
+
+  subsection {
+    @include flex-container(flex-start, flex-start, row);
+    @include scrollable-x;
+    width: 100%;
+    gap: $spacing-xl;
+    box-sizing: border-box;
+    padding-bottom: $spacing-md;
+
+    @include respond-to(sm) {
+      gap: $spacing-lg;
+    }
+  
+    .hobby {
+      @include flex-container(center, center, column);
+      gap: $spacing-sm;
+      text-transform: uppercase;
+      font-weight: 900;
+  
+      $radius: 40px;
+      i {
+        @include flex-container(center, center, row);
+        font-size: $fontSize-lg;
+        background-color: $color-medium-grey;
+        border-radius: 50%;
+        padding: $spacing-sm;
+        height: $radius;
+        width: $radius;
+        color: $color-light;
+      }
+    }
+  }
+}

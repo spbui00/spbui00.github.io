@@ -9,256 +9,257 @@
   @include respond-to(sm) {
     padding-right: 0;
   }
+}
   
-  section {
+section {
+  @include flex-container(flex-start, flex-start, column);
+  box-sizing: border-box;
+  padding: $spacing-md;
+  background-color: $color-dark-grey;
+  border-radius: $borderRadiusMedium;
+  width: 100%;
+
+  subsection {
     @include flex-container(flex-start, flex-start, column);
-    box-sizing: border-box;
-    padding: $spacing-md;
-    background-color: $color-dark-grey;
-    border-radius: $borderRadiusMedium;
+    @include scrollable-x;
     width: 100%;
-  
-    subsection {
-      @include flex-container(flex-start, flex-start, column);
-      @include scrollable-x;
-      width: 100%;
+  }
+
+  h2, h3 {
+    margin: 0;
+  }
+
+  h2 {
+    margin-bottom: $spacing-sm;
+  }
+
+  h3 {
+    margin-bottom: $spacing-xs;
+  }
+
+  .items {
+    @include flex-container(flex-start, flex-start, row);
+    // @include scrollable;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+    padding: $spacing-xs $spacing-xs;
+    box-sizing: border-box;
+    padding-bottom: $spacing-md;
+
+    @include respond-to(sm) {
+      padding-right: 0;
+      padding-left: 0;
     }
 
-    h2, h3 {
-      margin: 0;
-    }
-
-    h2 {
-      margin-bottom: $spacing-sm;
-    }
-
-    h3 {
-      margin-bottom: $spacing-xs;
-    }
-
-    .items {
-      @include flex-container(flex-start, flex-start, row);
-      // @include scrollable;
-      flex-wrap: wrap;
+    .item {
+      @include flex-container(flex-start, center, row);
+      border-radius: $borderRadiusMedium;
+      padding: $spacing-xs $spacing-sm;
       gap: $spacing-md;
-      padding: $spacing-xs $spacing-xs;
-      box-sizing: border-box;
-      padding-bottom: $spacing-md;
 
-      @include respond-to(sm) {
-        padding-right: 0;
-        padding-left: 0;
-      }
-
-      .item {
-        @include flex-container(flex-start, center, row);
-        border-radius: $borderRadiusMedium;
-        padding: $spacing-xs $spacing-sm;
-        gap: $spacing-md;
-
-        .levels {
-          @include flex-container(center, center, row);
-          gap: $spacing-xs;
-          
-          $point-width: 10px;
-          .point {
-            width: $point-width;
-            height: $point-width;
-            background-color: transparent;
-            border: $borderWidthMedium solid $color-white;
-            border-radius: 50%;
-          
-            &.full {
-              background-color: $color-white;
-            }
-          }
-        }
-
-        &.darken {
-          background-color: $color-medium-grey;
-          .item-name {
-            color: $color-light;
-          }
-        }
-      }
-
-      &-orange {
-        .item {
-          background-color: $color-light-orange;
-        }
-      }
-
-      &-blue {
-        .item {
-          background-color: $color-light-blue;
-        }
-      }
-
-      &-purple {
-        .item {
-          background-color: $color-light-purple;
-        }
-      }
-    }
-
-    &#projects {
-      subsection {
-        .items {
-          flex-wrap: nowrap;
-          @include scrollable;
-          .item {
-            @include flex-container(flex-start, flex-start, column);
-            @include scrollable-y;
-            background-color: $color-medium-grey;
-            padding: $spacing-sm;
-            width: 330px;
-            height: 155px;
-            gap: 10px;
-
-            .item-name {
-              font-weight: 900;
-            }
-
-            @include respond-to(sm) {
-              width: 200px;
-              height: 150px;
-            }
-
-          }
-        }
-      }
-    }
-
-    &#business {
-      background-color: transparent;
-      padding: 0;
-      padding-bottom: $spacing-sm;
-
-      subsection {
-        padding: 0;
-      }
-
-      .item {
-        @include flex-container(flex-start, flex-start, column);
-        @include scrollable-y;
-        background-color: $color-light;
-        color: black;
-        width: 350px;
-        height: 130px;
-        gap:0px;
-
-        .item-icon {
-          box-sizing: border-box;
-          padding: $spacing-xs 0;
-          width: 35%;
-          object-fit: contain;
-        }
-      
-        .item-name {
-          font-weight: 900;
-        }
-
-        @include respond-to(md) {
-          width: 280px;
-          height: 130px;
-        }
-
-        @include respond-to(sm) {
-          width: 250px;
-          height: 110px;
-        }
-
-      }
-    }
-
-    &#ratings {
-      background-color: transparent;
-      padding: 0;
-      padding-bottom: $spacing-sm;
-      position: relative;
-      width: 100%;
-     
-      subsection {
-        .items {
-          @include scrollable;
-          padding: 0;
-          padding-bottom: $spacing-md;
-          flex-wrap: nowrap;
-        }
+      .levels {
+        @include flex-container(center, center, row);
+        gap: $spacing-xs;
         
+        $point-width: 10px;
+        .point {
+          width: $point-width;
+          height: $point-width;
+          background-color: transparent;
+          border: $borderWidthMedium solid $color-white;
+          border-radius: 50%;
+        
+          &.full {
+            background-color: $color-white;
+          }
+        }
+      }
+
+      &.darken {
+        background-color: $color-medium-grey;
+        .item-name {
+          color: $color-light;
+        }
+      }
+    }
+
+    &-orange {
+      .item {
+        background-color: $color-light-orange;
+      }
+    }
+
+    &-blue {
+      .item {
+        background-color: $color-light-blue;
+      }
+    }
+
+    &-purple {
+      .item {
+        background-color: $color-light-purple;
+      }
+    }
+  }
+
+  &#projects {
+    subsection {
+      .items {
+        flex-wrap: nowrap;
+        @include scrollable;
         .item {
           @include flex-container(flex-start, flex-start, column);
-          @include scrollable;
-          background-color: $color-medium;
-          width: 350px; 
-          height: 200px;
+          @include scrollable-y;
+          background-color: $color-medium-grey;
+          padding: $spacing-sm;
+          width: 330px;
+          height: 155px;
+          gap: 10px;
 
-          &:hover {
-            cursor: default;
-            animation: none;
-            transform: none;
-            box-shadow: none;
+          .item-name {
+            font-weight: 900;
           }
 
-          &.rating {
-            @include flex-container(flex-start, flex-start, column);
-
-            .heading {
-              @include flex-container(flex-start, flex-start, column);
-              &-name {
-                font-weight: 900;
-                font-size: $fontSize-lg;
-              }
-              &-origin {
-                font-size: $fontSize-sm;
-                font-style: italic;
-              }
-            }
-
-            .review {
-              @include flex-container(flex-start, flex-start, column);
-              font-style: italic;
-            }
-
-            .date {
-              @include flex-container(flex-end, flex-end, row);
-            }
+          @include respond-to(sm) {
+            width: 200px;
+            height: 150px;
           }
+
         }
-
       }
     }
   }
 
-  .flex-row {
+  &#business {
+    background-color: transparent;
+    padding: 0;
+    padding-bottom: $spacing-sm;
+
+    subsection {
+      padding: 0;
+    }
+
+    .item {
+      @include flex-container(flex-start, flex-start, column);
+      @include scrollable-y;
+      background-color: $color-light;
+      color: black;
+      width: 350px;
+      height: 130px;
+      gap:0px;
+
+      .item-icon {
+        box-sizing: border-box;
+        padding: $spacing-xs 0;
+        width: 35%;
+        object-fit: contain;
+      }
+    
+      .item-name {
+        font-weight: 900;
+      }
+
+      @include respond-to(md) {
+        width: 280px;
+        height: 130px;
+      }
+
+      @include respond-to(sm) {
+        width: 250px;
+        height: 110px;
+      }
+
+    }
+  }
+
+  &#ratings {
+    background-color: transparent;
+    padding: 0;
+    padding-bottom: $spacing-sm;
     position: relative;
     width: 100%;
-
-    section {
-      width: 48%;
-      height: 100%;
-    }
-
-    @include respond-to(md) {
-      flex-direction: column;
-      gap: $spacing-md;
-      section {
-        width: 100%;
+   
+    subsection {
+      .items {
+        @include scrollable;
+        padding: 0;
+        padding-bottom: $spacing-md;
+        flex-wrap: nowrap;
       }
-    }
-  }
+      
+      .item {
+        @include flex-container(flex-start, flex-start, column);
+        @include scrollable;
+        background-color: $color-medium;
+        width: 350px; 
+        height: 200px;
 
-  .item {
-    transition: $transition-fast;
+        &:hover {
+          cursor: default;
+          animation: none;
+          transform: none;
+          box-shadow: none;
+        }
 
-    &:hover {
-      cursor: pointer;
-      transition: $transition;
-      transform: scale(1.04);
-      box-shadow: $boxShadowMedium;
+        &.rating {
+          @include flex-container(flex-start, flex-start, column);
+
+          .heading {
+            @include flex-container(flex-start, flex-start, column);
+            &-name {
+              font-weight: 900;
+              font-size: $fontSize-lg;
+            }
+            &-origin {
+              font-size: $fontSize-sm;
+              font-style: italic;
+            }
+          }
+
+          .review {
+            @include flex-container(flex-start, flex-start, column);
+            font-style: italic;
+          }
+
+          .date {
+            @include flex-container(flex-end, flex-end, row);
+          }
+        }
+      }
+
     }
   }
 }
+
+.flex-row {
+ position: relative;
+  width: 100%;
+
+  section {
+    width: 48%;
+    height: 100%;
+  }
+
+  @include respond-to(md) {
+    flex-direction: column;
+    gap: $spacing-md;
+    section {
+      width: 100%;
+    }
+  }
+}
+
+.item {
+  transition: $transition-fast;
+
+  &:hover {
+    cursor: pointer;
+    transition: $transition;
+    transform: scale(1.04);
+    box-shadow: $boxShadowMedium;
+  }
+}
+
 
 .item-tags {
   @include flex-container(flex-start, flex-start, row);

@@ -68,3 +68,15 @@
     opacity: 1;
   }
 }
+
+@mixin growFromLeft($width) {
+  @keyframes growFromLeft {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: #{$width};
+    }
+  }
+  animation: growFromLeft $animation-duration-long ease-out;
+}
