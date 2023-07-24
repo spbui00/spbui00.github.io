@@ -1,33 +1,39 @@
 {
   "ratings": [
     {
-      "name": "Do Hong Hanh",
-      "origin": "Spark Environment",
-      "review": "Han is a makes a great contribution to the team. He is a hard-working person and always willing to help others. He is also a good team player and a good friend. I am very happy to work with him.",
-      "date": "21.7.2023"
+      "name": "Kryštof Mitka",
+      "origin": "University colleague",
+      "review": "S Ha jsem měl možnost spolupracovat na řadě nejrůznějších projektů v rámci školy University of Twente. Společně se nám podařilo všechny projekty obhájit a vždy jsme dosáhli výborného výsledku. Zároveň jsme společně vyhráli programovací soutěž TAPC a postupem jsme se zúčastnili mezinárodní programovací soutěže BAPC. Ha je výborný v bedlivém naslouchání, které doplňuje rychlým porozuměním problémům a vysokým pracovním nasazením. Jeho specialitou je kreativní řešení problémů a nesmírně rychlá adaptace na prostředí. Určitě bych se s ním v budoucnu rád podílel na dalších společných projektech.",
+      "date": "23.7.2023"
     },
     {
-      "name": "Do Manh Cuong",
-      "origin": "Spark Environment",
-      "review": "Cuong is a makes a great contribution to the team. He is a hard-working person and always willing to help others. He is also a good team player and a good friend. I am very happy to work with him.",
+      "name": "Ngoc Minh Nguyen",
+      "origin": "360 Degree Show",
+      "review": "Throughout our collaboration on the project \"360 Degree View of Life\". Han's contributions were precious. Han's the one who founded the project and organized it well with his unique perspectives, which was a key to its success. Throughout this collaboration, Han demonstrated management skills, effectively communicated, provided constructive feedback, and appreciated team members' ideas, fostering a productive and positive working environment. Han skillfully united the team around a shared vision while respecting and integrating diverse perspectives, playing a crucial role in shaping our cohesive and impactful project. <br/><br/>Han is the most talented and hard-working person, and the friendliest friend that I ever met. Han's huge positive energy, creativity, intellectual depth, and interpersonal skills enriched the project, as well as our friendship and his relationships in life. It was a pleasure to meet and work with Han, an extraordinary individual.",
+      "date": "3.9.2021"
+    },
+    {
+      "name": "Jiří Luňák",
+      "origin": "Spark conversational lecturer",
+      "review": "Han je můj nadřízený. Je spolehlivý a umí vést meetingy, poradit s výukou a pomoci. Han je hodně aktivní člověk. Má spoustu koníčků a zajímá se o nové technologie. Je hodně informovaný o svém oboru a sleduje aktuality.",
       "date": "10.7.2023"
     },
     {
-      "name": "Do Manh Cuong",
-      "origin": "UT Twente",
-      "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam ni",
+      "name": "Magdalena Šrámková",
+      "origin": "Spark conversational lecturer",
+      "review": "Velmi mě baví tento projekt, kde spolupracuji jako rodilý mluvčí v českém jazyce a konverzuji s vietnamskými studenty. Je to vzájemné propojení mezi dvěma kulturami, kde s navzájem poznáváme, učíme a obohacujeme svými úhly pohledu na život.<br/><br/>Han je velmi přátelský, cílevědomý, inteligentní a citlivý mladý muž, který se rád zdokonaluje ve svých talentech, stojí si za svými názory a je otevřený i dalším úhlům pohledu. Dokáže se pohybovat za svou hranicí komfortní zóny, nebojí se komunikovat i o tématech, která nejsou často společností přijímána, a to vše dělá s elegancí sobě vlastní. Je skvělý společník, má skvělé organizační schopnosti, nikdy se s ním nenudíte a vždy Vás překvapí něčím milým Záleží mu na tom, aby lidé kolem něj byli spokojení, bavili se a udržuje všechny v komunikaci.",
       "date": "10.7.2023"
     },
     {
-      "name": "Do Manh Cuong",
-      "origin": "UT Twente",
-      "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam ni",
-      "date": "10.7.2023"
+      "name": "Anna Do",
+      "origin": "Spark alumni",
+      "review": "Thai Ha Bui là người thông minh, vui vẻ và hòa đồng. Đặc biệt là người nhiều năng lượng, khi hợp tác với anh ấy bạn ko bao giờ có cảm giác bị bỏ rơi hay tụt lại phía sau. Năng lượng của anh ấy lúc nào cũng có thể tràn sang cho bạn, giúp bạn đi lên. Khá tỉ mỉ  trong công việc, nói chung hợp tác với anh ấy thì cả bạn và anh ấy đều chạm đến sự thành công. Nhưng lưu ý: khi bạn ốm hay đau đầu thì không nên lại gần anh ấy, sẽ làm cho bệnh của bạn càng trở lên trầm trọng hơn.",
+      "date": "8.12.2022"
     },
     {
-      "name": "Do Manh Cuong",
-      "origin": "UT Twente",
-      "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam ni",
+      "name": "Mikuláš Vanoušek",
+      "origin": "University colleague",
+      "review": "Han works smart and hard. He can be late, but as soon as he comes, he gets the job done.",
       "date": "10.7.2023"
     }
   ]

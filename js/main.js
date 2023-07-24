@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const ul = document.querySelector('nav ul');
 
   // page that is loaded by default
-  const startPage = "personality";
+  const startPage = "work";
   const startLink = document.querySelector(`#${startPage}`);
   fetchHTML(startPage, contentContainer, removeActives(navLinks, startLink));
 
@@ -27,11 +27,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 
-  // if screen is phone size, close nav when link is clicked
   const nav = document.querySelector('.brand');
   nav.addEventListener('click', () => {
     ul.classList.toggle('show');
   });
+  
+  // for safari weirdness
+  const main = document.querySelector('main');
+  setElementHeight(main);
+  window.addEventListener('resize', setElementHeight(main));
 });
 
+function setElementHeight(el) {
+  const vh = window.innerHeight;
+  el.style.height = `${vh * 0.9}px`;
+}
 

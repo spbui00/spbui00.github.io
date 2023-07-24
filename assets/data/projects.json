@@ -11,7 +11,7 @@
       "images": "",
       "tags": ["Python", "Math", "Simulation"],
       "date": "July 2023",
-      "personalTake": "Lorem ipsum bla bla bla"
+      "personalTake": "Although I learned a lot during this project, the structure made by the proffesors was not very clear, therefore I often had to intepret the questions by myself. But I also think this is a scenario that could happen in real life cases, where clients can give vague objectives and it is up to me to shape the problem to align with the client's goals effectively. Regarding the project itself, I really enjoyed making simulation and incorporating queueing theory to analyse the systems."
     },
     {
       "name": "Water Level Prediction",
@@ -24,7 +24,7 @@
       "images": "",
       "tags": ["Python", "Machine Learning", "Math"],
       "date": "April 2023",
-      "personalTake": "Lorem ipsum bla bla bla"
+      "personalTake": "I was left behind during this project. I was not able to contribute as much as I wanted to, the people I worked with did most of the job very quickly and I was not aware of this. This did not mean any bad intentions from the colleagues, rather they were very motivated to do it and unfortunately, we did not communicate very well. On the other hand, I understand how 'deep' can you fall into the rabit hole once you start working on something on your own, I am no exception to this phenomenon. Next time, I will just make sure I am in the picture and initiate the communication. Luckily, my friends are extremely talented, so the project went very well."
     },
     {
       "name": "Graph Isomorphism",
@@ -37,7 +37,7 @@
       "images": "",
       "tags": ["Python", "Math"],
       "date": "April 2023",
-      "personalTake": "Lorem ipsum bla bla bla"
+      "personalTake": "What a project! I loved this project. Definitely had something to do with the fact that I was very invested into the problem of graph isomorphism. During this project, effecient techniques with branching, data structures played a huge part. I also started coding in vim during this period of time, and made a hilarious bug of leaving out a return line with a wrong number of tabs that took me hours to debug, as I said, hilarious."
     },
     {
       "name": "Visol (ships schedule)",
@@ -50,7 +50,7 @@
       "images": "Visol",
       "tags": ["SCSS", "JavaScript", "HTML"],
       "date": "June 2022",
-      "personalTake": "Lorem ipsum bla bla bla"
+      "personalTake": "I learned so much during this project regarding collaboration. We worked in a team of 5 people. I was in the team of frontend with a very experienced colleague in this area, so I learned a lot from his coding style and I think it really helped me have a better grasp of 'structured code'."
     },
     {
       "name": "Multi-hop ad-hoc chat",
@@ -63,20 +63,20 @@
       "images": "",
       "tags": ["Java", "Networking"],
       "date": "March 2022",
-      "personalTake": "Lorem ipsum bla bla bla"
+      "personalTake": "Learning about networks and protocols is actually very interesting. I learned a lot about how the internet works and how the data is transferred. I also learned about the different protocols and how they are used in different scenarios. Designing our own protocol was challenging and increadibely fun."
     },
     {
       "name": "Pentago Game",
       "id": "pentago-game",
       "icon": "",
       "description": "Implemented a two-player board game with game logic, server/client system, and an AI player.",
-      "longDescription": "Developed the Pentago board game in Java, featuring game logic, multiplayer functionality, and an AI player. Designed an intuitive user interface to facilitate gameplay and implemented the rules of the game. Implemented network communication for multiplayer mode and developed an AI player capable of providing challenging gameplay. Conducted thorough testing and optimization to ensure smooth gameplay experience.",
+      "longDescription": "Developed the Pentago board game in Java, featuring game logic, multiplayer functionality, and an AI player. Implemented network communication for multiplayer mode and developed an AI player capable of providing challenging gameplay. Conducted thorough testing and optimization to ensure smooth gameplay experience.",
       "link": [],
       "report": "",
       "images": "",
       "tags": ["Java", "Networking", "AI"],
       "date": "December 2021",
-      "personalTake": "Lorem ipsum bla bla bla"
+      "personalTake": "This project did not require a lot of logical thinking, it rather trained my understanding of client server methods and how to implement them. The game itself was fun to play though."
     },
     {
       "name": "Topdown Game on Raspberry Pi",
@@ -89,7 +89,7 @@
       "images": "Gamestart",
       "tags": ["Python", "Raspberry Pi"],
       "date": "November 2022",
-      "personalTake": "Lorem ipsum bla bla bla"
+      "personalTake": "I have used Raspberry Pi before and getting one for free was one of the things I loved about this project. We had a lot of fun working on this project with friends. We used the pygame library to code this game so it was very easy."
     }
   ]
 }

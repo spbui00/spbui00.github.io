@@ -469,6 +469,7 @@ a:hover, a:focus {
   padding-right: 24px;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  height: 100%;
 }
 @media (max-width: 576px) {
   .work {
@@ -646,6 +647,10 @@ section#ratings {
   padding-bottom: 16px;
   position: relative;
   width: 100%;
+  height: 100%;
+}
+section#ratings section, section#ratings items, section#ratings subsection, section#ratings item {
+  height: 100%;
 }
 section#ratings subsection .items {
   overflow: scroll;
@@ -667,7 +672,7 @@ section#ratings subsection .item {
   scrollbar-width: thin;
   background-color: #403D39;
   width: 350px;
-  height: 200px;
+  height: 300px;
 }
 section#ratings subsection .item:hover {
   cursor: default;
@@ -777,7 +782,10 @@ section#ratings subsection .item.rating .date {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  overflow: hidden;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: #EB5E28 #1D1E1F;
+  scrollbar-width: thin;
   position: relative;
   background-color: #1D1E1F;
   border-radius: 12px;
@@ -792,6 +800,7 @@ section#ratings subsection .item.rating .date {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
   overflow: scroll;
   scroll-behavior: smooth;
   scrollbar-color: #EB5E28 #1D1E1F;
@@ -819,9 +828,19 @@ section#ratings subsection .item.rating .date {
   scroll-behavior: smooth;
   scrollbar-color: #EB5E28 #1D1E1F;
   scrollbar-width: thin;
+  font-style: italic;
   gap: 24px;
   width: 29%;
   height: 100%;
+}
+@media (max-width: 576px) {
+  .popup-container .popup-children .popup-children-left {
+    width: 100%;
+  }
+  .popup-container .popup-children .popup-children-right {
+    width: 100%;
+    gap: 0;
+  }
 }
 
 .links {
@@ -1168,7 +1187,8 @@ section#ratings subsection .item.rating .date {
 }
 @media (max-width: 576px) {
   #content-container {
-    padding: 3px;
+    padding: 2px;
+    max-height: 87vh;
   }
 }
 
