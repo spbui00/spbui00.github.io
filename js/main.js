@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
   
   // for safari weirdness
-  const main = document.querySelector('main');
-  setElementHeight(main);
-  window.addEventListener('resize', setElementHeight(main));
+  // const main = document.querySelector('main');
+  // setElementHeight(main);
+  // window.addEventListener('resize', setElementHeight(main));
 });
 
 function setElementHeight(el) {

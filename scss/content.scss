@@ -4,15 +4,17 @@
   height:max-content;
   box-sizing: border-box;
   max-width: $xl-max;
-  max-height: 85vh;
+  max-height: 86vh;
   margin-top: $spacing-md;
   padding: $spacing-xs $spacing-lg;
   padding-bottom: 0%;
   transition: $transition;
   
   @include respond-to(sm) {
-    padding: 2px;
+    padding: 0px;
     max-height: 87vh;
+    margin-top: 80px;
+    margin-bottom: $spacing-lg;
   }
 }
 

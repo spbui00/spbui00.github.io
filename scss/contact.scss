@@ -5,20 +5,30 @@
 
   @include respond-to(sm) {
     width: 100%;
+    gap: 0;
 
     button {
       width: 100%;
     }
   }
 
-  .headings {
+  .headings, form {
     @include flex-container(flex-start, flex-start, column);
-    margin-bottom: $spacing-sm;
-    gap: $spacing-xs;
-    font-size: 1.2rem;
+    gap: $spacing-md;
     width: 100%;
     box-sizing: border-box;
     padding: $spacing-xs;
+
+    @include respond-to(sm) {
+      padding: 0;
+      gap: $spacing-xs;
+    }
+  }
+
+  .headings {
+    margin-bottom: $spacing-sm;
+    gap: $spacing-xs;
+    font-size: 1.2rem;
 
     h1 {
       font-size: 3rem;
@@ -33,9 +43,6 @@
   form {
     @include flex-container(flex-start, flex-start, column);
     gap: $spacing-md;
-    width: 100%;
-    box-sizing: border-box;
-    padding: $spacing-xs;
 
     .row-group {
       @include flex-container(flex-start, flex-start, row);
@@ -60,6 +67,7 @@
 
       input, textarea {
         @include flex-container(flex-start, center, row);
+        font-size: 1.1rem;
         width: 100%;
         box-sizing: border-box;
         padding: $spacing-sm;
@@ -83,6 +91,10 @@
       &:hover, &:focus-within {
         opacity: 1;
         outline: none;
+      }
+
+      textarea {
+        height: 180px;
       }
     }
 

@@ -674,6 +674,12 @@ section#ratings subsection .item {
   width: 350px;
   height: 300px;
 }
+@media (max-width: 768px) {
+  section#ratings subsection .item {
+    width: 340px;
+    height: 290px;
+  }
+}
 section#ratings subsection .item:hover {
   cursor: default;
   animation: none;
@@ -896,22 +902,32 @@ section#ratings subsection .item.rating .date {
 @media (max-width: 576px) {
   #contact-container {
     width: 100%;
+    gap: 0;
   }
   #contact-container button {
     width: 100%;
   }
 }
-#contact-container .headings {
+#contact-container .headings, #contact-container form {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  margin-bottom: 16px;
-  gap: 8px;
-  font-size: 1.2rem;
+  gap: 24px;
   width: 100%;
   box-sizing: border-box;
   padding: 8px;
+}
+@media (max-width: 576px) {
+  #contact-container .headings, #contact-container form {
+    padding: 0;
+    gap: 8px;
+  }
+}
+#contact-container .headings {
+  margin-bottom: 16px;
+  gap: 8px;
+  font-size: 1.2rem;
 }
 #contact-container .headings h1 {
   font-size: 3rem;
@@ -929,9 +945,6 @@ section#ratings subsection .item.rating .date {
   align-items: flex-start;
   flex-direction: column;
   gap: 24px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 8px;
 }
 #contact-container form .row-group {
   display: flex;
@@ -966,6 +979,7 @@ section#ratings subsection .item.rating .date {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  font-size: 1.1rem;
   width: 100%;
   box-sizing: border-box;
   padding: 16px;
@@ -986,6 +1000,9 @@ section#ratings subsection .item.rating .date {
 #contact-container form .form-group:hover, #contact-container form .form-group:focus-within {
   opacity: 1;
   outline: none;
+}
+#contact-container form .form-group textarea {
+  height: 180px;
 }
 #contact-container form p {
   font-size: 3rem;
@@ -1179,7 +1196,7 @@ section#ratings subsection .item.rating .date {
   height: max-content;
   box-sizing: border-box;
   max-width: 1200px;
-  max-height: 85vh;
+  max-height: 86vh;
   margin-top: 24px;
   padding: 8px 32px;
   padding-bottom: 0%;
@@ -1187,8 +1204,10 @@ section#ratings subsection .item.rating .date {
 }
 @media (max-width: 576px) {
   #content-container {
-    padding: 2px;
+    padding: 0px;
     max-height: 87vh;
+    margin-top: 80px;
+    margin-bottom: 32px;
   }
 }
 

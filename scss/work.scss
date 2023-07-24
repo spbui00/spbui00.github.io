@@ -200,6 +200,11 @@ section {
         width: 350px; 
         height: 300px;
 
+        @include respond-to(md) {
+          width: 340px;
+          height: 290px;
+        }
+
         &:hover {
           cursor: default;
           animation: none;
