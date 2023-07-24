@@ -22,6 +22,7 @@ main {
   }
 
   @include respond-to(sm) {
+    height: 69vh; 
     width: 100%;
   }
 }

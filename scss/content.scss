@@ -13,8 +13,8 @@
   @include respond-to(sm) {
     padding: 0px;
     max-height: 87vh;
-    margin-top: 80px;
-    margin-bottom: $spacing-lg;
+    box-sizing: border-box;
+    padding-top: 80px;
   }
 }
 

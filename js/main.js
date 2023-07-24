@@ -33,13 +33,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
   
   // for safari weirdness
-  // const main = document.querySelector('main');
-  // setElementHeight(main);
-  // window.addEventListener('resize', setElementHeight(main));
+  const main = document.querySelector('main');
+  setElementHeight(main);
+  window.addEventListener('resize', setElementHeight(main));
 });
 
 function setElementHeight(el) {
-  const vh = window.innerHeight;
-  el.style.height = `${vh * 0.9}px`;
+  // 90vh
+  const vh = window.innerHeight * 0.01;
+  el.style.setProperty('--vh', `${vh}px`);
 }
 
