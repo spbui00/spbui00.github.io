@@ -40,12 +40,12 @@ section {
 
   .items {
     @include flex-container(flex-start, flex-start, row);
-    // @include scrollable;
     flex-wrap: wrap;
     gap: $spacing-md;
     padding: $spacing-xs $spacing-xs;
     box-sizing: border-box;
     padding-bottom: $spacing-md;
+    width: 100%;
 
     @include respond-to(sm) {
       padding-right: 0;
@@ -53,11 +53,16 @@ section {
     }
 
     .item {
-      @include flex-container(flex-start, center, row);
+      @include flex-container(space-between, center, row);
       border-radius: $borderRadiusMedium;
       padding: $spacing-xs $spacing-sm;
-      gap: $spacing-md;
+      // gap: $spacing-md;
+      width: 180px;
 
+      @include respond-to(sm) {
+        width: 100%;
+      }
+ 
       .levels {
         @include flex-container(center, center, row);
         gap: $spacing-xs;
@@ -106,6 +111,7 @@ section {
   &#projects {
     subsection {
       .items {
+        width: auto;
         flex-wrap: nowrap;
         @include scrollable;
         .item {
@@ -187,22 +193,26 @@ section {
 
     subsection {
       .items {
-        @include scrollable;
+        @include scrollable-x;
+        overflow-y: hidden;
         padding: 0;
+        box-sizing: border-box;
         padding-bottom: $spacing-md;
         flex-wrap: nowrap;
+        width: auto;
       }
       
       .item {
         @include flex-container(flex-start, flex-start, column);
-        @include scrollable;
+        @include scrollable-x;
         background-color: $color-medium;
+        gap: $spacing-sm;
         width: 350px; 
         height: 300px;
 
         @include respond-to(md) {
-          width: 340px;
-          height: 290px;
+          width: 220px;
+          height: 270px;
         }
 
         &:hover {
@@ -310,6 +320,11 @@ section {
     max-height: 70%;
     padding: $spacing-md $spacing-lg;
     animation: popUp $animation-duration-short ease-in-out;
+
+    @include respond-to(sm) {
+      padding: $spacing-sm $spacing-md;
+      max-height: 60%;
+    }
     
     .popup-children {
       @include flex-container(space-between, flex-start, row);
@@ -337,6 +352,7 @@ section {
       }
 
       @include respond-to(sm) {
+
         .popup-children-left {
           width: 100%;
         }

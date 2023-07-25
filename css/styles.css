@@ -519,6 +519,7 @@ section .items {
   padding: 8px 8px;
   box-sizing: border-box;
   padding-bottom: 24px;
+  width: 100%;
 }
 @media (max-width: 576px) {
   section .items {
@@ -528,12 +529,17 @@ section .items {
 }
 section .items .item {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   border-radius: 8px;
   padding: 8px 16px;
-  gap: 24px;
+  width: 180px;
+}
+@media (max-width: 576px) {
+  section .items .item {
+    width: 100%;
+  }
 }
 section .items .item .levels {
   display: flex;
@@ -568,6 +574,7 @@ section .items-purple .item {
   background-color: #B828EB;
 }
 section#projects subsection .items {
+  width: auto;
   flex-wrap: nowrap;
   overflow: scroll;
   scroll-behavior: smooth;
@@ -654,31 +661,35 @@ section#ratings section, section#ratings items, section#ratings subsection, sect
   height: 100%;
 }
 section#ratings subsection .items {
-  overflow: scroll;
+  overflow-x: scroll;
   scroll-behavior: smooth;
   scrollbar-color: #EB5E28 #1D1E1F;
   scrollbar-width: thin;
+  overflow-y: hidden;
   padding: 0;
+  box-sizing: border-box;
   padding-bottom: 24px;
   flex-wrap: nowrap;
+  width: auto;
 }
 section#ratings subsection .item {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  overflow: scroll;
+  overflow-x: scroll;
   scroll-behavior: smooth;
   scrollbar-color: #EB5E28 #1D1E1F;
   scrollbar-width: thin;
   background-color: #403D39;
+  gap: 16px;
   width: 350px;
   height: 300px;
 }
 @media (max-width: 768px) {
   section#ratings subsection .item {
-    width: 340px;
-    height: 290px;
+    width: 220px;
+    height: 270px;
   }
 }
 section#ratings subsection .item:hover {
@@ -801,6 +812,12 @@ section#ratings subsection .item.rating .date {
   max-height: 70%;
   padding: 24px 32px;
   animation: popUp 0.3s ease-in-out;
+}
+@media (max-width: 576px) {
+  .popup-container {
+    padding: 16px 24px;
+    max-height: 60%;
+  }
 }
 .popup-container .popup-children {
   display: flex;
