@@ -14,7 +14,7 @@ export async function fetchHTML(page, container, callback) {
     if (response.ok) {
       const html = await response.text();
       container.innerHTML = html;
-      import(`../${page}.js`).then(module => {
+      import(`../../js-min/${page}.js`).then(module => {
         module[`handle${page.charAt(0).toUpperCase() + page.slice(1)}`]();
       });
       if (callback) callback();

@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-uglify": "^5.2.2"
   }
 }
