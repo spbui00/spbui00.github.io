@@ -222,6 +222,28 @@ a:hover, a:focus {
   flex-direction: row;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 3px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(235, 94, 40, 0.3);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #EB5E28;
+}
+
 nav {
   display: flex;
   justify-content: flex-start;
@@ -346,19 +368,19 @@ button {
   gap: 10px;
   border-radius: 8px;
   background-color: #303137;
-  color: black;
+  color: white;
   font-weight: bold;
-  text-transform: uppercase;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
   transition: all 0.1s ease-in-out;
 }
-button:hover {
+button:hover, button:focus {
   cursor: pointer;
   padding: 8px 16px;
-  background-color: #1D1E1F;
+  background-color: #EB5E28;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
   color: #F1F2EB;
-  transform: scale(1.15);
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .academy {
@@ -367,13 +389,22 @@ button:hover {
   align-items: flex-start;
   flex-direction: column;
   overflow: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   gap: 32px;
   transition: all 0.2s ease-in-out;
   width: 100%;
   margin-top: 20px;
+}
+.academy::-webkit-scrollbar {
+  width: thin;
+}
+.academy::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 .academy .timeline {
   display: flex;
@@ -463,14 +494,23 @@ a:hover, a:focus {
   align-items: center;
   flex-direction: column;
   overflow-y: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   gap: 32px;
   padding-right: 24px;
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 100%;
+}
+.work::-webkit-scrollbar {
+  width: thin;
+}
+.work::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 @media (max-width: 576px) {
   .work {
@@ -495,10 +535,19 @@ section subsection {
   align-items: flex-start;
   flex-direction: column;
   overflow-x: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   width: 100%;
+}
+section subsection::-webkit-scrollbar {
+  width: thin;
+}
+section subsection::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 section h2, section h3 {
   margin: 0;
@@ -529,33 +578,76 @@ section .items {
 }
 section .items .item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
   border-radius: 8px;
-  padding: 8px 16px;
-  width: 180px;
+  padding: 8px;
+  width: 43%;
+  min-width: 175px;
+  gap: 8px;
 }
 @media (max-width: 576px) {
   section .items .item {
-    width: 100%;
+    width: 39%;
+    min-width: 20px;
+  }
+  section .items .item-additional {
+    height: 55px;
   }
 }
-section .items .item .levels {
+section .items .item-additional {
+  font-style: italic;
+}
+section .items .item .item-group-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  section .items .item .item-group-row {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+@media (max-width: 576px) {
+  section .items .item .item-group-row {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+section .items .item .item-group-row .levels {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 8px;
 }
-section .items .item .levels .point {
+@media (max-width: 576px) {
+  section .items .item .item-group-row .levels {
+    gap: 5.3333333333px;
+  }
+}
+section .items .item .item-group-row .levels .point {
   width: 10px;
   height: 10px;
   background-color: transparent;
   border: 2px solid #FFFFFF;
   border-radius: 50%;
 }
-section .items .item .levels .point.full {
+@media (max-width: 576px) {
+  section .items .item .item-group-row .levels .point {
+    width: 6.6666666667px;
+    height: 6.6666666667px;
+  }
+}
+section .items .item .item-group-row .levels .point.full {
   background-color: #FFFFFF;
 }
 section .items .item.darken {
@@ -577,9 +669,18 @@ section#projects subsection .items {
   width: auto;
   flex-wrap: nowrap;
   overflow: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
+}
+section#projects subsection .items::-webkit-scrollbar {
+  width: thin;
+}
+section#projects subsection .items::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 section#projects subsection .items .item {
   display: flex;
@@ -587,14 +688,23 @@ section#projects subsection .items .item {
   align-items: flex-start;
   flex-direction: column;
   overflow-y: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   background-color: #303137;
   padding: 16px;
   width: 330px;
   height: 155px;
   gap: 10px;
+}
+section#projects subsection .items .item::-webkit-scrollbar {
+  width: thin;
+}
+section#projects subsection .items .item::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 section#projects subsection .items .item .item-name {
   font-weight: 900;
@@ -619,14 +729,23 @@ section#business .item {
   align-items: flex-start;
   flex-direction: column;
   overflow-y: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   background-color: #F1F2EB;
   color: black;
   width: 350px;
   height: 130px;
   gap: 0px;
+}
+section#business .item::-webkit-scrollbar {
+  width: thin;
+}
+section#business .item::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 section#business .item .item-icon {
   box-sizing: border-box;
@@ -649,7 +768,7 @@ section#business .item .item-name {
     height: 110px;
   }
 }
-section#ratings {
+section#ratings, section#links {
   background-color: transparent;
   padding: 0;
   padding-bottom: 16px;
@@ -657,14 +776,16 @@ section#ratings {
   width: 100%;
   height: 100%;
 }
-section#ratings section, section#ratings items, section#ratings subsection, section#ratings item {
+section#ratings section, section#ratings items, section#ratings subsection, section#ratings item, section#links section, section#links items, section#links subsection, section#links item {
   height: 100%;
 }
-section#ratings subsection .items {
+section#ratings subsection .items, section#links subsection .items {
   overflow-x: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   overflow-y: hidden;
   padding: 0;
   box-sizing: border-box;
@@ -672,64 +793,87 @@ section#ratings subsection .items {
   flex-wrap: nowrap;
   width: auto;
 }
-section#ratings subsection .item {
+section#ratings subsection .items::-webkit-scrollbar, section#links subsection .items::-webkit-scrollbar {
+  width: thin;
+}
+section#ratings subsection .items::-webkit-scrollbar-thumb, section#links subsection .items::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
+}
+section#ratings subsection .item, section#links subsection .item {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   overflow-x: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   background-color: #403D39;
   gap: 16px;
   width: 350px;
   height: 300px;
 }
+section#ratings subsection .item::-webkit-scrollbar, section#links subsection .item::-webkit-scrollbar {
+  width: thin;
+}
+section#ratings subsection .item::-webkit-scrollbar-thumb, section#links subsection .item::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
+}
 @media (max-width: 768px) {
-  section#ratings subsection .item {
+  section#ratings subsection .item, section#links subsection .item {
     width: 220px;
     height: 270px;
   }
 }
-section#ratings subsection .item:hover {
+section#ratings subsection .item:hover, section#links subsection .item:hover {
   cursor: default;
   animation: none;
   transform: none;
   box-shadow: none;
 }
-section#ratings subsection .item.rating {
+section#ratings subsection .item.rating, section#links subsection .item.rating {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 }
-section#ratings subsection .item.rating .heading {
+section#ratings subsection .item.rating .heading, section#links subsection .item.rating .heading {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 }
-section#ratings subsection .item.rating .heading-name {
+section#ratings subsection .item.rating .heading-name, section#links subsection .item.rating .heading-name {
   font-weight: 900;
   font-size: 1.25rem;
 }
-section#ratings subsection .item.rating .heading-origin {
+section#ratings subsection .item.rating .heading-origin, section#links subsection .item.rating .heading-origin {
   font-size: 0.75rem;
   font-style: italic;
 }
-section#ratings subsection .item.rating .review {
+section#ratings subsection .item.rating .review, section#links subsection .item.rating .review {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   font-style: italic;
 }
-section#ratings subsection .item.rating .date {
+section#ratings subsection .item.rating .date, section#links subsection .item.rating .date {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: row;
+}
+section#links {
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+section#links .items {
+  padding: 8px !important;
 }
 
 .flex-row {
@@ -801,9 +945,11 @@ section#ratings subsection .item.rating .date {
   align-items: flex-start;
   flex-direction: column;
   overflow: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   position: relative;
   background-color: #1D1E1F;
   border-radius: 12px;
@@ -812,6 +958,13 @@ section#ratings subsection .item.rating .date {
   max-height: 70%;
   padding: 24px 32px;
   animation: popUp 0.3s ease-in-out;
+}
+.popup-container::-webkit-scrollbar {
+  width: thin;
+}
+.popup-container::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 @media (max-width: 576px) {
   .popup-container {
@@ -826,12 +979,21 @@ section#ratings subsection .item.rating .date {
   flex-direction: row;
   flex-wrap: wrap;
   overflow: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   position: relative;
   width: 100%;
   height: 100%;
+}
+.popup-container .popup-children::-webkit-scrollbar {
+  width: thin;
+}
+.popup-container .popup-children::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 .popup-container .popup-children .popup-children-left {
   display: flex;
@@ -849,13 +1011,22 @@ section#ratings subsection .item.rating .date {
   align-items: flex-start;
   flex-direction: column;
   overflow-y: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   font-style: italic;
   gap: 24px;
   width: 29%;
   height: 100%;
+}
+.popup-container .popup-children-right::-webkit-scrollbar {
+  width: thin;
+}
+.popup-container .popup-children-right::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 @media (max-width: 576px) {
   .popup-container .popup-children .popup-children-left {
@@ -920,11 +1091,20 @@ section#ratings subsection .item.rating .date {
 @media (max-width: 576px) {
   #contact-container {
     overflow: scroll;
-    scroll-behavior: smooth;
-    scrollbar-color: #EB5E28 #1D1E1F;
+    /* Hide default scrollbar on Firefox */
     scrollbar-width: thin;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-color: #EB5E28 #1D1E1F;
     width: 100%;
     gap: 0;
+  }
+  #contact-container::-webkit-scrollbar {
+    width: thin;
+  }
+  #contact-container::-webkit-scrollbar-thumb {
+    background-color: #EB5E28 #1D1E1F;
+    border-radius: 10px;
   }
   #contact-container button {
     width: 100%;
@@ -1048,12 +1228,21 @@ section#ratings subsection .item.rating .date {
   align-items: flex-start;
   flex-direction: column;
   overflow-y: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   width: 100%;
   height: max-content;
   gap: 24px;
+}
+.scrollable-container::-webkit-scrollbar {
+  width: thin;
+}
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 
 .hello h1 {
@@ -1177,13 +1366,22 @@ section#ratings subsection .item.rating .date {
   align-items: flex-start;
   flex-direction: row;
   overflow-x: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: #EB5E28 #1D1E1F;
+  /* Hide default scrollbar on Firefox */
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: #EB5E28 #1D1E1F;
   width: 100%;
   gap: 48px;
   box-sizing: border-box;
   padding-bottom: 24px;
+}
+.hobbies subsection::-webkit-scrollbar {
+  width: thin;
+}
+.hobbies subsection::-webkit-scrollbar-thumb {
+  background-color: #EB5E28 #1D1E1F;
+  border-radius: 10px;
 }
 @media (max-width: 576px) {
   .hobbies subsection {

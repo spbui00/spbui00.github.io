@@ -10,18 +10,18 @@ button {
   gap: 10px;
   border-radius: $borderRadiusMedium;
   background-color: $color-medium-grey;
-  color: black;
+  color: white;
   font-weight: bold;
-  text-transform: uppercase;
   box-shadow: $boxShadowSmall;
   transition: $transition-fast;
 
-  &:hover {
+  &:hover, &:focus {
     cursor: pointer;
     padding: $spacing-xs $spacing-sm;
-    background-color: $color-dark-grey;
+    background-color: $color-light-orange;
     box-shadow: $boxShadowMedium;
     color: $color-light;
-    transform: scale($scale-md);
+    opacity: 1;
+    transform: scale($scale-sm);
   }
 }

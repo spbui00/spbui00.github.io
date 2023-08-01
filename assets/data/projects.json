@@ -14,6 +14,19 @@
       "personalTake": "Although I learned a lot during this project, the structure made by the proffesors was not very clear, therefore I often had to intepret the questions by myself. But I also think this is a scenario that could happen in real life cases, where clients can give vague objectives and it is up to me to shape the problem to align with the client's goals effectively. Regarding the project itself, I really enjoyed making simulation and incorporating queueing theory to analyse the systems."
     },
     {
+      "name": "Portfolio",
+      "id": "portfolio",
+      "icon": "",
+      "description": "Designed and developed a personal portfolio website using vanilla JavaScript, SCSS and HTML.",
+      "longDescription": "Designed and developed a personal portfolio website using vanilla JavaScript, SCSS and HTML. Implemented a responsive design that adapts to different screen sizes and devices.",
+      "link": [],
+      "report": "",
+      "images": "",
+      "tags": ["JavaScript", "SCSS", "Web"],
+      "date": "July 2023",
+      "personalTake": "I feel like coding this website was so much easier compared to when I was doing a similar project two years ago. It took me about 4 days to complete this website, then I took some time to ask for peers reviews and finalized it. There is still bunch of stuff I want to implement but this is presentable for now."
+    },
+    {
       "name": "Water Level Prediction",
       "id": "water-level-prediction",
       "icon": "",
@@ -48,7 +61,7 @@
       "link": [],
       "report": "",
       "images": "Visol",
-      "tags": ["SCSS", "JavaScript", "HTML"],
+      "tags": ["SCSS", "JavaScript", "Web"],
       "date": "June 2022",
       "personalTake": "I learned so much during this project regarding collaboration. We worked in a team of 5 people. I was in the team of frontend with a very experienced colleague in this area, so I learned a lot from his coding style and I think it really helped me have a better grasp of 'structured code'."
     },

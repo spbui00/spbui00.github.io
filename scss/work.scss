@@ -53,34 +53,74 @@ section {
     }
 
     .item {
-      @include flex-container(space-between, center, row);
+      @include flex-container(flex-start, flex-start, column);
       border-radius: $borderRadiusMedium;
-      padding: $spacing-xs $spacing-sm;
-      // gap: $spacing-md;
-      width: 180px;
+      padding: $spacing-xs;
+      width: 43%;
+      min-width: 175px;
+      gap: $spacing-xs;
 
       @include respond-to(sm) {
-        width: 100%;
-      }
- 
-      .levels {
-        @include flex-container(center, center, row);
-        gap: $spacing-xs;
+        width: 39%;
+        min-width: 20px;
         
-        $point-width: 10px;
-        .point {
-          width: $point-width;
-          height: $point-width;
-          background-color: transparent;
-          border: $borderWidthMedium solid $color-white;
-          border-radius: 50%;
-        
-          &.full {
-            background-color: $color-white;
-          }
+        &-additional {
+          height: 55px;
         }
       }
 
+      &-additional {
+        font-style: italic;
+      }
+      
+      .item-group-row {
+        @include flex-container(space-between, center, row);
+        width: 100%;
+
+        @include respond-to(md) {
+          justify-content: flex-start;
+          align-items: flex-start; 
+          flex-direction: column;
+          gap: $spacing-xs;
+        }
+      
+        @include respond-to(sm) {
+          justify-content: flex-start;
+          align-items: flex-start; 
+          flex-direction: column;
+          gap: $spacing-xs;
+        }
+        
+        $ratio: 1.5;
+        .levels {
+          @include flex-container(center, center, row);
+          gap: $spacing-xs;
+
+          @include respond-to(sm) {
+            gap: calc($spacing-xs / $ratio);
+          }
+          
+          $point-width: 10px;
+          .point {
+            width: $point-width;
+            height: $point-width;
+            background-color: transparent;
+            border: $borderWidthMedium solid $color-white;
+            border-radius: 50%;
+
+            @include respond-to(sm) {
+              width: calc($point-width / $ratio);
+              height: calc($point-width / $ratio);
+            }
+          
+            &.full {
+              background-color: $color-white;
+            }
+          }
+        }
+
+      }
+     
       &.darken {
         background-color: $color-medium-grey;
         .item-name {
@@ -107,6 +147,7 @@ section {
       }
     }
   }
+
 
   &#projects {
     subsection {
@@ -179,7 +220,7 @@ section {
     }
   }
 
-  &#ratings {
+  &#ratings, &#links {
     background-color: transparent;
     padding: 0;
     padding-bottom: $spacing-sm;
@@ -248,6 +289,14 @@ section {
         }
       }
 
+    }
+  }
+  
+  &#links {
+    padding-bottom: 0;
+    box-sizing: border-box;
+    .items {
+      padding: $spacing-xs !important;
     }
   }
 }

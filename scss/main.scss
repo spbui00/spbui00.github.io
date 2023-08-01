@@ -89,3 +89,25 @@ a {
 .flex-row {
   @include flex-container(space-between, center, row);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+  border-radius: $borderRadiusLarge;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(235, 94, 40, 0.3);
+  border-radius: $borderRadiusLarge;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color-light-orange;
+} 

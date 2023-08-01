@@ -13,25 +13,36 @@
   flex-shrink: $flex-shrink;
 }
 
+@mixin scrollbar($scrollbar-color: $color-light-orange $color-dark-grey, $scrollbar-width: thin) {
+  /* Hide default scrollbar on Firefox */
+  scrollbar-width: $scrollbar-width;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-color: $scrollbar-color;
+
+  &::-webkit-scrollbar {
+    width: $scrollbar-width;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-color;
+    border-radius: 10px;
+  }
+}
+
 @mixin scrollable($scrollbar-color: $color-light-orange $color-dark-grey, $scrollbar-width: thin) {
   overflow: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: $scrollbar-color;
-  scrollbar-width: $scrollbar-width;
+  @include scrollbar($scrollbar-color, $scrollbar-width);
 }
 
 @mixin scrollable-x($scrollbar-color: $color-light-orange $color-dark-grey, $scrollbar-width: thin) {
   overflow-x: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: $scrollbar-color;
-  scrollbar-width: $scrollbar-width;
+  @include scrollbar($scrollbar-color, $scrollbar-width);
 }
 
 @mixin scrollable-y($scrollbar-color: $color-light-orange $color-dark-grey, $scrollbar-width: thin) {
   overflow-y: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: $scrollbar-color;
-  scrollbar-width: $scrollbar-width;
+  @include scrollbar($scrollbar-color, $scrollbar-width);
 }
 
 // break points 
