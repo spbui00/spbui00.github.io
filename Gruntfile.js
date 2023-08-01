@@ -23,10 +23,23 @@ module.exports = function(grunt) {
           ext: '.js'     // Extension for the minified files            
        }]
       }
+    },
+    replace: {
+      watermark: {
+        src: ['index.html', 'components/*.html'],
+        overwrite: true,
+        replacements: [
+          {
+            from: '<!-- watermark -->',
+            to: '<!-- Author: Thai Ha Bui -->'
+          },
+        ]
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-text-replace');
 
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['uglify', 'replace']);
 };
