@@ -3,8 +3,10 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options: {
-        mangle: true,
-        compress: true
+        mangle: {
+          toplevel: true
+        },
+        compress: true,
       },
       build: {
         files: [{
