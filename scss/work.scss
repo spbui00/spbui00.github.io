@@ -297,6 +297,10 @@ section {
     box-sizing: border-box;
     .items {
       padding: $spacing-xs !important;
+      flex-wrap: wrap !important;
+      @include respond-to(md) {
+        gap: $spacing-xs !important; 
+      }
     }
   }
 }

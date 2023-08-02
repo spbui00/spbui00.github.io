@@ -874,6 +874,12 @@ section#links {
 }
 section#links .items {
   padding: 8px !important;
+  flex-wrap: wrap !important;
+}
+@media (max-width: 768px) {
+  section#links .items {
+    gap: 8px !important;
+  }
 }
 
 .flex-row {
