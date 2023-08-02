@@ -1,6 +1,11 @@
 {
   "ratings": [
     {
+      "name": "Marek Šíma",
+      "review": "Han při volbě mezi dělat-nedělat volí vždy dělat a dělat naplno. V podstatě ve všem. For better or worse.",
+      "date": "2.8.2023"
+    },
+    {
       "name": "Kryštof Mitka",
       "review": "Han is a great friend, I have had the pleasure of living with him in the same household during our years at the University of Twente. He keeps his things orderly and is always down for an adventure, whether it is beating his friends in badminton, lifting weights or billiard. Han is an extremely peaceful human being and I dont think I have ever seen him in a conflict with anyone. Overall a great person to be around and I am glad to have him as a housemate!",
       "date": "21.7.2023"
@@ -9,6 +14,16 @@
       "name": "Adéla Tomaidesová",
       "review": "S Hanem se znám už spoustu let a je to jeden z mých dobrých přátel. Vždy kolem něj panuje pozitivní atmosféra a je na něj spolehnutí, ať už se jedná o důležité věci nebo maličkosti. Jeho nasazení pro práci je obdivuhodné. Kromě studia dvou oborů zároveň zvládá i vést vlastní firmu a přitom si vždy najde čas i na svou rodinu a kamarády. Vždy byl ochoten mi pomoci, když jsem si se studiem neuměla poradit.",
       "date": "24.7.2023"
+    },
+    {
+      "name": "Robin Nguyen",
+      "review": "Han is a great guy, very friendly and genuine. It is a lot of fun to spend time with him and he is also very smart making it easy to talk with him about more serious topics as well.",
+      "date": "1.8.2023"
+    },
+    {
+      "name": "Terka Tranová",
+      "review": "Han is such a nice and helpful person, and his ambition and intelligence are truly inspiring. I do have to say though, it would be great if he could work on being on time to our meetings. But regardless of that, it is always a blast to be around him. He bring so much fun and laughter into my life. He has ability to stay strong and not let emotions get the best of him. But let's not forget how easily scared he is. Also the amount of screams he can produce haha but it just adds to his charm. Overall, I am grateful to have him as a friend and I truly cherish our friendship.",
+      "date": "1.8.2023"
     }
   ]
 }

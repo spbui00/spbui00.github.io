@@ -20,6 +20,9 @@
 
 .head {
   margin-bottom: $spacing-lg;
+  @include respond-to(sm) {
+    margin-bottom: $spacing-xs;
+  }
 }
 .note {
   font-style: italic;

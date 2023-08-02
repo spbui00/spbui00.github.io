@@ -1438,6 +1438,11 @@ section#links .items {
 .head {
   margin-bottom: 32px;
 }
+@media (max-width: 576px) {
+  .head {
+    margin-bottom: 8px;
+  }
+}
 
 .note {
   font-style: italic;
