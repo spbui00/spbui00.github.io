@@ -10,9 +10,6 @@
 # Ignore Node.js dependencies
 node_modules/
 
-# ignore js files 
-js/
-
 # Ignore build artifacts
 dist/
 build/
