@@ -14,6 +14,19 @@
       "personalTake": "Although I learned a lot during this project, the structure made by the proffesors was not very clear, therefore I often had to intepret the questions by myself. But I also think this is a scenario that could happen in real life cases, where clients can give vague objectives and it is up to me to shape the problem to align with the client's goals effectively. Regarding the project itself, I really enjoyed making simulation and incorporating queueing theory to analyse the systems."
     },
     {
+      "name": "Graph Isomorphism",
+      "id": "graph-isomorphism",
+      "icon": "",
+      "description": "Implemented a graph isomorphism algorithm in Python to find isomorphisms between graphs.",
+      "longDescription": "Developed a graph isomorphism algorithm in Python capable of determining whether two graphs are isomorphic. Utilized advanced techniques, including fast partition refinement and branching, to efficiently find and validate isomorphisms. Conducted extensive testing and evaluation on diverse graph datasets to assess the algorithm's accuracy and performance.",
+      "link": [],
+      "report": "",
+      "images": "",
+      "tags": ["Python", "Math"],
+      "date": "April 2023",
+      "personalTake": "What a project! I loved this project. Definitely had something to do with the fact that I was very invested into the problem of graph isomorphism. During this project, effecient techniques with branching, data structures played a huge part. I also started coding in vim during this period of time, and made a hilarious bug of leaving out a return line with a wrong number of tabs that took me hours to debug, as I said, hilarious."
+    },
+    {
       "name": "Portfolio",
       "id": "portfolio",
       "icon": "",
@@ -38,19 +51,6 @@
       "tags": ["Python", "Machine Learning", "Math"],
       "date": "April 2023",
       "personalTake": "I was left behind during this project. I was not able to contribute as much as I wanted to, the people I worked with did most of the job very quickly and I was not aware of this. This did not mean any bad intentions from the colleagues, rather they were very motivated to do it and unfortunately, we did not communicate very well. On the other hand, I understand how 'deep' can you fall into the rabit hole once you start working on something on your own, I am no exception to this phenomenon. Next time, I will just make sure I am in the picture and initiate the communication. Luckily, my friends are extremely talented, so the project went very well."
-    },
-    {
-      "name": "Graph Isomorphism",
-      "id": "graph-isomorphism",
-      "icon": "",
-      "description": "Implemented a graph isomorphism algorithm in Python to find isomorphisms between graphs.",
-      "longDescription": "Developed a graph isomorphism algorithm in Python capable of determining whether two graphs are isomorphic. Utilized advanced techniques, including fast partition refinement and branching, to efficiently find and validate isomorphisms. Conducted extensive testing and evaluation on diverse graph datasets to assess the algorithm's accuracy and performance.",
-      "link": [],
-      "report": "",
-      "images": "",
-      "tags": ["Python", "Math"],
-      "date": "April 2023",
-      "personalTake": "What a project! I loved this project. Definitely had something to do with the fact that I was very invested into the problem of graph isomorphism. During this project, effecient techniques with branching, data structures played a huge part. I also started coding in vim during this period of time, and made a hilarious bug of leaving out a return line with a wrong number of tabs that took me hours to debug, as I said, hilarious."
     },
     {
       "name": "Visol (ships schedule)",
