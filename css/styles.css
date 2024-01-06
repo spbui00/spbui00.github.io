@@ -440,7 +440,7 @@ button:hover, button:focus {
   background-color: #FFFFFF;
   border-radius: 50%;
   position: absolute;
-  margin-left: -calc($dot-width/2)24pxcalc($borderWidthLarge / 2);
+  margin-left: -36px; 
   transition: all 0.2s ease-in-out;
 }
 .academy .timeline .period .dot.orange-bg {
