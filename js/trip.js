@@ -3,10 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(response => response.json())
     .then(data => {
       const mainElement = document.querySelector('main');
-      const headerElement = document.createElement('div');
-      headerElement.classList.add('header');
-      headerElement.innerHTML = `<h1>${data.title}</h1>`;
-      mainElement.appendChild(headerElement);
 
       data.days.forEach(day => {
         const dayElement = document.createElement('div');
@@ -60,6 +56,24 @@ document.addEventListener('DOMContentLoaded', () => {
           dayContentElement.classList.toggle('expanded');
         });
       });
+
     })
     .catch(error => console.error('Error loading itinerary:', error));
+
+  // Fetch weather data
+  const weatherApiKey = process.env.WEATHERAPI_KEY;
+  const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=Pompei&aqi=no`;
+
+  fetch(weatherUrl)
+    .then(response => response.json())
+    .then(weatherData => {
+      const weatherInfo = document.getElementById('weather-info');
+      weatherInfo.innerHTML = `
+      <div class="weather-item"><i class="fas fa-thermometer-half"></i> ${weatherData.current.temp_c} °C</div>
+      <div class="weather-item"><i class="fas fa-cloud"></i> ${weatherData.current.condition.text}</div>
+      <div class="weather-item"><i class="fas fa-tint"></i> ${weatherData.current.humidity}%</div>
+      <div class="weather-item"><i class="fas fa-wind"></i> ${weatherData.current.wind_kph} kph</div>
+      `;
+    })
+    .catch(error => console.error('Error fetching weather data:', error));
 });

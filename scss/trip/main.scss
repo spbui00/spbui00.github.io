@@ -19,7 +19,7 @@ body {
   padding: $spacing-md $spacing-sm;
   transition: $transition;
   height: 100vh;
-  width: 40%;
+  width: 50%;
 
   @include respond-to(md) {
     width: 100%;
@@ -43,6 +43,33 @@ main {
   height: 100%;
   transition: $transition;
   width: 100%;
+}
+
+.trip-btns {
+  @include flex-container(start, start, row);
+  gap: $spacing-sm;
+  margin-bottom: $spacing-md;
+  width: 100%;
+}
+
+.trip-btn {
+  box-shadow: none;
+  padding: 4px 8px;
+  border-radius: $borderRadiusSmall;
+  background: $medium-green;
+  color: $light-green;
+  opacity: 0.8;
+  font-weight: 500;
+  transition: $transition;
+  font-size: 1rem;
+
+  i {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 // reset all ul, ol, li styles
@@ -234,5 +261,35 @@ a {
         }
       }
     }
+  }
+}
+.weather-section {
+  @include flex-container(center, center, column);
+  width: 100%;
+  transition: $transition;
+  box-sizing: border-box;
+  border-radius: $borderRadiusMedium;
+  margin-bottom: $spacing-md;
+
+  .weather-info {
+    @include flex-container(space-between, start, row);
+    gap: $spacing-sm;
+    width: 100%;
+
+    .weather-item {
+      @include flex-container(center, center, column);
+      width: 100%;
+      gap: $spacing-xs;
+      background: $medium-green;
+      padding: $spacing-sm;
+      border-radius: $borderRadiusLarge;
+      color: $light-green;
+
+      i {
+        @include flex-container(center, center, column);
+        font-size: 1.3rem;
+      }
+    }
+
   }
 }

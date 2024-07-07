@@ -140,7 +140,7 @@ body {
   padding: 24px 16px;
   transition: all 0.2s ease-in-out;
   height: 100vh;
-  width: 40%;
+  width: 50%;
 }
 @media (max-width: 768px) {
   body {
@@ -170,6 +170,34 @@ main {
   height: 100%;
   transition: all 0.2s ease-in-out;
   width: 100%;
+}
+
+.trip-btns {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.trip-btn {
+  box-shadow: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #3F5429;
+  color: #E7ECE3;
+  opacity: 0.8;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+}
+.trip-btn i {
+  margin-right: 5px;
+}
+.trip-btn:hover {
+  opacity: 1;
 }
 
 ul, ol, li, a {
@@ -367,6 +395,45 @@ a:hover, a:focus {
   opacity: 0;
 }
 
+.weather-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.weather-section .weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+}
+.weather-section .weather-info .weather-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  background: #3F5429;
+  padding: 16px;
+  border-radius: 12px;
+  color: #E7ECE3;
+}
+.weather-section .weather-info .weather-item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+
 nav {
   display: flex;
   justify-content: flex-start;
@@ -471,39 +538,6 @@ nav .brand {
   nav .brand:hover, nav .brand:focus {
     cursor: pointer;
   }
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 8px 16px;
-  gap: 10px;
-  border-radius: 8px;
-  background-color: #303137;
-  color: white;
-  font-weight: bold;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
-  transition: all 0.1s ease-in-out;
-}
-button:hover, button:focus {
-  cursor: pointer;
-  padding: 8px 16px;
-  background-color: #EB5E28;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-  color: #F1F2EB;
-  opacity: 1;
-  transform: scale(1.05);
 }
 
 #content-container {
