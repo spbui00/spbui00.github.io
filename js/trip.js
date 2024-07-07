@@ -79,29 +79,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Countdown Timer
   const tripStartDate = new Date('2024-07-17T08:45:00'); // Set your trip start date here
-  const countdownElement = document.getElementById('countdown');
+  const headerElement = document.querySelector('.header'); // Assuming header class is used
+
+  const countdownElement = document.createElement('div');
+  countdownElement.classList.add('countdown-timer');
+  headerElement.appendChild(countdownElement);
 
   function updateCountdown() {
     const now = new Date();
     const timeRemaining = tripStartDate - now;
 
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    if (timeRemaining > 0) {
+      const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-    countdownElement.innerHTML = `
-    <div>${days}d ${hours}h
-      ${minutes}m ${seconds}s
-    </div>
-    `;
-
-    if (timeRemaining < 0) {
+      countdownElement.innerHTML = `
+<div>Trip starts in ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds</div>
+`;
+    } else {
       clearInterval(countdownInterval);
       countdownElement.innerHTML = 'Trip started!';
     }
   }
 
   const countdownInterval = setInterval(updateCountdown, 1000);
+  updateCountdown(); // Initial call to display the countdown immediately
 
 });

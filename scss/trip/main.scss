@@ -161,8 +161,6 @@ a {
 
 .countdown-timer {
   @include flex-container(center, center, row);
-  font-size: 1.5rem;
-  font-weight: 800;
   border: 1px solid $yellow;
   border-radius: $borderRadiusMedium;
   padding: $spacing-xs;
@@ -280,11 +278,19 @@ a {
 }
 .weather-section {
   @include flex-container(center, center, column);
-  width: 100%;
+  width: 400px;
   transition: $transition;
   box-sizing: border-box;
   border-radius: $borderRadiusMedium;
   margin-bottom: $spacing-md;
+
+  @include respond-to(md) {
+    width: 80%;
+  }
+
+  @include respond-to(sm) {
+    width: 100%;
+  }
 
   .weather-info {
     @include flex-container(space-between, start, row);
@@ -303,6 +309,10 @@ a {
       i {
         @include flex-container(center, center, column);
         font-size: 1.3rem;
+      }
+
+      @include respond-to(md) {
+        padding: $spacing-xs; 
       }
     }
 
