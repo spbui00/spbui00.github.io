@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './js-min/main.js', // Change this to your entry point
+    main: './js/main.js', // Change this to your entry point,
+    trip: './js/trip.js'
   },
   output: {
     filename: '[name].bundle.js',
@@ -11,7 +12,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html', // Change this to your HTML template
+      template: 'index.html',
+      chunks: ['main'], // Specify the chunks for index.html
+    }),
+    new HtmlWebpackPlugin({
+      template: 'trip.html',
+      filename: 'trip.html',
+      chunks: ['trip'], 
     }),
   ],
 };
