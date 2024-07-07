@@ -5,6 +5,7 @@ $dark-green: #2F4414;
 $olivine: #9CAF88;
 $black-olive: #353A31;
 $brown: #4f473b;
+$yellow: #F7FF88;
 
 html {
   @include flex-container(center, center, column);
@@ -27,7 +28,8 @@ body {
 }
 
 .header {
-  @include flex-container(start, center, row);
+  @include flex-container(start, start, column);
+  gap: $spacing-sm;
   width: 100%;
   transition: $transition;
   margin-bottom: $spacing-md;
@@ -156,6 +158,19 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: $dark-green;
 } 
+
+.countdown-timer {
+  @include flex-container(center, center, row);
+  font-size: 1.5rem;
+  font-weight: 800;
+  border: 1px solid $yellow;
+  border-radius: $borderRadiusMedium;
+  padding: $spacing-xs;
+  width: 100%;
+  background: $yellow;
+  color: $black-olive;
+  box-sizing: border-box;
+}
 
 .day {
   @include flex-container(center, start, column);

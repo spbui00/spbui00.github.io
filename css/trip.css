@@ -151,8 +151,9 @@ body {
 .header {
   display: flex;
   justify-content: start;
-  align-items: center;
-  flex-direction: row;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
   width: 100%;
   transition: all 0.2s ease-in-out;
   margin-bottom: 24px;
@@ -287,6 +288,22 @@ a:hover, a:focus {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #2F4414;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border: 1px solid #F7FF88;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  background: #F7FF88;
+  color: #353A31;
+  box-sizing: border-box;
 }
 
 .day {
