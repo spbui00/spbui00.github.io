@@ -2,11 +2,12 @@
   "title": "Hello...</br>Italy",
   "days": [
     {
-      "day": "Day 1",
+      "day": "Day 1 - Discover the Colosseum",
       "checkpoints": [
         {
           "time": "09:00",
           "title": "Breakfast",
+          "link": "https://www.google.com",
           "description": "Enjoy a traditional Italian breakfast at a local cafe",
           "icon": "fa-mug-saucer"
         },
@@ -39,6 +40,83 @@
           "time": "16:00",
           "title": "Dinner",
           "description": "Enjoy a traditional Italian dinner at a local cafe"
+        }
+      ]
+    },
+    {
+      "day": "Day 2 - Explore the Vatican",
+      "checkpoints": [
+        {
+          "time": "09:00",
+          "title": "Breakfast",
+          "description": "Enjoy a traditional Italian breakfast at a local cafe",
+          "icon": "fa-mug-saucer"
+        },
+        {
+          "time": "10:00",
+          "title": "Bus",
+          "description": "ABC -> fdsf",
+          "icon": "fa-bus",
+          "class": "travel"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch",
+          "description": "Enjoy a traditional Italian lunch at a local cafe",
+          "class": "special"
+        },
+        {
+          "time": "14:00",
+          "title": "Bus",
+          "description": "ABC -> fdsf",
+          "class": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Sightseeing",
+          "description": "Visit the Vatican",
+          "class": "special"
+        },
+        {
+          "time": "16:00",
+          "title": "Dinner",
+          "description": "Enjoy a traditional Italian dinner at a local cafe"
+        }
+      ]
+    },
+    {
+      "day": "Day 3 - Relax in the Italian countryside",
+      "checkpoints": [
+        {
+          "time": "09:00",
+          "title": "Breakfast",
+          "description": "Enjoy a traditional Italian breakfast at a local cafe",
+          "icon": "fa-mug-saucer"
+        },
+        {
+          "time": "10:00",
+          "title": "Bus",
+          "description": "ABC -> fdsf",
+          "icon": "fa-bus",
+          "class": "travel"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch",
+          "description": "Enjoy a traditional Italian lunch at a local cafe",
+          "class": "special"
+        },
+        {
+          "time": "14:00",
+          "title": "Bus",
+          "description": "ABC -> fdsf",
+          "class": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Sightseeing",
+          "description": "Visit the Italian countryside",
+          "class": "special"
         }
       ]
     }

@@ -11,7 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
       data.days.forEach(day => {
         const dayElement = document.createElement('div');
         dayElement.classList.add('day');
-        dayElement.innerHTML = `<h2>${day.day}</h2>`;
+
+        const dayHeaderElement = document.createElement('h2');
+        dayHeaderElement.classList.add('day-header');
+        dayHeaderElement.innerText = day.day;
+
+        dayElement.appendChild(dayHeaderElement);
 
         const dayContentElement = document.createElement('div');
         dayContentElement.classList.add('day-content');
@@ -41,6 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         dayElement.appendChild(dayContentElement);
         mainElement.appendChild(dayElement);
+
+        // Add event listener to toggle visibility with sliding effect
+        dayHeaderElement.addEventListener('click', () => {
+          dayContentElement.classList.toggle('expanded');
+        });
       });
     })
     .catch(error => console.error('Error loading itinerary:', error));

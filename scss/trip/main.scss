@@ -6,13 +6,24 @@ $olivine: #9CAF88;
 $black-olive: #353A31;
 $brown: #4f473b;
 
+html {
+  @include flex-container(center, center, column);
+  padding: $spacing-md;
+}
+
 body {
+  @include flex-container(center, center, column);
   margin: 0;
   background: $dark-green;
   color: white;
   padding: $spacing-md $spacing-sm;
   transition: $transition;
   height: 100vh;
+  width: 40%;
+
+  @include respond-to(md) {
+    width: 100%;
+  }
 }
 
 .header {
@@ -29,21 +40,9 @@ body {
 
 main {
   @include flex-container(start, start, column);
-  width: 100%;
   height: 100%;
   transition: $transition;
-
-  @include respond-to(xxl) {
-    width: 90%;
-  }
-
-  @include respond-to(md) {
-    width: 80%;
-  }
-
-  @include respond-to(sm) {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 // reset all ul, ol, li styles
@@ -138,6 +137,10 @@ a {
   gap: $spacing-xs;
   transition: $transition;
 
+  &-header {
+    cursor: pointer;
+  }
+
   h2 {
     margin-bottom: 0;
   }
@@ -146,13 +149,24 @@ a {
     @include flex-container(center, start, column);
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    max-height: 0;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out, opacity 0.5s ease-out;
     color: white;
+
+    &.expanded {
+      height: 100%;
+      max-height: 1000px;
+      opacity: 1; 
+      transition: $transition-slow;
+    }
 
     &-checkpoint {
       @include flex-container(start, start, row);
       gap: $spacing-xs;
       width: 100%;
+      height: 100%;
 
       &-timeline {
         @include flex-container(center, center, column);
@@ -220,3 +234,4 @@ a {
     }
   }
 }
+
