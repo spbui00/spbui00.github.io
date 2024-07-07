@@ -1,0 +1,65 @@
+
+/* Typography styles */
+
+$fontSize-sm: 0.75rem;
+$fontSize-md: 1rem;
+$fontSize-lg: 1.25rem;
+$fontSize-base: 14px;
+
+html {
+  font-size: $fontSize-base;
+  font-family: 'Default Nutino', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5;
+  color: $color-white;
+
+  @include respond-to(sm) {
+    font-size: $fontSize-sm;
+  }
+}
+
+@font-face {
+  font-family: 'Default Nutino';
+  src: url('../fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-stretch: 1 100%;
+}
+
+@font-face {
+  font-family: 'Default Nunito';
+  src: url('../fonts/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-stretch: 1 100%;
+}
+
+body {
+  color: $color-white;
+  font-family: 'Default Nutino', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 0px;
+  line-height: 1;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}

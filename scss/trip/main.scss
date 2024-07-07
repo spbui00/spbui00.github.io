@@ -1,0 +1,212 @@
+$light-green: #E7ECE3;
+$neon-green: #49DD85;
+$medium-green: #3F5429;
+$dark-green: #2F4414;
+$olivine: #9CAF88;
+$black-olive: #353A31;
+$brown: #4f473b;
+
+body {
+  margin: 0;
+  background: $dark-green;
+  color: white;
+  padding: $spacing-md $spacing-sm;
+  transition: $transition;
+  height: 100vh;
+}
+
+.header {
+  @include flex-container(start, center, row);
+  width: 100%;
+  transition: $transition;
+  margin-bottom: $spacing-md;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 800;
+  }
+}
+
+main {
+  @include flex-container(start, start, column);
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+
+  @include respond-to(xxl) {
+    width: 90%;
+  }
+
+  @include respond-to(md) {
+    width: 80%;
+  }
+
+  @include respond-to(sm) {
+    width: 100%;
+  }
+}
+
+// reset all ul, ol, li styles
+ul, ol, li, a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: $black-olive;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+footer {
+  @include flex-container(flex-start, end, row); 
+  transition: $transition;
+  position: fixed;
+  bottom: 0;
+}
+
+.orange {
+  color: $color-light-orange;
+}
+
+.grey {
+  color: $color-medium-grey;
+}
+
+.orange-bg {
+  background-color: $color-light-orange;
+}
+
+.blue-bg {
+  background-color: $color-light-blue;
+}
+
+.purple-bg {
+  background-color: $color-light-purple;
+}
+
+.green-bg {
+  background-color: $color-light-green;
+}
+
+.yellow-bg {
+  background-color: $color-light-yellow;
+}
+
+a {
+  opacity: 0.7;
+
+  &:hover, &:focus {
+    opacity: 1;
+  }
+}
+
+.flex-row {
+  @include flex-container(space-between, center, row);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+  border-radius: $borderRadiusLarge;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(235, 94, 40, 0.3);
+  border-radius: $borderRadiusLarge;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $dark-green;
+} 
+
+.day {
+  @include flex-container(center, start, column);
+  width: 100%;
+  position: relative;
+  gap: $spacing-xs;
+  transition: $transition;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  &-content {
+    @include flex-container(center, start, column);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    &-checkpoint {
+      @include flex-container(start, start, row);
+      gap: $spacing-xs;
+      width: 100%;
+
+      &-timeline {
+        @include flex-container(center, center, column);
+        position: relative;
+        height: 100%;
+
+        &-time {
+          color: $neon-green;
+
+          .travel & {
+            opacity: 0.6;
+          }
+        }
+
+        &-line {
+          height: 100%;
+          border: 1px solid $neon-green;
+          border-radius: $borderRadiusSmall;
+
+          .travel & {
+            border: 1px dashed $neon-green;
+            background: none;
+            opacity: 0.6;
+          }
+
+        }
+      }
+
+      &-info {
+        @include flex-container(start, start, column);
+        width: 100%;
+        margin-bottom: $spacing-md;
+
+        &-title {
+          font-weight: 800;
+        }
+
+        &-description {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        .special & {
+          background: $medium-green;
+          border-radius: $borderRadiusMedium;
+          padding: $spacing-xs;
+          box-sizing: border-box;
+        }
+      }
+
+      &:last-child & {
+        &-timeline-line {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

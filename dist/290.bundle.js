@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[290,780],{290:()=>{document.addEventListener("DOMContentLoaded",(()=>{console.log("Trip page loaded")}))}}]);
