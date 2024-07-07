@@ -197,7 +197,7 @@ a {
 
     &.expanded {
       height: 100%;
-      max-height: 1000px;
+      max-height: 10000px;
       opacity: 1; 
       transition: $transition-slow;
     }
@@ -214,6 +214,7 @@ a {
         @include flex-container(center, center, column);
         position: relative;
         height: 100%;
+        opacity: 0.8;
 
         &-time {
           color: $neon-green;
@@ -259,10 +260,33 @@ a {
           font-weight: 400;
         }
 
+        &-infos {
+          @include flex-container(start, start, row);
+          margin-top: $spacing-xs;
+          gap: $spacing-xs;
+          width: 100%;
+  
+          &-item {
+            border: 1px solid rgba(247, 255, 136, 0.5);
+            color: $yellow;
+            background: rgba(247, 255, 136, 0.1);
+            padding: 2px 4px;
+            border-radius: $borderRadiusSmall;
+          }
+        }
+
         .special & {
           background: $medium-green;
           box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
           border-radius: $borderRadiusMedium;
+          padding: $spacing-xs;
+          box-sizing: border-box;
+        }
+
+        .important & {
+          border-radius: $borderRadiusMedium;
+          color: $neon-green;
+          border: 1px solid $neon-green;
           padding: $spacing-xs;
           box-sizing: border-box;
         }

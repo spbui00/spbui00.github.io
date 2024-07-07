@@ -335,7 +335,7 @@ a:hover, a:focus {
 }
 .day-content.expanded {
   height: 100%;
-  max-height: 1000px;
+  max-height: 10000px;
   opacity: 1;
   transition: all 1s ease-in-out;
 }
@@ -357,6 +357,7 @@ a:hover, a:focus {
   flex-direction: column;
   position: relative;
   height: 100%;
+  opacity: 0.8;
 }
 .day-content-checkpoint-timeline-time {
   color: #49DD85;
@@ -399,10 +400,33 @@ a:hover, a:focus {
   font-size: 1rem;
   font-weight: 400;
 }
+.day-content-checkpoint-info-infos {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  margin-top: 8px;
+  gap: 8px;
+  width: 100%;
+}
+.day-content-checkpoint-info-infos-item {
+  border: 1px solid rgba(247, 255, 136, 0.5);
+  color: #F7FF88;
+  background: rgba(247, 255, 136, 0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
 .special .day-content-checkpoint-info {
   background: #3F5429;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.important .day-content-checkpoint-info {
+  border-radius: 8px;
+  color: #49DD85;
+  border: 1px solid #49DD85;
   padding: 8px;
   box-sizing: border-box;
 }

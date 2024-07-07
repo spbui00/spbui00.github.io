@@ -31,17 +31,29 @@ document.addEventListener('DOMContentLoaded', () => {
             checkpointElement.classList.add(checkpoint.class);
           }
 
+          let infosContent = '';
+          if (checkpoint.infos) {
+            checkpoint.infos.forEach(info => {
+              infosContent += `
+              <div class="day-content-checkpoint-info-infos-item">
+              ${info.icon ? `<i class="fa-solid ${info.icon}"></i>` : ''} ${info.text}
+              </div>
+              `;
+            });
+          }
+
           const checkpointContent = `
-            <div class="day-content-checkpoint-timeline">
-              <div class="day-content-checkpoint-timeline-time">${checkpoint.time}</div>
+          <div class="day-content-checkpoint-timeline">
+            <div class="day-content-checkpoint-timeline-time">${checkpoint.time}</div>
               <div class="day-content-checkpoint-timeline-line"></div>
             </div>
             <div class="day-content-checkpoint-info">
               <div class="day-content-checkpoint-info-title">
                 ${checkpoint.icon ? `<i class="fa-solid ${checkpoint.icon}"></i>` : ''} ${checkpoint.title}
               </div>
-              <div class="day-content-checkpoint-info-description">${checkpoint.description}</div>
-            </div>
+              ${checkpoint.description ? `<div class="day-content-checkpoint-info-description">${checkpoint.description}</div>` : ''}
+              ${infosContent ? `<div class="day-content-checkpoint-info-infos">${infosContent}</div>` : ''}
+          </div>
           `;
 
           checkpointElement.innerHTML = checkpointContent;
@@ -69,11 +81,11 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(weatherData => {
       const weatherInfo = document.getElementById('weather-info');
       weatherInfo.innerHTML = `
-      <div class="weather-item"><i class="fas fa-thermometer-half"></i> ${weatherData.current.temp_c} °C</div>
-      <div class="weather-item"><i class="fas fa-cloud"></i> ${weatherData.current.condition.text}</div>
-      <div class="weather-item"><i class="fas fa-tint"></i> ${weatherData.current.humidity}%</div>
-      <div class="weather-item"><i class="fas fa-wind"></i> ${weatherData.current.wind_kph} kph</div>
-      `;
+<div class="weather-item"><i class="fas fa-thermometer-half"></i> ${weatherData.current.temp_c} °C</div>
+<div class="weather-item"><i class="fas fa-cloud"></i> ${weatherData.current.condition.text}</div>
+<div class="weather-item"><i class="fas fa-tint"></i> ${weatherData.current.humidity}%</div>
+<div class="weather-item"><i class="fas fa-wind"></i> ${weatherData.current.wind_kph} kph</div>
+`;
     })
     .catch(error => console.error('Error fetching weather data:', error));
 
