@@ -1,4 +1,5 @@
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -20,5 +21,6 @@ module.exports = {
       filename: 'trip.html',
       chunks: ['trip'], 
     }),
+    new Dotenv()
   ],
 };

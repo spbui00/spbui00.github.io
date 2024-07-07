@@ -121,20 +121,39 @@ p {
     opacity: 1;
   }
 }
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 0;
   background: #2F4414;
   color: white;
   padding: 24px 16px;
   transition: all 0.2s ease-in-out;
   height: 100vh;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
 }
 
 .header {
   display: flex;
   justify-content: start;
-  align-items: center;
-  flex-direction: row;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
   width: 100%;
   transition: all 0.2s ease-in-out;
   margin-bottom: 24px;
@@ -149,24 +168,37 @@ main {
   justify-content: start;
   align-items: start;
   flex-direction: column;
-  width: 100%;
   height: 100%;
   transition: all 0.2s ease-in-out;
+  width: 100%;
 }
-@media (max-width: 1400px) {
-  main {
-    width: 90%;
-  }
+
+.trip-btns {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 24px;
+  width: 100%;
 }
-@media (max-width: 768px) {
-  main {
-    width: 80%;
-  }
+
+.trip-btn {
+  box-shadow: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #3F5429;
+  color: #E7ECE3;
+  opacity: 0.8;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
 }
-@media (max-width: 576px) {
-  main {
-    width: 100%;
-  }
+.trip-btn i {
+  margin-right: 5px;
+}
+.trip-btn:hover {
+  opacity: 1;
 }
 
 ul, ol, li, a {
@@ -258,6 +290,20 @@ a:hover, a:focus {
   background: #2F4414;
 }
 
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid #F7FF88;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  background: #F7FF88;
+  color: #353A31;
+  box-sizing: border-box;
+}
+
 .day {
   display: flex;
   justify-content: center;
@@ -267,6 +313,9 @@ a:hover, a:focus {
   position: relative;
   gap: 8px;
   transition: all 0.2s ease-in-out;
+}
+.day-header {
+  cursor: pointer;
 }
 .day h2 {
   margin-bottom: 0;
@@ -278,8 +327,17 @@ a:hover, a:focus {
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  max-height: 0;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out, opacity 0.5s ease-out;
   color: white;
+}
+.day-content.expanded {
+  height: 100%;
+  max-height: 10000px;
+  opacity: 1;
+  transition: all 1s ease-in-out;
 }
 .day-content-checkpoint {
   display: flex;
@@ -288,6 +346,9 @@ a:hover, a:focus {
   flex-direction: row;
   gap: 8px;
   width: 100%;
+  height: 100%;
+  opacity: 1;
+  color: white;
 }
 .day-content-checkpoint-timeline {
   display: flex;
@@ -296,6 +357,7 @@ a:hover, a:focus {
   flex-direction: column;
   position: relative;
   height: 100%;
+  opacity: 0.8;
 }
 .day-content-checkpoint-timeline-time {
   color: #49DD85;
@@ -338,6 +400,22 @@ a:hover, a:focus {
   font-size: 1rem;
   font-weight: 400;
 }
+.day-content-checkpoint-info-infos {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  margin-top: 8px;
+  gap: 8px;
+  width: 100%;
+}
+.day-content-checkpoint-info-infos-item {
+  border: 1px solid rgba(247, 255, 136, 0.5);
+  color: #F7FF88;
+  background: rgba(247, 255, 136, 0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
 .special .day-content-checkpoint-info {
   background: #3F5429;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
@@ -345,8 +423,69 @@ a:hover, a:focus {
   padding: 8px;
   box-sizing: border-box;
 }
+.important .day-content-checkpoint-info {
+  border-radius: 8px;
+  color: #49DD85;
+  border: 1px solid #49DD85;
+  padding: 8px;
+  box-sizing: border-box;
+}
 .day-content-checkpoint:last-child .day-content-checkpoint-timeline-line {
   opacity: 0;
+}
+
+.weather-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .weather-section {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .weather-section {
+    width: 100%;
+  }
+}
+.weather-section .weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+}
+.weather-section .weather-info .weather-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  background: #3F5429;
+  padding: 16px;
+  border-radius: 12px;
+  color: #E7ECE3;
+}
+.weather-section .weather-info .weather-item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+@media (max-width: 768px) {
+  .weather-section .weather-info .weather-item {
+    padding: 8px;
+  }
 }
 
 nav {
@@ -453,39 +592,6 @@ nav .brand {
   nav .brand:hover, nav .brand:focus {
     cursor: pointer;
   }
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 8px 16px;
-  gap: 10px;
-  border-radius: 8px;
-  background-color: #303137;
-  color: white;
-  font-weight: bold;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
-  transition: all 0.1s ease-in-out;
-}
-button:hover, button:focus {
-  cursor: pointer;
-  padding: 8px 16px;
-  background-color: #EB5E28;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-  color: #F1F2EB;
-  opacity: 1;
-  transform: scale(1.05);
 }
 
 #content-container {

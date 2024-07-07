@@ -5,18 +5,31 @@ $dark-green: #2F4414;
 $olivine: #9CAF88;
 $black-olive: #353A31;
 $brown: #4f473b;
+$yellow: #F7FF88;
+
+html {
+  @include flex-container(center, center, column);
+  padding: $spacing-md;
+}
 
 body {
+  @include flex-container(center, center, column);
   margin: 0;
   background: $dark-green;
   color: white;
   padding: $spacing-md $spacing-sm;
   transition: $transition;
   height: 100vh;
+  width: 50%;
+
+  @include respond-to(md) {
+    width: 100%;
+  }
 }
 
 .header {
-  @include flex-container(start, center, row);
+  @include flex-container(start, start, column);
+  gap: $spacing-sm;
   width: 100%;
   transition: $transition;
   margin-bottom: $spacing-md;
@@ -29,20 +42,35 @@ body {
 
 main {
   @include flex-container(start, start, column);
-  width: 100%;
   height: 100%;
   transition: $transition;
+  width: 100%;
+}
 
-  @include respond-to(xxl) {
-    width: 90%;
+.trip-btns {
+  @include flex-container(start, start, row);
+  gap: $spacing-sm;
+  margin-bottom: $spacing-md;
+  width: 100%;
+}
+
+.trip-btn {
+  box-shadow: none;
+  padding: 4px 8px;
+  border-radius: $borderRadiusSmall;
+  background: $medium-green;
+  color: $light-green;
+  opacity: 0.8;
+  font-weight: 500;
+  transition: $transition;
+  font-size: 1rem;
+
+  i {
+    margin-right: 5px;
   }
 
-  @include respond-to(md) {
-    width: 80%;
-  }
-
-  @include respond-to(sm) {
-    width: 100%;
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -131,12 +159,27 @@ a {
   background: $dark-green;
 } 
 
+.countdown-timer {
+  @include flex-container(center, center, row);
+  border: 1px solid $yellow;
+  border-radius: $borderRadiusMedium;
+  padding: $spacing-xs;
+  width: 100%;
+  background: $yellow;
+  color: $black-olive;
+  box-sizing: border-box;
+}
+
 .day {
   @include flex-container(center, start, column);
   width: 100%;
   position: relative;
   gap: $spacing-xs;
   transition: $transition;
+
+  &-header {
+    cursor: pointer;
+  }
 
   h2 {
     margin-bottom: 0;
@@ -146,18 +189,32 @@ a {
     @include flex-container(center, start, column);
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    max-height: 0;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out, opacity 0.5s ease-out;
     color: white;
+
+    &.expanded {
+      height: 100%;
+      max-height: 10000px;
+      opacity: 1; 
+      transition: $transition-slow;
+    }
 
     &-checkpoint {
       @include flex-container(start, start, row);
       gap: $spacing-xs;
       width: 100%;
+      height: 100%;
+      opacity: 1;
+      color: white;
 
       &-timeline {
         @include flex-container(center, center, column);
         position: relative;
         height: 100%;
+        opacity: 0.8;
 
         &-time {
           color: $neon-green;
@@ -203,10 +260,33 @@ a {
           font-weight: 400;
         }
 
+        &-infos {
+          @include flex-container(start, start, row);
+          margin-top: $spacing-xs;
+          gap: $spacing-xs;
+          width: 100%;
+  
+          &-item {
+            border: 1px solid rgba(247, 255, 136, 0.5);
+            color: $yellow;
+            background: rgba(247, 255, 136, 0.1);
+            padding: 2px 4px;
+            border-radius: $borderRadiusSmall;
+          }
+        }
+
         .special & {
           background: $medium-green;
           box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
           border-radius: $borderRadiusMedium;
+          padding: $spacing-xs;
+          box-sizing: border-box;
+        }
+
+        .important & {
+          border-radius: $borderRadiusMedium;
+          color: $neon-green;
+          border: 1px solid $neon-green;
           padding: $spacing-xs;
           box-sizing: border-box;
         }
@@ -218,5 +298,47 @@ a {
         }
       }
     }
+  }
+}
+.weather-section {
+  @include flex-container(center, center, column);
+  width: 400px;
+  transition: $transition;
+  box-sizing: border-box;
+  border-radius: $borderRadiusMedium;
+  margin-bottom: $spacing-md;
+
+  @include respond-to(md) {
+    width: 80%;
+  }
+
+  @include respond-to(sm) {
+    width: 100%;
+  }
+
+  .weather-info {
+    @include flex-container(space-between, start, row);
+    gap: $spacing-sm;
+    width: 100%;
+
+    .weather-item {
+      @include flex-container(center, center, column);
+      width: 100%;
+      gap: $spacing-xs;
+      background: $medium-green;
+      padding: $spacing-sm;
+      border-radius: $borderRadiusLarge;
+      color: $light-green;
+
+      i {
+        @include flex-container(center, center, column);
+        font-size: 1.3rem;
+      }
+
+      @include respond-to(md) {
+        padding: $spacing-xs; 
+      }
+    }
+
   }
 }

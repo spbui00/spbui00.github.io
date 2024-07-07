@@ -2,43 +2,476 @@
   "title": "Hello...</br>Italy",
   "days": [
     {
-      "day": "Day 1",
+      "day": "Day 1 - First day to Massa Lubrense",
+      "checkpoints": [
+        {
+          "time": "08:45",
+          "title": "Departure from Prague",
+          "description": "Catch your flight from Prague Airport.",
+          "icon": "fa-plane-departure",
+          "class": "travel"
+        },
+        {
+          "time": "10:50",
+          "title": "Arrival at Naples, head for lunch",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Pizzeria+da+Michele,+Naples,+Italy",
+          "description": "Arrive at Naples Airport. Take your luggage, and search for public transport tickets? Then go to the <b>best</b> pizza place in Naples.",
+          "icon": "fa-plane-arrival",
+          "class": "travel"
+        },
+        {
+          "time": "11:50",
+          "title": "Lunch at Pizzeria da Michele",
+          "link": "https://www.damichele.net/sede-di-napoli/", 
+          "description": "The ultimate best pizza on earth. Be prepared to wait in line, but it's worth it.",
+          "icon": "fa-pizza-slice",
+          "class": "important",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "10€"
+            }
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Travel to Airbnb",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=40.603528,14.350694", 
+          "description": "This is going to be a long trip, so make sure you have some snackeru for Viky :-).",
+          "icon": "fa-van-shuttle",
+          "class": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Arrive at Airbnb",
+          "description": "Rest up, shower and cuddle with Viky.",
+          "icon": "fa-home",
+          "class": "travel"
+        },
+        {
+          "time": "16:00",
+          "title": "Travel to Positano",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Spiaggia di Positano Marina Grande",
+
+          "icon": "fa-bus",
+          "class": "travel"
+        },
+        {
+          "time": "17:30",
+          "title": "Sunset at Positano",
+          "description": "Walk around the beach and enjoy the sunset. Don't forget to buy grocery for tomorrow's breakfast.",
+          "icon": "fa-sun",
+          "class": "special",
+          "infos": [
+            {
+              "icon": "fa-camera",
+              "text": "Views"
+            },
+            {
+              "icon": "fa-cart-shopping",
+              "text": "Grocery shopping"
+            }
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner",
+          "description": "Explore local restaurants in Positano.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Day 2 - Day Trip to Baia di Ieranto",
       "checkpoints": [
         {
           "time": "09:00",
-          "title": "Breakfast",
-          "description": "Enjoy a traditional Italian breakfast at a local cafe",
-          "icon": "fa-mug-saucer"
+          "title": "Breakfast at the exeternal kitchen",
+          "description": "Prepare lunch for the picnic, no restaurants much around! Pack some snacks for the hike. Bring precautions for insects and sun. Don't forget swimwear, towel, snorkel.",
+          "icon": "fa-coffee",
+          "infos": [
+            {
+              "icon": "fa-utensils",
+              "text": "Pack lunch"
+            },
+            {
+              "icon": "fa-person-swimming",
+              "text": "Swimwear, and snorkel"
+            }
+          ]
         },
         {
           "time": "10:00",
-          "title": "Bus",
-          "description": "ABC -> fdsf",
+          "title": "Travel to Nerano",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Nerano",
+          "description": "Either take a bus for walk. This is where the trail starts.",
+          "icon": "fa-bus",
+          "class": "travel"
+        },
+        {
+          "time": "11:00",
+          "title": "Hike to Baia di Ieranto",
+          "link": "https://www.alltrails.com/trail/italy/campania/baia-di-ieranto-spiaggia-capitiello",
+          "icon": "fa-hiking",
+          "description": "Stunning views and a refreshing swim. Check the link for more info.",
+          "class": "important",
+          "infos": [
+            {
+              "icon": "fa-camera",
+              "text": "Views"
+            },
+            {
+              "icon": "fa-swimmer",
+              "text": "Swimming"
+            }
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Picnic lunch",
+          "description": "Picnic lunch by the sea.",
+          "icon": "fa-utensils",
+          "class": "special"
+        },
+        {
+          "time": "14:00",
+          "title": "Relax",
+          "description": "Relax, enjoy the beach. Or explore more of the area.",
+          "icon": "fa-umbrella-beach"
+        },
+        {
+          "time": "17:00",
+          "title": "Return to Nerano",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Nerano",
+          "description": "Return to Nerano.",
+          "icon": "fa-hiking"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner",
+          "link": "https://goo.gl/maps/XYZ", 
+          "description": "Dinner at a local restaurant.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Day 3 - Capri Island Adventure",
+      "checkpoints": [
+        {
+          "time": "06:10",
+          "title": "Go to Sorrento Port",
+          "link": "https://www.google.com/maps/dir/'40.603528,14.350694'/Capri+Hydro+-+Green+Watersports,+Via+Marina+Piccola,+Capri,+Metropolitan+City+of+Naples,+Italy/@40.5920496,14.1964942,11z/am=t/data=!4m17!4m16!1m3!2m2!1d14.350694!2d40.603528!1m5!1m1!1s0x133b79aeaad2b785:0xb2e00cf8fcdd3305!2m2!1d14.234998!2d40.5451555!2m4!4e3!6e1!7e2!8j1721380500!3e3?entry=ttu",
+          "icon": "fa-bus",
+          "infos": [
+            {
+              "icon": "fa-person-swimming",
+              "text": "Swimwear, and snorkel"
+            }
+          ],
+          "class": "travel"
+        },
+        {
+          "time": "06:40",
+          "title": "Morning coffee",
+          "description": "Grab a coffee and eat breakfast at the port.",
+          "icon": "fa-coffee"
+        },
+        {
+          "time": "07:45",
+          "title": "Boat Ride to Capri Turistico Port",
+          "link": "https://www.capri.com/en/ferry-traghettilines?from=sorrento&to=capri&one_way_date=07%2F19%2F2024&roundtrip=Y&return_date=07%2F19%2F2024", 
+          "icon": "fa-ship",
+          "class": "travel",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "20€"
+            }
+          ]
+        },
+        {
+          "time": "08:35",
+          "title": "Rent a yayak",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Capri Hydro - Green Watersports",
+          "icon": "fa-sailboat",
+          "description": "Rent a kayak at this place, or search around the port if you find another kayak rental place.",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "90€"
+            }
+          ]
+        },
+        {
+          "time": "09:15",
+          "title": "Explore Capri on a kayak",
+          "description": "Sail, sail, sail.",
+          "icon": "fa-map-marked-alt",
+          "class": "important"
+        },
+        {
+          "time": "09:45",
+          "title": "Cala Ventroso",
+          "description": "Visit Cala Ventroso, a small hidden beach accessible only by sea. Enjoy a swim in its crystal-clear waters.",
+          "link": "https://www.google.com/maps/place/Cala+Ventroso/@40.5381683,14.2034873,14z/data=!4m10!1m2!2m1!1scala+ventroso!3m6!1s0x133b79c645dafbf3:0x4e18c3b89fa9b00e!8m2!3d40.5399604!4d14.2268872!15sCg1jYWxhIHZlbnRyb3NvkgEEbGlkb-ABAA!16s%2Fg%2F11cn67n2rs?entry=ttu",
+          "icon": "fa-water",
+          "class": "special"
+        },
+        {
+          "time": "10:20",
+          "title": "Grotta Verde - Green Cave and other caves",
+          "description": "Famous for the play of lights created inside it.",
+          "link": "https://www.google.com/maps/place/Grotta+Verde/@40.5390898,14.2213984,17z/data=!3m1!4b1!4m6!3m5!1s0x133b79c0bcb9ae5f:0x580935bd66842d2a!8m2!3d40.5390898!4d14.2213984!16s%2Fm%2F0k3p7bx?entry=ttu",
+          "icon": "fa-water",
+          "class": "special"
+        },
+        {
+          "time": "11:45",
+          "title": "Sail to The Blue Grotto",
+          "link": "https://www.google.com/maps/place/Blue+Grotto/@40.5610093,14.2055259,17z/data=!3m1!4b1!4m6!3m5!1s0x133b7758104ef07d:0x2badacbfa06157b3!8m2!3d40.5609849!4d14.2055931!16zL20vMDI1NXls?entry=ttu",
+          "icon": "fa-dumbbell",
+          "class": "important"
+        },
+        {
+          "time": "13:30",
+          "title": "Lunch",
+          "description": "Lunch at a local restaurant.",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "14:30",
+          "title": "Blue Grotto",
+          "description": "Visit the famous Blue Grotto and enjoy the stunning blue waters.",
+          "icon": "fa-anchor",
+          "class": "important",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "14€ entrance"
+            }
+          ]
+        },
+        {
+          "time": "15:00",
+          "title": "Sail back.",
+          "icon": "fa-dumbbell",
+          "class": "important"
+        },
+        {
+          "time": "17:00",
+          "title": "Explore before return kayak",
+          "description": "Explore the area around Capri Hydro before returning the kayak. Possible visit places: </br> &#x2022; Grotta dei Marinai </br> &#x2022; Grotta Rossa (caverna)",
+          "icon": "fa-map-marked-alt"
+        },
+        {
+          "time": "18:00",
+          "title": "Return kayak",
+          "description": "Return the kayak and head back to Sorrento.",
+          "icon": "fa-person-walking",
+          "class": "travel"
+        },
+        {
+          "time": "19:00",
+          "title": "Catch ferry back to Sorrento",
+          "link": "https://www.capri.com/en/ferry-traghettilines?from=sorrento&to=capri&one_way_date=07%2F19%2F2024&roundtrip=Y&return_date=07%2F19%2F2024",
+          "icon": "fa-ship",
+          "class": "travel",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "20€"
+            }
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Sunset at Sorrento",
+          "description": "Walk around Piazza Tasso and visit the Villa Comunale for views. Don't forget to buy grocery for tomorrow's breakfast.",
+          "icon": "fa-sun",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Villa+Comunale+di+Sorrento",
+          "class": "special",
+          "infos": [
+            {
+              "icon": "fa-camera",
+              "text": "Views"
+            },
+            {
+              "icon": "fa-cart-shopping",
+              "text": "Grocery shopping"
+            }
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner",
+          "description": "Here are some suggestions: </br> &#x2022; Porta Marina Seafood Restaurant </br>&#x2022; Ndulì Osteria Di Mare </br> &#x2022; Ristorante Ruccio",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Day 4 - Travel to Pompei (20th July 2024)",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Breakfast",
+          "description": "Have breakfast at a local cafe.",
+          "icon": "fa-coffee"
+        },
+        {
+          "time": "09:00",
+          "title": "Travel",
+          "link": "https://goo.gl/maps/XYZ", 
+          "description": "Travel to Pompei. Destination: Piazzetta Concordia, 35, Pompei, Campania 80045, Italy.",
           "icon": "fa-bus",
           "class": "travel"
         },
         {
           "time": "12:00",
           "title": "Lunch",
-          "description": "Enjoy a traditional Italian lunch at a local cafe",
-          "class": "special"
+          "description": "Lunch at a local restaurant in Pompei.",
+          "icon": "fa-utensils"
         },
         {
           "time": "14:00",
-          "title": "Bus",
-          "description": "ABC -> fdsf",
-          "class": "travel"
+          "title": "Explore Pompei",
+          "description": "Explore the ruins of Pompei and visit local museums.",
+          "icon": "fa-landmark"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner",
+          "link": "https://goo.gl/maps/XYZ", 
+          "description": "Dinner at a local restaurant in Pompei.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Day 5 - Explore Pompei (21st July 2024)",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Breakfast",
+          "description": "Have breakfast at a local cafe.",
+          "icon": "fa-coffee"
+        },
+        {
+          "time": "09:00",
+          "title": "Explore Pompei",
+          "description": "Continue exploring Pompei and visit more historical sites.",
+          "icon": "fa-landmark"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch",
+          "description": "Lunch at a local restaurant.",
+          "icon": "fa-utensils"
         },
         {
           "time": "15:00",
-          "title": "Sightseeing",
-          "description": "Visit the Colosseum",
+          "title": "Relax",
+          "description": "Relax and enjoy some free time.",
+          "icon": "fa-couch"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner",
+          "link": "https://goo.gl/maps/XYZ", 
+          "description": "Dinner at a local restaurant.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Day 6 - Nature and Adventure in Pompei (22nd July 2024)",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Breakfast",
+          "description": "Have breakfast at a local cafe.",
+          "icon": "fa-coffee"
+        },
+        {
+          "time": "09:00",
+          "title": "Hike",
+          "link": "https://goo.gl/maps/XYZ", 
+          "description": "Hike up Mount Vesuvius and enjoy the breathtaking views.",
+          "icon": "fa-hiking",
           "class": "special"
         },
         {
-          "time": "16:00",
+          "time": "12:00",
+          "title": "Lunch",
+          "description": "Lunch at a local restaurant.",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "15:00",
+          "title": "Visit Museum",
+          "description": "Visit the National Archaeological Museum of Naples.",
+          "icon": "fa-landmark"
+        },
+        {
+          "time": "19:00",
           "title": "Dinner",
-          "description": "Enjoy a traditional Italian dinner at a local cafe"
+          "link": "https://goo.gl/maps/XYZ", 
+          "description": "Dinner at a local restaurant.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Day 7 - Explore Naples (23rd July 2024)",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Breakfast",
+          "description": "Have breakfast at a local cafe.",
+          "icon": "fa-coffee"
+        },
+        {
+          "time": "09:00",
+          "title": "Travel to Naples",
+          "link": "https://goo.gl/maps/XYZ", 
+          "description": "Travel to Naples.",
+          "icon": "fa-bus",
+          "class": "travel"
+        },
+        {
+          "time": "10:00",
+          "title": "Check-out",
+          "description": "Check-out from your stay in Pompei."
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch",
+          "description": "Lunch at a local restaurant in Naples.",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "14:00",
+          "title": "Explore Naples",
+          "description": "Explore Naples, visit historical sites, and enjoy the local culture.",
+          "icon": "fa-landmark"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner",
+          "link": "https://goo.gl/maps/XYZ",
+          "description": "Dinner at a local restaurant in Naples.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Day 8 - Departure from Naples (24th July 2024)",
+      "checkpoints": [
+        {
+          "time": "06:00",
+          "title": "Departure",
+          "description": "Catch your flight from Naples Airport."
         }
       ]
     }
