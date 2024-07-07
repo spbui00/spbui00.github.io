@@ -167,6 +167,8 @@ a {
       gap: $spacing-xs;
       width: 100%;
       height: 100%;
+      opacity: 1;
+      color: white;
 
       &-timeline {
         @include flex-container(center, center, column);
@@ -234,4 +236,3 @@ a {
     }
   }
 }
-

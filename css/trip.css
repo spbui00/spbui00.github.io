@@ -304,6 +304,8 @@ a:hover, a:focus {
   gap: 8px;
   width: 100%;
   height: 100%;
+  opacity: 1;
+  color: white;
 }
 .day-content-checkpoint-timeline {
   display: flex;

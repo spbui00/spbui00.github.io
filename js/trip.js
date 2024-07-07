@@ -22,13 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
         dayContentElement.classList.add('day-content');
 
         day.checkpoints.forEach(checkpoint => {
-          const checkpointElement = document.createElement('div');
+          let checkpointElement;
+          if (checkpoint.link) {
+            checkpointElement = document.createElement('a');
+            checkpointElement.href = checkpoint.link;
+            checkpointElement.target = '_blank';
+          } else {
+            checkpointElement = document.createElement('div');
+          }
           checkpointElement.classList.add('day-content-checkpoint');
           if (checkpoint.class) {
             checkpointElement.classList.add(checkpoint.class);
           }
 
-          checkpointElement.innerHTML = `
+          const checkpointContent = `
             <div class="day-content-checkpoint-timeline">
               <div class="day-content-checkpoint-timeline-time">${checkpoint.time}</div>
               <div class="day-content-checkpoint-timeline-line"></div>
@@ -41,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           `;
 
+          checkpointElement.innerHTML = checkpointContent;
           dayContentElement.appendChild(checkpointElement);
         });
 
