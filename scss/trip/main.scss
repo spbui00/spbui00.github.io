@@ -324,15 +324,16 @@ a {
     .weather-item {
       @include flex-container(center, center, column);
       width: 100%;
+      height: 100%;
       gap: $spacing-xs;
       background: $medium-green;
-      padding: $spacing-sm;
+      padding: $spacing-sm $spacing-xs;
       border-radius: $borderRadiusLarge;
       color: $light-green;
 
       i {
         @include flex-container(center, center, column);
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
 
       @include respond-to(md) {

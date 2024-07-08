@@ -311,40 +311,63 @@
       ]
     },
     {
-      "day": "Day 4 - Travel to Pompei (20th July 2024)",
+      "day": "Day 4 - Travel to Pompei",
       "checkpoints": [
         {
-          "time": "08:00",
+          "time": "09:00",
           "title": "Breakfast",
-          "description": "Have breakfast at a local cafe.",
+          "description": "Have breakfast home, pack stuff to go to Pompei.",
           "icon": "fa-coffee"
         },
         {
-          "time": "09:00",
-          "title": "Travel",
-          "link": "https://goo.gl/maps/XYZ", 
-          "description": "Travel to Pompei. Destination: Piazzetta Concordia, 35, Pompei, Campania 80045, Italy.",
+          "time": "10:00",
+          "title": "Travel to Airbnb in Pompei",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Piazzetta Concordia, 35, Pompei, Campania 80045, Italy", 
           "icon": "fa-bus",
           "class": "travel"
         },
         {
-          "time": "12:00",
+          "time": "12:40",
           "title": "Lunch",
-          "description": "Lunch at a local restaurant in Pompei.",
+          "description": "Possible options: </br> &#x2022; Bio Cucina Bistro Bio Pizza, Alleria Pizzeria Newpolitana",
           "icon": "fa-utensils"
         },
         {
           "time": "14:00",
-          "title": "Explore Pompei",
-          "description": "Explore the ruins of Pompei and visit local museums.",
-          "icon": "fa-landmark"
+          "title": "Pompei Ruins",
+          "link": "https://pompeiisites.org/en/buy-tickets/",
+          "description": "Explore the ruins of Pompei.",
+          "icon": "fa-landmark",
+          "class": "important",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "20€ entrance"
+            }
+          ]
         },
         {
-          "time": "19:00",
+          "time": "18:00",
           "title": "Dinner",
-          "link": "https://goo.gl/maps/XYZ", 
-          "description": "Dinner at a local restaurant in Pompei.",
+          "description": "Possible options: Stuzzico by Lucius, Mercato Pompeiano.",
           "icon": "fa-utensils"
+        },
+        {
+          "time": "19:30",
+          "title": "Walk",
+          "description": "Walk around the beach and enjoy the sunset.",
+          "icon": "fa-utensils",
+          "class": "special",
+          "infos": [
+            {
+              "icon": "fa-camera",
+              "text": "Views"
+            },
+            {
+              "icon": "fa-sun",
+              "text": "Sunset"
+            }
+          ]
         }
       ]
     },

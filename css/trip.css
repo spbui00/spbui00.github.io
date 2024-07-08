@@ -469,9 +469,10 @@ a:hover, a:focus {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   gap: 8px;
   background: #3F5429;
-  padding: 16px;
+  padding: 16px 8px;
   border-radius: 12px;
   color: #E7ECE3;
 }
@@ -480,7 +481,7 @@ a:hover, a:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 768px) {
   .weather-section .weather-info .weather-item {
