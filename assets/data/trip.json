@@ -2,7 +2,7 @@
   "title": "Hello...</br>Italy",
   "days": [
     {
-      "day": "Day 1 - First day to Massa Lubrense",
+      "day": "17.7.2024 - First day to Massa Lubrense",
       "checkpoints": [
         {
           "time": "08:45",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "day": "Day 2 - Day Trip to Baia di Ieranto",
+      "day": "18.7.2024 - Day Trip to Baia di Ieranto",
       "checkpoints": [
         {
           "time": "09:00",
@@ -156,7 +156,7 @@
       ]
     },
     {
-      "day": "Day 3 - Capri Island Adventure",
+      "day": "19.7.2024 - Capri Island Adventure",
       "checkpoints": [
         {
           "time": "06:10",
@@ -307,11 +307,18 @@
           "title": "Dinner",
           "description": "Here are some suggestions: </br> &#x2022; Porta Marina Seafood Restaurant </br>&#x2022; Ndulì Osteria Di Mare </br> &#x2022; Ristorante Ruccio",
           "icon": "fa-utensils"
+        },
+        {
+          "time": "21:00",
+          "title": "Walk around Sorrento",
+          "description": "Walk around the city and enjoy the evening streets.",
+          "icon": "fa-walking",
+          "class": "special"
         }
       ]
     },
     {
-      "day": "Day 4 - Travel to Pompei",
+      "day": "20.7.2024 - Travel to Pompei",
       "checkpoints": [
         {
           "time": "09:00",
@@ -372,38 +379,119 @@
       ]
     },
     {
-      "day": "Day 5 - Explore Pompei (21st July 2024)",
+      "day": "21.7.2024 - Explore Vesuvius",
       "checkpoints": [
         {
-          "time": "08:00",
+          "time": "09:00",
           "title": "Breakfast",
-          "description": "Have breakfast at a local cafe.",
+          "description": "We wake up a bit later today, enjoy breakfast at a local cafe or home. Prepare enough food for the hike.",
           "icon": "fa-coffee"
         },
         {
-          "time": "09:00",
-          "title": "Explore Pompei",
-          "description": "Continue exploring Pompei and visit more historical sites.",
-          "icon": "fa-landmark"
+          "time": "10:40",
+          "title": "Travel to Mount Vesuvius",
+          "description": "Leave on time, coming late disqualifies the tickets to the park! Ticket for EAV bus can be purchased on board.",
+          "icon": "fa-bus",
+          "link": "https://maps.app.goo.gl/3hC8XLALL59mEn8DA",
+          "class": "travel",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "3.10€"
+            }
+          ]
         },
         {
-          "time": "12:00",
-          "title": "Lunch",
-          "description": "Lunch at a local restaurant.",
-          "icon": "fa-utensils"
+          "time": "12:40",
+          "title": "Mount Vesuvius loop hike",
+          "description": "Tickets are bought. </br>Transaction code: VIVATK143901190784",
+          "icon": "fa-hiking",
+          "link": "https://www.alltrails.com/trail/italy/campania/il-gran-cono-sentiero-5?u=m&sh=setvtu",
+          "class": "important",
+          "infos": [
+            {
+              "icon": "fa-camera",
+              "text": "Views"
+            },
+            {
+              "icon": "fa-hiking",
+              "text": "4.3km"
+            },
+            {
+              "icon": "fa-volcano",
+              "text": "219m elevation"
+            }
+          ]
         },
         {
-          "time": "15:00",
-          "title": "Relax",
-          "description": "Relax and enjoy some free time.",
-          "icon": "fa-couch"
+          "time": "13:58",
+          "title": "Travel to Cantina Del Vesuvio Winery",
+          "link": "https://maps.app.goo.gl/9MmxBTUpbx7Jr8jb6",
+          "description": "YOU HAVE TO BE ON TIME! Tour starts at 15:30",
+          "icon": "fa-bus",
+          "class": "travel"
         },
         {
-          "time": "19:00",
-          "title": "Dinner",
-          "link": "https://goo.gl/maps/XYZ", 
-          "description": "Dinner at a local restaurant.",
-          "icon": "fa-utensils"
+          "time": "15:30",
+          "title": "Wine Tasting with Lunch",
+          "link": "https://www.exploretock.com/cantina-del-vesuvio",
+          "description": "Walk through the vineyards and enjoy wine made from volcanic soil. Buy a bottle of Vesuvio Lacryma Christi (in translation \"Tears of Christ\").",
+          "icon": "fa-wine-glass",
+          "class": "important",
+          "infos": [
+            {
+              "icon": "fa-wine-bottle",
+              "text": "Souvenir"
+            },
+            {
+              "icon": "fa-mountain-sun",
+              "text": "View"
+            }
+          ]
+        },
+        {
+          "time": "17:30",
+          "title": "Travel to Terme Vesuviane",
+          "description": "Walk is about 3.4km or take a bus.",
+          "icon": "fa-walking",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Terme Vesuviane",
+          "class": "travel"
+        },
+        {
+          "time": "18:20",
+          "title": "Thermal bath at Terme Vesuviane",
+          "description": "Relax in the thermal baths and maybe you could also do a mud wrap :-). No clue if reservation is needed and how much it cost.",
+          "link": "https://www.termevesuviane.com/contatti/",
+          "class": "special",
+          "infos": [
+            {
+              "icon": "fa-spa",
+              "text": "Relax"
+            }
+          ]
+        },
+        {
+          "time": "20:00",
+          "title": "Travel to Terrazza Due Golfi",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Terrazza Due Golfi",
+          "class": "travel"
+        },
+        {
+          "time": "21:30",
+          "title": "Dinner at Terrazza Due Golfi",
+          "description": "Enjoy your dinner with stunning view on Vesuvius. This restaurant has a skyline and plays music at night, so you could stay for a little party!",
+          "link": "https://terrazza2golfi.com/",
+          "class": "special",
+          "infos": [
+            {
+              "icon": "fa-mountain-sun",
+              "text": "View"
+            },
+            {
+              "icon": "fa-martini-glass",
+              "text": "Party"
+            }
+          ]
         }
       ]
     },

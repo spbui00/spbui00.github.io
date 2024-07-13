@@ -439,15 +439,16 @@ a:hover, a:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 400px;
+  width: 500px;
   transition: all 0.2s ease-in-out;
   box-sizing: border-box;
   border-radius: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 @media (max-width: 768px) {
   .weather-section {
     width: 80%;
+    margin-bottom: 32px;
   }
 }
 @media (max-width: 576px) {
@@ -462,6 +463,11 @@ a:hover, a:focus {
   flex-direction: row;
   gap: 16px;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .weather-section .weather-info {
+    gap: 8px;
+  }
 }
 .weather-section .weather-info .weather-item {
   display: flex;
@@ -481,7 +487,12 @@ a:hover, a:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1.4rem;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .weather-section .weather-info .weather-item i {
+    font-size: 1.7rem;
+  }
 }
 @media (max-width: 768px) {
   .weather-section .weather-info .weather-item {
