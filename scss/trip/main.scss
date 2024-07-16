@@ -302,14 +302,15 @@ a {
 }
 .weather-section {
   @include flex-container(center, center, column);
-  width: 400px;
+  width: 500px;
   transition: $transition;
   box-sizing: border-box;
   border-radius: $borderRadiusMedium;
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-xl;
 
   @include respond-to(md) {
     width: 80%;
+    margin-bottom: $spacing-lg;
   }
 
   @include respond-to(sm) {
@@ -320,6 +321,10 @@ a {
     @include flex-container(space-between, start, row);
     gap: $spacing-sm;
     width: 100%;
+
+    @include respond-to(md) {
+      gap: $spacing-xs;
+    }
 
     .weather-item {
       @include flex-container(center, center, column);
@@ -333,7 +338,11 @@ a {
 
       i {
         @include flex-container(center, center, column);
-        font-size: 1.4rem;
+        font-size: 2rem;
+
+        @include respond-to(md) {
+          font-size: 1.7rem;
+        }
       }
 
       @include respond-to(md) {
