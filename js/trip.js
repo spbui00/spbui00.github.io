@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('../assets/data/trip.json')
+  fetch('../assets/data/trips/dolomites.json')
     .then(response => response.json())
     .then(data => {
       const mainElement = document.querySelector('main');
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Fetch weather data
   const weatherApiKey = process.env.WEATHERAPI_KEY;
-  const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=Pompei&aqi=no`;
+  const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=Canazei&aqi=no`;
 
   fetch(weatherUrl)
     .then(response => response.json())
@@ -90,33 +90,33 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(error => console.error('Error fetching weather data:', error));
 
   // Countdown Timer
-  const tripStartDate = new Date('2024-07-17T08:45:00'); // Set your trip start date here
-  const headerElement = document.querySelector('.header'); // Assuming header class is used
+//   const tripStartDate = new Date('2024-07-17T08:45:00'); // Set your trip start date here
+//   const headerElement = document.querySelector('.header'); // Assuming header class is used
+//
+//   const countdownElement = document.createElement('div');
+//   countdownElement.classList.add('countdown-timer');
+//   headerElement.appendChild(countdownElement);
+//
+//   function updateCountdown() {
+//     const now = new Date();
+//     const timeRemaining = tripStartDate - now;
+//
+//     if (timeRemaining > 0) {
+//       const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+//       const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//       const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+//       const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+//
+//       countdownElement.innerHTML = `
+// <div>Trip starts in ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds</div>
+// `;
+//     } else {
+//       clearInterval(countdownInterval);
+//       countdownElement.innerHTML = 'Trip started!';
+//     }
+//   }
 
-  const countdownElement = document.createElement('div');
-  countdownElement.classList.add('countdown-timer');
-  headerElement.appendChild(countdownElement);
-
-  function updateCountdown() {
-    const now = new Date();
-    const timeRemaining = tripStartDate - now;
-
-    if (timeRemaining > 0) {
-      const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-      countdownElement.innerHTML = `
-<div>Trip starts in ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds</div>
-`;
-    } else {
-      clearInterval(countdownInterval);
-      countdownElement.innerHTML = 'Trip started!';
-    }
-  }
-
-  const countdownInterval = setInterval(updateCountdown, 1000);
-  updateCountdown(); // Initial call to display the countdown immediately
+  // const countdownInterval = setInterval(updateCountdown, 1000);
+  // updateCountdown(); // Initial call to display the countdown immediately
 
 });
