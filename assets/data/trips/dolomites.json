@@ -1,0 +1,261 @@
+{
+  "title": "Adventure in the Dolomites, Italy",
+  "days": [
+    {
+      "day": "26.8.2024 - Travel from Prague to Canazei",
+      "checkpoints": [
+        {
+          "time": "06:00",
+          "title": "Start Drive from Prague",
+          "description": "Begin your journey from Prague to Canazei. The drive is approximately 11 hours, so be prepared for a long day on the road.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch Break in Austria",
+          "description": "Stop for a quick lunch break in a scenic town in Austria. Enjoy the views and stretch your legs.",
+          "icon": "fa-utensils",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "20€"
+            }
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Arrive in Canazei",
+          "description": "Check-in at your Airbnb in Canazei and settle in after the long drive.",
+          "icon": "fa-home",
+          "class": "travel"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner in Canazei",
+          "description": "Enjoy dinner at a local restaurant in Canazei. Try the local specialties like polenta and Tyrolean dumplings.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "27.8.2024 - Hike to Lago di Fedaia and Marmolada Glacier",
+      "checkpoints": [
+        {
+          "time": "07:30",
+          "title": "Breakfast at Airbnb",
+          "description": "Start your day with a hearty breakfast to prepare for a day of hiking.",
+          "icon": "fa-coffee"
+        },
+        {
+          "time": "08:30",
+          "title": "Drive to Lago di Fedaia",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Lago+di+Fedaia,+Italy",
+          "description": "Drive to Lago di Fedaia, a beautiful lake at the base of Marmolada, the highest mountain in the Dolomites.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "09:30",
+          "title": "Hike Around Lago di Fedaia",
+          "link": "https://www.alltrails.com/trail/italy/trentino-alto-adige--south-tyrol/lago-di-fedaia",
+          "description": "Explore the scenic trails around the lake with views of the Marmolada Glacier. Consider taking the cable car up to the glacier for a closer look.",
+          "icon": "fa-hiking",
+          "class": "important",
+          "infos": [
+            {
+              "icon": "fa-camera",
+              "text": "Photography"
+            },
+            {
+              "icon": "fa-snowflake",
+              "text": "Glacier Views"
+            }
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Picnic Lunch by the Lake",
+          "description": "Enjoy a picnic lunch by the lake. Remember to pack enough food and water.",
+          "icon": "fa-utensils",
+          "class": "special"
+        },
+        {
+          "time": "14:30",
+          "title": "Climb Marmolada Via Ferrata",
+          "link": "https://www.dolomites.com/en/activities/via-ferrata/routes/marmolada",
+          "description": "If you're up for a challenge, try the via ferrata on Marmolada. Make sure you have the proper gear and check the weather conditions.",
+          "icon": "fa-mountain",
+          "class": "important",
+          "infos": [
+            {
+              "icon": "fa-dumbbell",
+              "text": "Physical Difficulty"
+            }
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Return to Canazei",
+          "description": "Drive back to Canazei to relax and unwind after a day of adventure.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner",
+          "description": "Enjoy a relaxing dinner at a local pizzeria in Canazei.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "28.8.2024 - Hike in Val di Fassa and Visit Lago di Carezza",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Breakfast at Airbnb",
+          "description": "Prepare for another adventurous day with a solid breakfast.",
+          "icon": "fa-coffee"
+        },
+        {
+          "time": "09:00",
+          "title": "Hike in Val di Fassa",
+          "link": "https://www.alltrails.com/trail/italy/trentino-alto-adige--south-tyrol/val-di-fassa-hike",
+          "description": "Explore the hiking trails in Val di Fassa, offering stunning views of the surrounding Dolomite peaks.",
+          "icon": "fa-hiking",
+          "class": "important",
+          "infos": [
+            {
+              "icon": "fa-camera",
+              "text": "Scenic Views"
+            },
+            {
+              "icon": "fa-sun",
+              "text": "Bring Sun Protection"
+            }
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch at Rifugio",
+          "description": "Have lunch at a mountain hut (rifugio) along the trail, enjoying local dishes with a view.",
+          "icon": "fa-utensils",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "20€"
+            }
+          ]
+        },
+        {
+          "time": "14:00",
+          "title": "Drive to Lago di Carezza",
+          "link": "https://www.google.com/maps/dir/?api=1&origin=current+location&destination=Lago+di+Carezza,+Italy",
+          "description": "Drive to the picturesque Lago di Carezza, also known as the 'Rainbow Lake' for its vibrant colors.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Visit Lago di Carezza",
+          "description": "Walk around Lago di Carezza, taking in the stunning reflections of the surrounding mountains in the lake's clear waters.",
+          "icon": "fa-water",
+          "class": "special",
+          "infos": [
+            {
+              "icon": "fa-camera",
+              "text": "Photography"
+            }
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Return to Canazei",
+          "description": "Head back to Canazei to relax for the evening.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "19:30",
+          "title": "Dinner",
+          "description": "Dinner at a cozy local restaurant, enjoying regional specialties.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "29.8.2024 - Flex Day: Explore or Camp in the Wild",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Breakfast at Airbnb or Camp",
+          "description": "Enjoy breakfast at your Airbnb or make a camp breakfast if you decide to camp.",
+          "icon": "fa-coffee"
+        },
+        {
+          "time": "09:00",
+          "title": "Decide Your Adventure",
+          "description": "Today is a flexible day. Choose from various options like exploring more hiking trails, visiting local attractions, or setting up a wild camp if the weather is good.",
+          "icon": "fa-map",
+          "class": "special"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch on the Trail or in Town",
+          "description": "Depending on your choice, have lunch at a mountain hut or a local cafe in Canazei.",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "14:00",
+          "title": "Explore More or Relax",
+          "description": "Continue exploring the Dolomites, or take a relaxed day to unwind and prepare for your journey back home.",
+          "icon": "fa-umbrella-beach"
+        },
+        {
+          "time": "18:00",
+          "title": "Prepare for Departure",
+          "description": "Start packing and prepare for your departure the next day. If camping, ensure you're ready to break camp early.",
+          "icon": "fa-suitcase",
+          "class": "travel"
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner in Canazei",
+          "description": "Enjoy a farewell dinner at a local restaurant in Canazei.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "30.8.2024 - Departure from Canazei",
+      "checkpoints": [
+        {
+          "time": "06:00",
+          "title": "Early Start and Drive Back to Prague",
+          "description": "Begin your drive back to Prague early to make the most of the day.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch Break in Austria",
+          "description": "Stop for a lunch break and stretch your legs.",
+          "icon": "fa-utensils",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "20€"
+            }
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Arrive Back in Prague",
+          "description": "Arrive back in Prague and reflect on your Dolomites adventure.",
+          "icon": "fa-home"
+        }
+      ]
+    }
+  ]
+}
