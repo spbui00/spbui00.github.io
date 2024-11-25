@@ -615,7 +615,7 @@ nav .brand {
   height: max-content;
   box-sizing: border-box;
   max-width: 1200px;
-  max-height: 86vh;
+  max-height: 100vh;
   margin-top: 24px;
   padding: 8px 32px;
   padding-bottom: 0%;

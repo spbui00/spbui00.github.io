@@ -11,7 +11,7 @@
     padding-right: 0;
   }
 }
-  
+
 section {
   @include flex-container(flex-start, flex-start, column);
   box-sizing: border-box;
@@ -63,7 +63,7 @@ section {
       @include respond-to(sm) {
         width: 39%;
         min-width: 20px;
-        
+
         &-additional {
           height: 55px;
         }
@@ -72,7 +72,7 @@ section {
       &-additional {
         font-style: italic;
       }
-      
+
       .item-group-row {
         @include flex-container(space-between, center, row);
         width: 100%;
@@ -83,14 +83,14 @@ section {
           flex-direction: column;
           gap: $spacing-xs;
         }
-      
+
         @include respond-to(sm) {
           justify-content: flex-start;
           align-items: flex-start; 
           flex-direction: column;
           gap: $spacing-xs;
         }
-        
+
         $ratio: 1.5;
         .levels {
           @include flex-container(center, center, row);
@@ -99,7 +99,7 @@ section {
           @include respond-to(sm) {
             gap: calc($spacing-xs / $ratio);
           }
-          
+
           $point-width: 10px;
           .point {
             width: $point-width;
@@ -112,7 +112,7 @@ section {
               width: calc($point-width / $ratio);
               height: calc($point-width / $ratio);
             }
-          
+
             &.full {
               background-color: $color-white;
             }
@@ -120,7 +120,7 @@ section {
         }
 
       }
-     
+
       &.darken {
         background-color: $color-medium-grey;
         .item-name {
@@ -160,8 +160,8 @@ section {
           @include scrollable-y;
           background-color: $color-medium-grey;
           padding: $spacing-sm;
-          width: 330px;
-          height: 155px;
+          width: 333px;
+          height: 180px;
           gap: 10px;
 
           .item-name {
@@ -202,7 +202,7 @@ section {
         width: 35%;
         object-fit: contain;
       }
-    
+
       .item-name {
         font-weight: 900;
       }
@@ -213,8 +213,8 @@ section {
       }
 
       @include respond-to(sm) {
-        width: 250px;
-        height: 110px;
+        width: 100%;
+        height: max-content;
       }
 
     }
@@ -227,7 +227,7 @@ section {
     position: relative;
     width: 100%;
     height: 100%;
-    
+
     section, items, subsection, item {
       height: 100%;
     }
@@ -242,7 +242,7 @@ section {
         flex-wrap: nowrap;
         width: auto;
       }
-      
+
       .item {
         @include flex-container(flex-start, flex-start, column);
         @include scrollable-x;
@@ -291,15 +291,25 @@ section {
 
     }
   }
-  
+
   &#links {
     padding-bottom: 0;
     box-sizing: border-box;
     .items {
       padding: $spacing-xs !important;
       flex-wrap: wrap !important;
+
       @include respond-to(md) {
         gap: $spacing-xs !important; 
+      }
+
+      a {
+        height: 100%;
+        button {
+          @include flex-container(center, center, row);
+          text-align: center;
+          height: 100%;
+        }
       }
     }
   }
@@ -340,7 +350,7 @@ section {
   flex-wrap: wrap;
   gap: $spacing-xs;
   margin-bottom: $spacing-xs;
-  
+
   .item-tag {
     @include flex-container(center, center, row);
     border-radius: $borderRadiusSmall;
@@ -378,7 +388,7 @@ section {
       padding: $spacing-sm $spacing-md;
       max-height: 60%;
     }
-    
+
     .popup-children {
       @include flex-container(space-between, flex-start, row);
       flex-wrap: wrap;
@@ -421,7 +431,7 @@ section {
 
 .links {
   @include flex-container(flex-start, flex-start, column);
-  
+
   h3, h4 {
     margin-bottom: $spacing-xs;
   }

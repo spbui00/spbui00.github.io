@@ -1,6 +1,18 @@
 {
   "ratings": [
     {
+      "name": "prof.dr.ir. B.J. Geurts",
+      "origin": "professor at University of Twente",
+      "review": "As Han's supervisor of his Bachelor thesis, I have had the opportunity to observe Han’s academic merit, professional attitude, and immense interest in the subject of neuromorphic computing. <br/><br/>Han's bachelor thesis, which I supervise, exposed him to the deep concept of neuromorphic computing. Han has set out to explore the complexities of neuromorphic systems through the development of software that leverages Monte Carlo simulations. Han has proposed incorporating empirical data sets into the simulation process to improve the accuracy and relevance of the outcomes. This could bring insightful information that I am excited to see. This initiative reflects Han&#39;s dedication to pushing the boundaries of his understanding and his proactive stance in seeking ways to enhance the quality and applicability of his work. <br/><br/> It is my belief that the field of neuromorphic computing is interdisciplinary at its core and stands to gain immensely from students like Han who not only bring a depth of understanding in both mathematics and computer science but also embody the collaborative and innovative spirit necessary for breakthroughs in this area. As a student pursuing both degrees, he can bring essential capabilities to this field.",
+      "date": "14.1.2024"
+    },
+    {
+      "name": "Lilian Spijker",
+      "origin": "Study adviser Applied Mathematics at University of Twente",
+      "review": "Han has shown a good academic performance within our programme until now. He has shown that he can adapt quickly to a new educational environment and is a student who works very independently, has strong organisational skills, is sociable and someone who likes to challenge himself. In order to get a double degree, it is not enough to have good secondary school marks in mathematics and some knowledge of programming. Motivation, ambition and a certain degree of independence is expected from these double degree students.<br/><br/> Despite already taking more EC than the average student, Han is also actively involved in the programme. For example, he is a member of a committee doing evaluations within the computer Science progamme, he joined our Al team and he has been appointed as a teaching assistant. And besides this amount of duties and responsibilities, he also runs his own teaching business. This shows that he is ambitious and can keep many tasks in motion at the same time.",
+      "date": "14.1.2024"
+    },
+    {
       "name": "Vojtěch Ešner",
       "origin": "Digitoo s.r.o",
       "review": "Han is a super addition to the FE team here at Digitoo. He is very keen on picking up new technologies and fears no challenge. He was able to very quickly understand the main points of the business and he also had bright ideas how we can push the user experience even further.",

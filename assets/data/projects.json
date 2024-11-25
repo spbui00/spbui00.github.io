@@ -1,6 +1,32 @@
 {
   "projects": [
     {
+      "name": "Nonlinear classification using nanoneuron",
+      "id": "nonlinear-classification-nanoneuron",
+      "icon": "",
+      "description": "Trained a surrogate model of a nanoneuron using Monte Carlo simulation method. Examined nonlinear classification capabilities of the nanoneuron model.",
+      "longDescription": "An investigation of the capability of the Dopant Network Processing Unit (DNPU) as a innovative candidate for neuromorphic computing. Since the fabrication of these units are expensive, this project leveraged Monte Carlo simulation methods and ML techniques to analyze its potential without physical fabrication.",
+      "link": [],
+      "report": "https://drive.google.com/file/d/10nKfpnlld6JS2E0mIJAoos7b-YGXinmY/view?usp=sharing",
+      "images": "",
+      "tags": ["Python", "C++", "Machine Learning", "Neural Networks", "Simulation"],
+      "date": "June 2024",
+      "personalTake": "This was my Bachelor thesis supervised by prof. Bernard Geurts. It was one of my first close encounters with Machine Learning and I loved it. Not just learning a lot about neural nets, but also the fun of research if done right. I was pretty lost sometimes, but I guess it is a part of the journey. I contacted series of researchers and students who participated in this research, their insights defninitely helped shape my today's direction of going into research as well."
+    },
+    {
+      "name": "Real time point-to-point Measurement in 2D",
+      "id": "p2p",
+      "icon": "",
+      "description": "Developed on OAK-D camera using depthAI, openCV. Application also trackes pinned points with CSRT.",
+      "longDescription": "The application calculates the distance between two points in real time using the intrinsic matrix K and depth information at each pixel. The application also tracks pinned points with CSRT tracker. To make the tracking robust, a combination of spatial constraints and depth continuity is incoporated.",
+      "link": [],
+      "report": "",
+      "images": "",
+      "tags": ["Python", "Computer Vision"],
+      "date": "August 2024",
+      "personalTake": "I see this more of a high level software that could have wide range of usecase in real life. I had fun experimenting different object tracking algorithms from openCV, none of them seem to be close to perfect though, especially when frame moves too which."
+    },
+    {
       "name": "Hospital Queue Simulation",
       "id": "hospital-queue-simulation",
       "icon": "",
