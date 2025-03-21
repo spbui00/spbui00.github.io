@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "name": "Creating a neural network from scratch",
+      "id": "creating-nn-from-scratch",
+      "icon": "",
+      "description": "Implemented a Deep Operator Network (DON) from scratch. DON is a neural network architecture designed to learn mappings between function spaces. The project was done in Python and using NumPy.",
+      "longDescription": "DON is particularly suited for solving problems involving parameterized differential equations or operator learning tasks, where the goal is to predict outputs given input functions and parameters. Traditional methods like finite elements might be compotationally expensive, we leverage the fruits of Machine Learning, neural networks specifically, so develop an approximation of the desired function. Once well trained, DON provides fast predictions for new inputs with high accuracy. We evaluated this method by fitting the Poisson 2D function.",
+      "link": [],
+      "report": "",
+      "images": "",
+      "tags": ["Python", "NumPy", "Machine Learning", "Neural Networks", "PDE"],
+      "date": "Nov 2024",
+      "personalTake": "This was a course project but I truly found this project to be fun and educationally beneficial. While nowadays one can easily use libraries like PyTorch to implement a neural network in few minutes, I like to unravel the black box and dig my hands into it, and this project allowed me to do so."
+    },
+    {
       "name": "Nonlinear classification using nanoneuron",
       "id": "nonlinear-classification-nanoneuron",
       "icon": "",
