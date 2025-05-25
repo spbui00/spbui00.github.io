@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From BUBU</title>
+    <link rel="stylesheet" href="css/viky.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script type="module" src="dist/viky.bundle.js" defer></script>
+</head>
+<body>
+    <main class="viky-page">
+        <div class="screen active" id="screen1-intro">
+            <h1 class="intro-text"></h1>
+        </div>
+
+        <div class="screen" id="screen2-love-question">
+            <h2>Do you love Han?</h2>
+            <div class="buttons">
+                <button id="love-yes" class="viky-button">Yes</button>
+                <button id="love-no" class="viky-button" disabled>No</button>
+            </div>
+        </div>
+
+        <div class="screen" id="screen3-apology">
+            <p class="apology-text-line1"></p>
+            <p class="apology-text-line2"></p>
+            <p class="accept-present-text">...and he wants to give you a present. Accept?</p>
+            <div class="moving-button-container">
+                <button id="accept-present-button" class="viky-button">Accept</button>
+            </div>
+        </div>
+
+        <div class="screen" id="screen4-flowers">
+            <h2>For You, Viky!</h2>
+            <div class="flower-garden">
+                <div class="flower-wrapper" style="--delay: 0s;">
+                    <div class="flower">
+                        <div class="stem"></div>
+                        <div class="leaf leaf-1"></div>
+                        <div class="leaf leaf-2"></div>
+                        <div class="petal-group">
+                            <div class="petal p1"></div>
+                            <div class="petal p2"></div>
+                            <div class="petal p3"></div>
+                            <div class="petal p4"></div>
+                            <div class="petal p5"></div>
+                            <div class="petal p6"></div>
+                        </div>
+                        <div class="flower-center"></div>
+                    </div>
+                </div>
+                <div class="flower-wrapper" style="--delay: 0.5s; --flower-color: linear-gradient(45deg, #f3a7c2, #d81b60); --stem-color: #3a8c5e;">
+                    <div class="flower">
+                        <div class="stem"></div>
+                        <div class="leaf leaf-1"></div>
+                        <div class="leaf leaf-2"></div>
+                        <div class="petal-group">
+                            <div class="petal p1"></div>
+                            <div class="petal p2"></div>
+                            <div class="petal p3"></div>
+                            <div class="petal p4"></div>
+                            <div class="petal p5"></div>
+                            <div class="petal p6"></div>
+                        </div>
+                        <div class="flower-center"></div>
+                    </div>
+                </div>
+                <div class="flower-wrapper" style="--delay: 1s; --flower-color: linear-gradient(45deg, #b388ff, #7c4dff); --stem-color: #2e6b45;">
+                    <div class="flower">
+                        <div class="stem"></div>
+                        <div class="leaf leaf-1"></div>
+                        <div class="leaf leaf-2"></div>
+                        <div class="petal-group">
+                            <div class="petal p1"></div>
+                            <div class="petal p2"></div>
+                            <div class="petal p3"></div>
+                            <div class="petal p4"></div>
+                            <div class="petal p5"></div>
+                            <div class="petal p6"></div>
+                        </div>
+                        <div class="flower-center"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="final-message">Han loves you very much! ❤️</p>
+        </div>
+    </main>
+</body>
+</html>

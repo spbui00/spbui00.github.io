@@ -1,0 +1,643 @@
+/* mixins.scss */
+@keyframes pullDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pullUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes disappearDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+}
+@keyframes disappearUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+}
+@keyframes hide {
+  0% {
+    position: relative;
+    visibility: visible;
+  }
+  100% {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+@keyframes popUp {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Variables */
+/* General page styles */
+html, body, .viky-page {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #1b3c34;
+  font-family: "Inter", sans-serif, Arial, Helvetica;
+  color: #f8f1e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.viky-page {
+  position: relative;
+  text-align: center;
+}
+
+/* Screen visibility and transitions */
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  z-index: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.screen.active {
+  display: flex;
+  opacity: 1;
+  z-index: 10;
+}
+
+/* Typography */
+h1, h2 {
+  font-family: "Lora", serif, Arial, Helvetica;
+  color: white;
+  font-size: 3rem;
+  margin: 0.6rem 0;
+  line-height: 1.3;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 0.6rem 0;
+  color: #f8f1e9;
+}
+
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}
+/* Buttons */
+.viky-button {
+  font-family: "Inter", sans-serif, Arial, Helvetica;
+  background: #2a9d8f;
+  color: #f8f1e9;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  touch-action: manipulation;
+}
+
+.viky-button:hover {
+  transform: scale(1.1);
+  background: #287b6e;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.viky-button:active {
+  transform: scale(0.95);
+}
+
+.viky-button:disabled {
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Screen 1: Intro Animation */
+#screen1-intro .intro-text {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: white;
+  min-height: 1.2em;
+  text-align: center;
+  animation: fadeInText 1.2s ease-in forwards;
+}
+
+@media (max-width: 600px) {
+  #screen1-intro .intro-text {
+    font-size: 2.4rem;
+  }
+}
+/* Screen 2: Love Question */
+#screen2-love-question .buttons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+/* Screen 3: Apology & Moving Button */
+#screen3-apology .apology-text-line1, #screen3-apology .apology-text-line2 {
+  min-height: 1.6em;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+#screen3-apology .accept-present-text {
+  margin: 1.8rem 0;
+  font-weight: 600;
+  color: white;
+  font-size: 1.3rem;
+}
+#screen3-apology .moving-button-container {
+  position: relative;
+  width: 85vw;
+  max-width: 400px;
+  height: 180px;
+  margin: 1.2rem auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#screen3-apology #accept-present-button {
+  position: absolute;
+  animation: moveButton 4s ease-in-out infinite;
+  touch-action: none;
+}
+
+/* Screen 4: Flowers */
+#screen4-flowers .flower-garden {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 340px;
+  margin: 1.8rem 0;
+}
+#screen4-flowers .flower-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 0 1.5rem;
+  animation: flowerSway 4s ease-in-out infinite alternate;
+  animation-delay: var(--delay, 0s);
+}
+#screen4-flowers .flower-wrapper::before,
+#screen4-flowers .flower-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, rgba(255, 241, 233, 0.8) 20%, transparent 70%);
+  z-index: 2;
+  animation: sparkle 2.5s ease-in-out infinite;
+}
+#screen4-flowers .flower-wrapper::before {
+  top: 10px;
+  left: 20%;
+  animation-delay: var(--delay, 0s);
+}
+#screen4-flowers .flower-wrapper::after {
+  top: 20px;
+  left: 80%;
+  animation-delay: calc(var(--delay, 0s) + 0.5s);
+}
+#screen4-flowers .flower {
+  position: relative;
+  width: 90px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  --flower-color: #c8b1e9;
+  --stem-color: #3d816b;
+  --leaf-color: #83c5be;
+  --center-color: #f4a261;
+}
+#screen4-flowers .flower .stem {
+  width: 7px;
+  background-color: var(--stem-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px 4px 0 0;
+  height: 0;
+  animation: growStem 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  animation-delay: calc(var(--delay, 0s) + 0.2s);
+}
+#screen4-flowers .flower .leaf {
+  width: 18px;
+  height: 36px;
+  background-color: var(--leaf-color);
+  border-radius: 50% 0;
+  position: absolute;
+  bottom: 18px;
+  opacity: 0;
+  animation: growLeaf 0.9s ease-out forwards;
+  animation-delay: calc(var(--delay, 0s) + 0.8s);
+}
+#screen4-flowers .flower .leaf.leaf-1 {
+  left: 50%;
+  transform: translateX(-100%) rotate(-30deg);
+}
+#screen4-flowers .flower .leaf.leaf-2 {
+  left: 50%;
+  transform: rotate(30deg);
+}
+#screen4-flowers .flower .petal-group {
+  position: absolute;
+  bottom: 80px;
+  width: 90px;
+  height: 90px;
+  animation: petalRotate 6s linear infinite;
+  animation-delay: var(--delay, 0s);
+}
+#screen4-flowers .flower .petal {
+  width: 34px;
+  height: 52px;
+  background: var(--flower-color);
+  border-radius: 50% 50% 10px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-origin: bottom center;
+  opacity: 0;
+  animation: bloomPetalEffect 1.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  box-shadow: 0 0 12px rgba(200, 177, 233, 0.6);
+}
+#screen4-flowers .flower .petal.p1 {
+  animation-delay: calc(var(--delay, 0s) + 1s);
+  transform: translateX(-50%) rotate(0deg) translateY(-8px);
+}
+#screen4-flowers .flower .petal.p2 {
+  animation-delay: calc(var(--delay, 0s) + 1.1s);
+  transform: translateX(-50%) rotate(60deg) translateY(-8px) translateX(2px);
+}
+#screen4-flowers .flower .petal.p3 {
+  animation-delay: calc(var(--delay, 0s) + 1.2s);
+  transform: translateX(-50%) rotate(120deg) translateY(-8px) translateX(2px);
+}
+#screen4-flowers .flower .petal.p4 {
+  animation-delay: calc(var(--delay, 0s) + 1.3s);
+  transform: translateX(-50%) rotate(180deg) translateY(-8px);
+}
+#screen4-flowers .flower .petal.p5 {
+  animation-delay: calc(var(--delay, 0s) + 1.4s);
+  transform: translateX(-50%) rotate(240deg) translateY(-8px) translateX(-2px);
+}
+#screen4-flowers .flower .petal.p6 {
+  animation-delay: calc(var(--delay, 0s) + 1.5s);
+  transform: translateX(-50%) rotate(300deg) translateY(-8px) translateX(-2px);
+}
+#screen4-flowers .flower .flower-center {
+  width: 24px;
+  height: 24px;
+  background-color: var(--center-color);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 78px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  z-index: 1;
+  animation: growCenter 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  animation-delay: calc(var(--delay, 0s) + 1.8s);
+  box-shadow: 0 0 15px rgba(244, 162, 97, 0.7);
+}
+#screen4-flowers .final-message {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 2.2rem;
+  animation: fadeInText 2s ease-in forwards;
+  animation-delay: calc(var(--delay, 0s) + 2.5s);
+  opacity: 0;
+}
+
+/* Animations */
+@keyframes growStem {
+  to {
+    height: 80px;
+  }
+}
+@keyframes growLeaf {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bloomPetalEffect {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes growCenter {
+  to {
+    transform: translateX(-50%) scale(1);
+  }
+}
+@keyframes flowerSway {
+  0% {
+    transform: rotate(-8deg) scale(1);
+  }
+  100% {
+    transform: rotate(8deg) scale(1.15);
+  }
+}
+@keyframes petalRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveButton {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(60%, -60%);
+  }
+  50% {
+    transform: translate(0, -120%);
+  }
+  75% {
+    transform: translate(-60%, -60%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes sparkle {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+.typed-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: white;
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .flower-garden {
+    height: 220px;
+  }
+  .flower {
+    width: 65px;
+    height: 150px;
+  }
+  .flower .petal-group {
+    bottom: 58px;
+    width: 65px;
+    height: 65px;
+  }
+  .flower .petal {
+    width: 24px;
+    height: 38px;
+  }
+  .flower .flower-center {
+    width: 16px;
+    height: 16px;
+    bottom: 56px;
+  }
+  .flower .stem {
+    width: 5px;
+  }
+  .flower .leaf {
+    width: 12px;
+    height: 24px;
+    bottom: 12px;
+  }
+  .moving-button-container {
+    height: 150px;
+    width: 90vw;
+  }
+}
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 17%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+nav ul li {
+  color: #FFFFFF;
+  width: 100%;
+  padding: 10px 0;
+  opacity: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  transition: all 0.2s ease-in-out;
+}
+nav ul li.active {
+  opacity: 1;
+  color: #FFFFFF;
+}
+nav ul li.active:hover, nav ul li.active:focus {
+  opacity: 1;
+  color: #FFFFFF;
+  cursor: default;
+}
+nav ul li:hover, nav ul li:focus {
+  opacity: 1;
+  color: #EB5E28;
+  outline: none;
+  cursor: pointer;
+}
+nav ul li.deactivated {
+  opacity: 0.5;
+  cursor: default;
+}
+nav ul li.deactivated:hover, nav ul li.deactivated:focus {
+  opacity: 0.5;
+  color: #FFFFFF;
+  cursor: default;
+}
+nav .brand {
+  display: none;
+}
+@media (max-width: 576px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1D1E1F;
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    z-index: 1000;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    background-color: #1D1E1F;
+  }
+  nav ul li {
+    width: auto;
+    animation: popUp 0.5s ease-in-out;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  nav .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+    color: #FFFFFF;
+    z-index: 800;
+    width: 100%;
+    height: 100%;
+  }
+  nav .brand:hover, nav .brand:focus {
+    cursor: pointer;
+  }
+}
+
+#content-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  box-sizing: border-box;
+  max-width: 1200px;
+  max-height: 90vh;
+  margin-top: 24px;
+  padding: 8px 32px;
+  padding-bottom: 0%;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 576px) {
+  #content-container {
+    padding: 0px;
+    max-height: 87vh;
+    box-sizing: border-box;
+    padding-top: 80px;
+  }
+}
+
+.head {
+  margin-bottom: 32px;
+}
+@media (max-width: 576px) {
+  .head {
+    margin-bottom: 8px;
+  }
+}
+
+.note {
+  font-style: italic;
+  color: #F1F2EB;
+  margin-bottom: 8px;
+}
+
+/*# sourceMappingURL=viky.css.map */

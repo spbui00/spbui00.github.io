@@ -5,7 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     main: './js/main.js', // Change this to your entry point,
-    trip: './js/trip.js'
+    trip: './js/trip.js',
+    viky: './js/viky.js', 
   },
   output: {
     filename: '[name].bundle.js',
@@ -20,6 +21,11 @@ module.exports = {
       template: 'trip.html',
       filename: 'trip.html',
       chunks: ['trip'], 
+    }),
+    new HtmlWebpackPlugin({
+      template: 'viky.html',
+      filename: 'viky.html',
+      chunks: ['viky'], 
     }),
     new Dotenv()
   ],
