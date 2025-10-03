@@ -1,11 +1,9 @@
-$light-green: #E7ECE3;
-$neon-green: #49DD85;
-$medium-green: #3F5429;
-$dark-green: #2F4414;
-$olivine: #9CAF88;
-$black-olive: #353A31;
-$brown: #4f473b;
-$yellow: #F7FF88;
+$bg-color: #ae2319;
+$text-color: #FFFFFF;
+$primary-color: #DA291C;
+$accent-color: #D3D3D3;
+$secondary-accent-color: #D3D3D3;
+$secondary-text-color: #FFFFFF;
 
 html {
   @include flex-container(center, center, column);
@@ -15,8 +13,8 @@ html {
 body {
   @include flex-container(center, center, column);
   margin: 0;
-  background: $dark-green;
-  color: white;
+  background: $bg-color;
+  color: $text-color;
   padding: $spacing-md $spacing-sm;
   transition: $transition;
   height: 100vh;
@@ -56,10 +54,10 @@ main {
 
 .trip-btn {
   box-shadow: none;
-  padding: 4px 8px;
-  border-radius: $borderRadiusSmall;
-  background: $medium-green;
-  color: $light-green;
+  padding: 4px 10px;
+  border-radius: $borderRadiusMedium;
+  background: $primary-color;
+  color: $text-color;
   opacity: 0.8;
   font-weight: 500;
   transition: $transition;
@@ -79,7 +77,7 @@ ul, ol, li, a {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: $black-olive;
+  color: $secondary-text-color;
   text-decoration: none;
 }
 
@@ -118,7 +116,7 @@ footer {
 }
 
 .green-bg {
-  background-color: $color-light-green;
+  background-color: $text-color;
 }
 
 .yellow-bg {
@@ -156,17 +154,17 @@ a {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $dark-green;
+  background: $bg-color;
 } 
 
 .countdown-timer {
   @include flex-container(center, center, row);
-  border: 1px solid $yellow;
+  border: 1px solid $secondary-accent-color;
   border-radius: $borderRadiusMedium;
   padding: $spacing-xs;
   width: 100%;
-  background: $yellow;
-  color: $black-olive;
+  background: $secondary-accent-color;
+  color: $secondary-text-color;
   box-sizing: border-box;
 }
 
@@ -193,7 +191,7 @@ a {
     opacity: 0.4;
     overflow: hidden;
     transition: max-height 0.8s ease-out, opacity 0.5s ease-out;
-    color: white;
+    color: $text-color;
 
     &.expanded {
       height: 100%;
@@ -208,7 +206,7 @@ a {
       width: 100%;
       height: 100%;
       opacity: 1;
-      color: white;
+      color: $text-color;
 
       &-timeline {
         @include flex-container(center, center, column);
@@ -217,7 +215,7 @@ a {
         opacity: 0.8;
 
         &-time {
-          color: $neon-green;
+          color: $accent-color;
 
           .travel & {
             opacity: 0.6;
@@ -226,11 +224,11 @@ a {
 
         &-line {
           height: 100%;
-          border: 1px solid $neon-green;
+          border: 1px solid $accent-color;
           border-radius: $borderRadiusSmall;
 
           .travel & {
-            border: 1px dashed $neon-green;
+            border: 1px dashed $accent-color;
             background: none;
             opacity: 0.6;
           }
@@ -268,15 +266,15 @@ a {
   
           &-item {
             border: 1px solid rgba(247, 255, 136, 0.5);
-            color: $yellow;
-            background: rgba(247, 255, 136, 0.1);
+            color: $secondary-accent-color;
+            background: rgba(211, 211, 211, 0.1);
             padding: 2px 4px;
             border-radius: $borderRadiusSmall;
           }
         }
 
         .special & {
-          background: $medium-green;
+          background: $primary-color;
           box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
           border-radius: $borderRadiusMedium;
           padding: $spacing-xs;
@@ -285,8 +283,8 @@ a {
 
         .important & {
           border-radius: $borderRadiusMedium;
-          color: $neon-green;
-          border: 1px solid $neon-green;
+          color: $accent-color;
+          border: 1px solid $accent-color;
           padding: $spacing-xs;
           box-sizing: border-box;
         }
@@ -331,10 +329,10 @@ a {
       width: 100%;
       height: 100%;
       gap: $spacing-xs;
-      background: $medium-green;
+      background: $primary-color;
       padding: $spacing-sm $spacing-xs;
       border-radius: $borderRadiusLarge;
-      color: $light-green;
+      color: $text-color;
 
       i {
         @include flex-container(center, center, column);

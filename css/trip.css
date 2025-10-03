@@ -135,8 +135,8 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  background: #2F4414;
-  color: white;
+  background: #ae2319;
+  color: #FFFFFF;
   padding: 24px 16px;
   transition: all 0.2s ease-in-out;
   height: 100vh;
@@ -185,10 +185,10 @@ main {
 
 .trip-btn {
   box-shadow: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  background: #3F5429;
-  color: #E7ECE3;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: #DA291C;
+  color: #FFFFFF;
   opacity: 0.8;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
@@ -205,7 +205,7 @@ ul, ol, li, a {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #353A31;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -247,7 +247,7 @@ footer {
 }
 
 .green-bg {
-  background-color: #28EB5E;
+  background-color: #FFFFFF;
 }
 
 .yellow-bg {
@@ -287,7 +287,7 @@ a:hover, a:focus {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2F4414;
+  background: #ae2319;
 }
 
 .countdown-timer {
@@ -295,12 +295,12 @@ a:hover, a:focus {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 1px solid #F7FF88;
+  border: 1px solid #D3D3D3;
   border-radius: 8px;
   padding: 8px;
   width: 100%;
-  background: #F7FF88;
-  color: #353A31;
+  background: #D3D3D3;
+  color: #FFFFFF;
   box-sizing: border-box;
 }
 
@@ -331,7 +331,7 @@ a:hover, a:focus {
   opacity: 0.4;
   overflow: hidden;
   transition: max-height 0.8s ease-out, opacity 0.5s ease-out;
-  color: white;
+  color: #FFFFFF;
 }
 .day-content.expanded {
   height: 100%;
@@ -348,7 +348,7 @@ a:hover, a:focus {
   width: 100%;
   height: 100%;
   opacity: 1;
-  color: white;
+  color: #FFFFFF;
 }
 .day-content-checkpoint-timeline {
   display: flex;
@@ -360,18 +360,18 @@ a:hover, a:focus {
   opacity: 0.8;
 }
 .day-content-checkpoint-timeline-time {
-  color: #49DD85;
+  color: #D3D3D3;
 }
 .travel .day-content-checkpoint-timeline-time {
   opacity: 0.6;
 }
 .day-content-checkpoint-timeline-line {
   height: 100%;
-  border: 1px solid #49DD85;
+  border: 1px solid #D3D3D3;
   border-radius: 4px;
 }
 .travel .day-content-checkpoint-timeline-line {
-  border: 1px dashed #49DD85;
+  border: 1px dashed #D3D3D3;
   background: none;
   opacity: 0.6;
 }
@@ -411,13 +411,13 @@ a:hover, a:focus {
 }
 .day-content-checkpoint-info-infos-item {
   border: 1px solid rgba(247, 255, 136, 0.5);
-  color: #F7FF88;
-  background: rgba(247, 255, 136, 0.1);
+  color: #D3D3D3;
+  background: rgba(211, 211, 211, 0.1);
   padding: 2px 4px;
   border-radius: 4px;
 }
 .special .day-content-checkpoint-info {
-  background: #3F5429;
+  background: #DA291C;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 8px;
@@ -425,8 +425,8 @@ a:hover, a:focus {
 }
 .important .day-content-checkpoint-info {
   border-radius: 8px;
-  color: #49DD85;
-  border: 1px solid #49DD85;
+  color: #D3D3D3;
+  border: 1px solid #D3D3D3;
   padding: 8px;
   box-sizing: border-box;
 }
@@ -477,10 +477,10 @@ a:hover, a:focus {
   width: 100%;
   height: 100%;
   gap: 8px;
-  background: #3F5429;
+  background: #DA291C;
   padding: 16px 8px;
   border-radius: 12px;
-  color: #E7ECE3;
+  color: #FFFFFF;
 }
 .weather-section .weather-info .weather-item i {
   display: flex;
@@ -615,7 +615,7 @@ nav .brand {
   height: max-content;
   box-sizing: border-box;
   max-width: 1200px;
-  max-height: 100vh;
+  max-height: 90vh;
   margin-top: 24px;
   padding: 8px 32px;
   padding-bottom: 0%;

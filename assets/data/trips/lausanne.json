@@ -1,0 +1,270 @@
+{
+  "title": "A Week around Lake Geneva: History, Nature & Cuisine (Revised)",
+  "days": [
+    {
+      "day": "Saturday, 4.10.2025 - Rainy Lausanne Exploration",
+      "checkpoints": [
+        {
+          "time": "09:30",
+          "title": "Explore the Olympic Museum",
+          "link": "https://www.google.com/maps/place/The+Olympic+Museum/",
+          "description": "Dive into the world of sports at this interactive museum. It's a perfect indoor activity for a rainy day, filled with Olympic artifacts and games. The museum park also offers sculptures and a beautiful view of the lake.",
+          "icon": "fa-landmark",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "Entry: ~20 CHF"
+            },
+            {
+              "icon": "fa-cloud-rain",
+              "text": "Indoor Activity"
+            }
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch in the Flon District",
+          "link": "https://www.google.com/maps/place/Le+Flon,+Lausanne/",
+          "description": "Head to the trendy Flon district, known for its vibrant atmosphere, shops, and diverse range of restaurants, making it easy to find a place that suits your mood.",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "14:00",
+          "title": "Discover Plateforme 10",
+          "link": "https://www.google.com/maps/place/Plateforme+10/",
+          "description": "Visit this cluster of art museums (MCBA, mudac, Photo Élysée) right next to the train station. It's a world-class cultural district perfect for staying dry.",
+          "icon": "fa-palette",
+          "infos": [
+            {
+              "icon": "fa-cloud-rain",
+              "text": "Indoor Activity"
+            }
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Stroll through the Old Town",
+          "link": "https://www.google.com/maps/place/Lausanne+Old+Town/",
+          "description": "Explore the cobblestone streets of the Old Town. Use the famous covered stairways, like Escaliers du Marché, to stay sheltered while moving between places like Place de la Palud and the Cathedral.",
+          "icon": "fa-umbrella",
+          "infos": [
+            {
+              "icon": "fa-cloud-rain",
+              "text": "Mostly Sheltered"
+            }
+          ]
+        },
+        {
+          "time": "19:30",
+          "title": "Dinner in the Old Town",
+          "description": "Enjoy a cozy dinner in the historic atmosphere. For Asian food, the Pâquis district in Geneva is known for its authentic and affordable eateries from around the world.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Sunday, 5.10.2025 - Afternoon by the Lake",
+      "checkpoints": [
+        {
+          "time": "14:00",
+          "title": "Ouchy Lakeside Promenade",
+          "link": "https://www.google.com/maps/place/Ouchy,+Lausanne/",
+          "description": "Meet your friend for a walk along the beautiful tree-lined promenade in Ouchy. Enjoy the views of Lake Geneva and the Alps.",
+          "icon": "fa-walking",
+          "infos": [
+            {
+              "icon": "fa-sun",
+              "text": "Outdoor Activity"
+            }
+          ]
+        },
+        {
+          "time": "16:00",
+          "title": "Optional: Coffee with a View",
+          "description": "Find a café with a terrace along the lake in Ouchy to enjoy a drink with a view if the weather is pleasant.",
+          "icon": "fa-coffee"
+        }
+      ]
+    },
+    {
+      "day": "Monday, 6.10.2025 - Morning Vineyard Escape",
+      "checkpoints": [
+        {
+          "time": "09:00",
+          "title": "Drive to Lavaux Vineyards",
+          "link": "https://www.google.com/maps/place/Lavaux+Vineyard+Terraces/",
+          "description": "A short 20-minute drive to the UNESCO World Heritage Lavaux vineyards. These stunning terraced vineyards offer breathtaking views of the lake.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "09:30",
+          "title": "Vineyard Walk",
+          "description": "Take a walk through the picturesque villages and vine-covered hillsides. The scenery is unforgettable and perfect for a morning stroll.",
+          "icon": "fa-hiking",
+          "class": "special"
+        },
+        {
+          "time": "11:00",
+          "title": "Wine Tasting at a Local Cellar",
+          "description": "Drop into one of the many local cellars for a tasting of local wines like Chasselas.",
+          "icon": "fa-wine-glass-alt",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "Tasting Fee Varies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday, 8.10.2025 - Geneva's Culture & Institutions",
+      "checkpoints": [
+        {
+          "time": "13:00",
+          "title": "Explore the Old Town & St. Pierre Cathedral",
+          "link": "https://www.google.com/maps/place/Cath%C3%A9drale+St-Pierre+Gen%C3%A8ve/",
+          "description": "Discover the heart of historic Geneva. Walk through the cobblestone streets and visit St. Peter's Cathedral for panoramic city views from the tower.",
+          "icon": "fa-landmark",
+          "class": "important"
+        },
+        {
+          "time": "14:30",
+          "title": "See the Jet d'Eau and Walk to the UN",
+          "link": "https://www.google.com/maps/place/Jet+d'Eau/",
+          "description": "Stroll down to the lake to see Geneva's iconic water fountain. Then, walk along the Quai du Mont-Blanc towards the United Nations office, seeing the Broken Chair sculpture.",
+          "icon": "fa-water"
+        },
+        {
+          "time": "15:30",
+          "title": "Visit the Patek Philippe Museum",
+          "link": "https://www.google.com/maps/place/Patek+Philippe+Museum/",
+          "description": "Explore the exquisite world of watchmaking at this renowned museum. It showcases centuries of horological history and craftsmanship.",
+          "icon": "fa-university",
+          "infos": [
+            {
+              "icon": "fa-clock",
+              "text": "Allow 1-1.5 hours"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday, 9.10.2025 - Medieval Charm in Yvoire",
+      "checkpoints": [
+        {
+          "time": "13:30",
+          "title": "Drive to Yvoire, France",
+          "link": "https://www.google.com/maps/place/Yvoire,+France/",
+          "description": "Take a scenic drive (about 1 hour) to this stunningly preserved medieval village on the southern shore of Lake Geneva.",
+          "icon": "fa-car",
+          "class": "travel",
+          "infos": [
+            {
+              "icon": "fa-passport",
+              "text": "Remember Passports"
+            }
+          ]
+        },
+        {
+          "time": "14:30",
+          "title": "Explore the Village",
+          "description": "Wander the flower-decked cobblestone streets, explore the charming shops, and admire the historic stone houses.",
+          "icon": "fa-hiking"
+        },
+        {
+          "time": "16:00",
+          "title": "Visit the Garden of Five Senses",
+          "description": "A beautiful and thematic garden to explore within the village walls (check opening status for October).",
+          "icon": "fa-seedling",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "Entry: ~12€"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Friday, 10.10.2025 - Castle and a Fancy Dinner",
+      "checkpoints": [
+        {
+          "time": "13:30",
+          "title": "Drive to Chillon Castle & Montreux",
+          "link": "https://www.google.com/maps/place/Chillon+Castle/",
+          "description": "Drive east along the lake (about 40 mins) to visit the magnificent Chillon Castle, a medieval fortress built right on the water's edge.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "14:00",
+          "title": "Tour Chillon Castle",
+          "description": "Explore Switzerland's most visited historic monument, with its underground vaults, great halls, and beautiful courtyards.",
+          "icon": "fa-chess-rook",
+          "infos": [
+            {
+              "icon": "fa-credit-card",
+              "text": "Entry: ~13 CHF"
+            }
+          ]
+        },
+        {
+          "time": "16:30",
+          "title": "Stroll the Montreux Promenade",
+          "link": "https://www.google.com/maps/place/Montreux+Promenade/",
+          "description": "Walk along the famous flower-lined lakeside promenade from the castle into Montreux. See the statue of Freddie Mercury.",
+          "icon": "fa-walking"
+        },
+        {
+          "time": "19:30",
+          "title": "Fancy Dinner in Montreux",
+          "description": "Enjoy a special dinner at a fine dining restaurant in Montreux. For a memorable experience, look for a restaurant with a terrace overlooking the lake. I recommend using Google Maps or a platform like TheFork to filter for highly-rated fine dining options and check recent reviews.",
+          "icon": "fa-utensils",
+          "class": "special"
+        }
+      ]
+    },
+    {
+      "day": "Saturday, 11.10.2025 - Memorable Alpine Hike: Rochers de Naye",
+      "checkpoints": [
+        {
+          "time": "08:30",
+          "title": "Drive to Montreux & Ascend Rochers de Naye",
+          "link": "https://www.google.com/maps/place/Rochers+de+Naye/",
+          "description": "Drive to Montreux (about 40 mins). From there, take the cogwheel railway up to Rochers de Naye. This offers a spectacular and effortless ascent into the high Alps, with stunning views all the way.",
+          "icon": "fa-train",
+          "class": "travel",
+          "infos": [
+            {
+              "icon": "fa-mountain",
+              "text": "High-Alpine Experience"
+            }
+          ]
+        },
+        {
+          "time": "10:30",
+          "title": "Hike at Rochers de Naye",
+          "description": "At the top, you can enjoy short hikes with breathtaking panoramic views of Lake Geneva and the surrounding Alps. Visit the Marmots' Paradise or simply soak in the incredible scenery from over 2000 meters altitude.",
+          "icon": "fa-hiking",
+          "class": "important"
+        },
+        {
+          "time": "12:30",
+          "title": "Lunch at the Summit",
+          "description": "Have lunch at the restaurant at the summit, enjoying a meal with a truly unforgettable view.",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "14:00",
+          "title": "Return Journey & Descent",
+          "description": "Take the cogwheel railway back down to Montreux. You can choose to explore Montreux a bit more if you have time before driving back.",
+          "icon": "fa-train",
+          "class": "travel"
+        }
+      ]
+    }
+  ]
+}
