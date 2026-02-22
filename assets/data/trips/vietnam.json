@@ -52,25 +52,53 @@
       ]
     },
     {
-      "day": "Monday, 23.02.2026 - Flight to the Highlands",
+      "day": "Monday, 23.02.2026 - Da Nang nature",
       "checkpoints": [
         {
-          "time": "10:00",
-          "title": "Transfer to Da Lat",
-          "description": "Flight or travel from Da Nang to the cooler climate of Da Lat.",
-          "icon": "fa-plane",
+          "time": "08:00",
+          "title": "Traveling to Linh Ứng Pagoda",
+          "description": "Car picks us up at 8AM. Drive is quite fast, can take a view.",
+          "icon": "fa-car",
           "class": "travel"
         },
         {
-          "time": "16:00",
-          "title": "Xuan Huong Lake Walk",
-          "description": "Evening stroll around the lake in the heart of Da Lat.",
-          "icon": "fa-walking"
+          "time": "08:20",
+          "title": "Linh Ứng Pagoda",
+          "description": "There are actually three Linh Ung Pagodas in Da Nang, but the one on the Son Tra Peninsula (at Bai But) is the largest, newest, and most famous. Back in the 19th century under Emperor Minh Mang, a Buddhist statue miraculously drifted ashore here. The local fishermen built a small shrine to honor it. Legend says that from that day forward, the seas calmed, typhoons bypassed the city, and fishing prospered. The absolute centerpiece is the 67-meter-tall (about 30 stories high!) white statue of Avalokitesvara, the Goddess of Mercy. It is the tallest Buddha statue in Vietnam. She faces the ocean to watch over and protect the local fishermen. It took six full years (2004-2010) to build, largely because of the immense scale of the project. The statue was crafted by highly skilled stone artisans from the famous Non Nuoc Marble Village (which sits right at the base of the Marble Mountains we'll be visiting later that afternoon). Some cool details: The statue actually has 17 interior floors inside of it, each housing dozens of smaller Buddha statues! Also, leading up to the main temple are 18 intricate statues of Arhats, each depicting a different human emotion (joy, anger, love, hate, etc.). A quick heads-up: You are visiting a very active religious site, so make sure your shoulders and knees are covered when you go!",
+          "icon": "fa-pray",
+          "class": "important"
+        },
+        {
+          "time": "09:20",
+          "tittle": "Transfer to Intercontinental Danang Sun Peninsula Resort",
+          "description": "Pay attention to the monkeys. Tell driver to pull over and take pics.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "09:40",
+          "title": "Intercontinental Danang Sun Peninsula Resort",
+          "description": "This is the most luxurious hotel in Da Nang, perched on a private bay with stunning views. It was designed by the famous architect Bill Bensley and has won multiple awards for its unique blend of traditional Vietnamese design and modern luxury. The resort is built into the hillside, with rooms and villas that offer panoramic views of the ocean and surrounding mountains. The architecture incorporates local materials like stone and wood, and there are beautiful gardens and a private beach. It's a great spot to relax, have a drink, or even just take in the incredible scenery.",
+          "icon": "fa-hotel",
+          "class": "special"
+        },
+        {
+          "time": "08:30",
+          "title": "Bàn Cờ Peak",
+          "description": "Highest point in Da Nang known as Roof of Da Nang. Name translates to Chessboard Peak. According to local folklore, an ancient fairy came down from the heavens, was captivated by the view, and set up a stone chessboard. Another deity named De Thich (a master chess player) passed by and challenged him. They played for days to a standstill. Suddenly, De Thich was distracted by the laughter of beautiful fairies bathing at the nearby beach (now named Tien Sa beach). He made a careless move and lost. The winner flew back to heaven, leaving De Thich alone to ponder the board. \nRight at the summit, there is a bronze statue of De Thich staring intensely at a stone chessboard. It is a massive tourist tradition to sit in the empty seat across from him, pretend to ponder a move, and take a photo!",
+          "icon": "fa-chess-board",
+          "class": "special"
+        },
+        {
+          "time": "9:15",
+          "title": "Son Tra Nature Reserve",
+          "description": "Explore the lush nature reserve with hiking trails and wildlife spotting.",
+          "icon": "fa-tree"
         }
       ]
     },
     {
-      "day": "Tuesday, 24.02.2026 - Da Lat Adventures",
+      "day": "Tuesday, 24.02.2026 - Da Nang & Da Lat Adventures",
       "checkpoints": [
         {
           "time": "09:00",
