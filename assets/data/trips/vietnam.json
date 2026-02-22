@@ -1,0 +1,191 @@
+{
+  "title": "Vietnam & Bali: From Ancient Temples to Tropical Paradises",
+  "days": [
+    {
+      "day": "Sunday, 22.02.2026 - Da Nang arrival and chill",
+      "checkpoints": [
+        {
+          "time": "13:30",
+          "title": "Transfer to Da Nang",
+          "description": "Take car from Hoi An to Da Nang hotel.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Hotel Check-in & Relax",
+          "description": "Settle into the hotel and unwind. Check out the infinity pool and beach access.",
+          "icon": "fa-hotel"
+        },
+        {
+          "time": "18:30",
+          "title": "Ăn hải sản",
+          "description": "Either at Mộc Quán or Bé Mặn or Năm Đảnh",
+          "icon": "fa-utensils",
+          "class": "special"
+        },
+        {
+          "time": "21:00",
+          "title": "Dragon Bridge Show",
+          "description": "Catch the fire and water show at the Dragon Bridge",
+          "icon": "fa-dragon",
+          "class": "important"
+        },
+        {
+          "time": "21:15",
+          "title": "Son Tra night market",
+          "description": "Explore the night market for local snacks and souvenirs.",
+          "icon": "fa-shopping-cart"
+        },
+        {
+          "time": "22:30",
+          "title": "Take cab to United Bar",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "22:30",
+          "title": "Cocktail at a United Bar",
+          "description": "Enjoy a nightcap at this popular bar.",
+          "icon": "fa-cocktail"
+        }
+      ]
+    },
+    {
+      "day": "Monday, 23.02.2026 - Flight to the Highlands",
+      "checkpoints": [
+        {
+          "time": "10:00",
+          "title": "Transfer to Da Lat",
+          "description": "Flight or travel from Da Nang to the cooler climate of Da Lat.",
+          "icon": "fa-plane",
+          "class": "travel"
+        },
+        {
+          "time": "16:00",
+          "title": "Xuan Huong Lake Walk",
+          "description": "Evening stroll around the lake in the heart of Da Lat.",
+          "icon": "fa-walking"
+        }
+      ]
+    },
+    {
+      "day": "Tuesday, 24.02.2026 - Da Lat Adventures",
+      "checkpoints": [
+        {
+          "time": "09:00",
+          "title": "Datanla Waterfalls",
+          "description": "Alpine coaster and scenic waterfall views.",
+          "icon": "fa-water"
+        },
+        {
+          "time": "14:00",
+          "title": "Crazy House",
+          "description": "Exploring the surreal and expressionist architecture.",
+          "icon": "fa-home"
+        }
+      ]
+    },
+    {
+      "day": "Wednesday, 25.02.2026 - Coffee & Pine Forests",
+      "checkpoints": [
+        {
+          "time": "10:00",
+          "title": "Local Coffee Plantation Visit",
+          "description": "Learning about Da Lat’s famous coffee culture.",
+          "icon": "fa-coffee",
+          "class": "special"
+        }
+      ]
+    },
+    {
+      "day": "Thursday, 26.02.2026 - Heading to the Big City",
+      "checkpoints": [
+        {
+          "time": "11:00",
+          "title": "Transfer to Ho Chi Minh City",
+          "description": "Flight or bus ride down from the highlands to Saigon.",
+          "icon": "fa-bus",
+          "class": "travel"
+        },
+        {
+          "time": "19:00",
+          "title": "Saigon Nightlife",
+          "description": "Exploring District 1 or a rooftop bar.",
+          "icon": "fa-cocktail"
+        }
+      ]
+    },
+    {
+      "day": "Friday, 27.02.2026 - HCM History",
+      "checkpoints": [
+        {
+          "time": "09:00",
+          "title": "War Remnants Museum / Independence Palace",
+          "description": "Learning about Vietnam's modern history.",
+          "icon": "fa-landmark",
+          "class": "important"
+        },
+        {
+          "time": "15:00",
+          "title": "Ben Thanh Market",
+          "description": "Shopping and street food exploration.",
+          "icon": "fa-shopping-bag"
+        }
+      ]
+    },
+    {
+      "day": "Saturday, 28.02.2026 - Departure for Bali",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Transfer to Tan Son Nhat Airport",
+          "description": "Flight from HCM to Denpasar (Bali).",
+          "icon": "fa-plane",
+          "class": "travel"
+        },
+        {
+          "time": "16:00",
+          "title": "Bali Arrival & Uluwatu",
+          "description": "Check-in and sunset views in Southern Bali.",
+          "icon": "fa-sun"
+        }
+      ]
+    },
+    {
+      "day": "Sunday, 01.03.2026 - Ubud Culture",
+      "checkpoints": [
+        {
+          "time": "10:00",
+          "title": "Tegalalang Rice Terraces",
+          "description": "Iconic Balinese rice fields and swings.",
+          "icon": "fa-leaf",
+          "class": "important"
+        }
+      ]
+    },
+    {
+      "day": "Monday, 02.03.2026 - Island Life",
+      "checkpoints": [
+        {
+          "time": "09:00",
+          "title": "Nusa Penida or Beach Club",
+          "description": "Optional day trip to the islands or relaxing at a beach club.",
+          "icon": "fa-umbrella-beach",
+          "class": "special"
+        }
+      ]
+    },
+    {
+      "day": "Tuesday, 03.03.2026 - Farewell Bali",
+      "checkpoints": [
+        {
+          "time": "12:00",
+          "title": "Final Souvenirs & Departure",
+          "description": "Wrapping up the trip and heading to the airport.",
+          "icon": "fa-door-open"
+        }
+      ]
+    }
+  ]
+}

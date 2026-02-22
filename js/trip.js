@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('../assets/data/trips/lausanne.json')
+  fetch('../assets/data/trips/vietnam.json')
     .then(response => response.json())
     .then(data => {
       const mainElement = document.querySelector('main');
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Fetch weather data
   const weatherApiKey = process.env.WEATHERAPI_KEY;
-  const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=Lausanne&aqi=no`;
+  const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=Danang&aqi=no`;
 
   fetch(weatherUrl)
     .then(response => response.json())
