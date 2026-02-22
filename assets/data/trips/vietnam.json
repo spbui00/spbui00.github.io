@@ -66,11 +66,23 @@
           "title": "Linh Ứng Pagoda",
           "description": "There are actually three Linh Ung Pagodas in Da Nang, but the one on the Son Tra Peninsula (at Bai But) is the largest, newest, and most famous. Back in the 19th century under Emperor Minh Mang, a Buddhist statue miraculously drifted ashore here. The local fishermen built a small shrine to honor it. Legend says that from that day forward, the seas calmed, typhoons bypassed the city, and fishing prospered. The absolute centerpiece is the 67-meter-tall (about 30 stories high!) white statue of Avalokitesvara, the Goddess of Mercy. It is the tallest Buddha statue in Vietnam. She faces the ocean to watch over and protect the local fishermen. It took six full years (2004-2010) to build, largely because of the immense scale of the project. The statue was crafted by highly skilled stone artisans from the famous Non Nuoc Marble Village (which sits right at the base of the Marble Mountains we'll be visiting later that afternoon). Some cool details: The statue actually has 17 interior floors inside of it, each housing dozens of smaller Buddha statues! Also, leading up to the main temple are 18 intricate statues of Arhats, each depicting a different human emotion (joy, anger, love, hate, etc.). A quick heads-up: You are visiting a very active religious site, so make sure your shoulders and knees are covered when you go!",
           "icon": "fa-pray",
-          "class": "important"
+          "class": "important",
+          "infos": [
+            {
+              "icon": "fa-camera",
+              "text": "Sculpture"
+            }
+          ]
         },
         {
+          "time": "08:50",
+          "title": "đền thờ Mẫu",
+          "description": "Đền thờ Mẫu are dedicated to Đạo Mẫu (Vietnamese Mother Goddess worship), which was officially recognized by UNESCO in 2016 as Intangible Cultural Heritage of Humanity. This religion is uniquely Vietnamese and blends folk beliefs, Taoism, and Buddhism. Unlike many religions centered on male gods, Đạo Mẫu focuses on female divine figures who govern different realms: Mẫu Thượng Thiên – Heaven | Mẫu Thượng Ngàn – Mountains & Forests | Mẫu Thoải – Water | Mẫu Địa – Earth. These goddesses are believed to protect families, bring prosperity, and control natural elements. While Linh Ứng Pagoda attracts large tourist crowds, Đền thờ Mẫu tends to be less commercial and more locally focused, offering a more intimate spiritual experience.",
+          "icon": "fa-pray"
+       },
+        {
           "time": "09:20",
-          "tittle": "Transfer to Intercontinental Danang Sun Peninsula Resort",
+          "title": "Transfer to Intercontinental Danang Sun Peninsula Resort",
           "description": "Pay attention to the monkeys. Tell driver to pull over and take pics.",
           "icon": "fa-car",
           "class": "travel"
@@ -78,22 +90,66 @@
         {
           "time": "09:40",
           "title": "Intercontinental Danang Sun Peninsula Resort",
-          "description": "This is the most luxurious hotel in Da Nang, perched on a private bay with stunning views. It was designed by the famous architect Bill Bensley and has won multiple awards for its unique blend of traditional Vietnamese design and modern luxury. The resort is built into the hillside, with rooms and villas that offer panoramic views of the ocean and surrounding mountains. The architecture incorporates local materials like stone and wood, and there are beautiful gardens and a private beach. It's a great spot to relax, have a drink, or even just take in the incredible scenery.",
+          "description": "This is the most luxurious hotel in Da Nang, perched on a private bay with stunning views. It was designed by the famous architect Bill Bensley and has won multiple awards for its unique blend of traditional Vietnamese design and modern luxury. The restaurants are sorted into themes and yep, it is very expensive, not for us!",
           "icon": "fa-hotel",
-          "class": "special"
+          "class": "important"
         },
         {
-          "time": "08:30",
+          "time": "10:10",
+          "title": "Drinks at The Long Bar",
+          "description": "The bar’s name literally reflects its impressive length — about 50 meters of seating and social space along the beachfront.",
+          "icon": "fa-cocktail"
+        },
+        {
+          "time": "10:40",
+          "title": "Transfer to Bàn Cờ Peak",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "11:00",
           "title": "Bàn Cờ Peak",
           "description": "Highest point in Da Nang known as Roof of Da Nang. Name translates to Chessboard Peak. According to local folklore, an ancient fairy came down from the heavens, was captivated by the view, and set up a stone chessboard. Another deity named De Thich (a master chess player) passed by and challenged him. They played for days to a standstill. Suddenly, De Thich was distracted by the laughter of beautiful fairies bathing at the nearby beach (now named Tien Sa beach). He made a careless move and lost. The winner flew back to heaven, leaving De Thich alone to ponder the board. \nRight at the summit, there is a bronze statue of De Thich staring intensely at a stone chessboard. It is a massive tourist tradition to sit in the empty seat across from him, pretend to ponder a move, and take a photo!",
           "icon": "fa-chess-board",
+          "class": "important"
+        },
+        {
+          "time": "11:30",
+          "title": "Transfer to Madame Lân",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch at Madame Lân",
+          "description": "Featured in the Michelin Guide (Michelin Selected). Named in honor of the owner’s late mother. Fried fish summer roll – a Da Nẵng specialty that combines crispy texture with fresh herbs and dipping sauce. Mì Quảng – a quintessential Central Vietnamese turmeric noodle dish with savory broth, herbs, and toppings. Bún bò Huế / Bún bò – rich beef noodle soup from Central Vietnam.",
+          "icon": "fa-utensils",
+          "link": "https://madamelan.vn/thuc-don/0"
+        },
+        {
+          "time": "13:10",
+          "title": "Transfer to Marble Mountains",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "13:50",
+          "title": "Marble Mountains Caves",
+          "description": "Climbing limestone peaks to explore massive, naturally formed caves hidden in the forest.",
+          "icon": "fa-dungeon"
+        },
+        {
+          "time": "16:30",
+          "title": "Non Nuoc Beach Sunset",
+          "description": "Escaping the city crowds for a quiet, peaceful sunset swim on pristine white sand.",
+          "icon": "fa-umbrella-beach",
           "class": "special"
         },
         {
-          "time": "9:15",
-          "title": "Son Tra Nature Reserve",
-          "description": "Explore the lush nature reserve with hiking trails and wildlife spotting.",
-          "icon": "fa-tree"
+          "time": "19:00",
+          "title": "Open-Air Coastal Dinner",
+          "description": "Fresh local seafood right by the water, listening to the ocean waves.",
+          "icon": "fa-fish"
         }
       ]
     },
