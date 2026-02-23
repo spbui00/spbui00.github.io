@@ -52,7 +52,7 @@
       ]
     },
     {
-      "day": "Monday, 23.02.2026 - Da Nang nature",
+      "day": "Monday, 23.02.2026 - Da Nang pop spots",
       "checkpoints": [
         {
           "time": "08:00",
@@ -139,22 +139,16 @@
           "icon": "fa-dungeon"
         },
         {
-          "time": "16:30",
-          "title": "Non Nuoc Beach Sunset",
+          "time": "18:00",
+          "title": "Beach Sunset",
           "description": "Escaping the city crowds for a quiet, peaceful sunset swim on pristine white sand.",
           "icon": "fa-umbrella-beach",
           "class": "special"
-        },
-        {
-          "time": "19:00",
-          "title": "Open-Air Coastal Dinner",
-          "description": "Fresh local seafood right by the water, listening to the ocean waves.",
-          "icon": "fa-fish"
         }
       ]
     },
     {
-      "day": "Tuesday, 24.02.2026 - Da Nang & Da Lat Adventures",
+      "day": "Tuesday, 24.02.2026 - Da Nang & Da Lat",
       "checkpoints": [
         {
           "time": "09:00",
