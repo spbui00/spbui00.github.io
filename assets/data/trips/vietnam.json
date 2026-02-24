@@ -151,16 +151,38 @@
       "day": "Tuesday, 24.02.2026 - Da Nang & Da Lat",
       "checkpoints": [
         {
-          "time": "09:00",
-          "title": "Datanla Waterfalls",
-          "description": "Alpine coaster and scenic waterfall views.",
-          "icon": "fa-water"
+          "time": "18:00",
+          "title": "Transfer to Dalat stay",
+          "description": "37 Trần Văn Côi, F5 | Taxi should cost around 150-200k according to the homestay's owner. Ask driver to stop at a place to get takeaway dinner.",
+          "icon": "fa-car",
+          "class": "travel",
+          "link": "https://www.google.com/maps/place/37+Tr%E1%BA%A7n+V%C4%83n+C%C3%B4i,+Ph%C6%B0%E1%BB%9Dng+5,+%C4%90%C3%A0+L%E1%BA%A1t,+L%C3%A2m+%C4%90%E1%BB%93ng+670000,+Vietnam/@11.9477876,108.4189536,17z/data=!3m1!4b1!4m6!3m5!1s0x31716d30d45a4a2f:0x29d3a0d1f50286ad!8m2!3d11.9477824!4d108.4215339!16s%2Fg%2F11vwxwq9zf?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D"
         },
         {
-          "time": "14:00",
-          "title": "Crazy House",
-          "description": "Exploring the surreal and expressionist architecture.",
-          "icon": "fa-home"
+          "time": "19:00",
+          "title": "Arrival at Homestay & Dinner",
+          "description": "Check-in and enjoy a cozy dinner at the homestay.",
+          "icon": "fa-hotel"
+        },
+        {
+          "time": "19:30",
+          "title": "Lululola Music Show",
+          "description": "Without reservation. Pay on place. Just live music and some drinks.",
+          "icon": "fa-music",
+          "class": "special",
+          "link": "https://lululola.com.vn/acoustic-live-band-mung-8-tet-pd5bf803a369492",
+          "infos": [
+            {
+              "icon": "fa-ticket",
+              "text": "150k"
+            }
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Chợ Đà Lạt (optional)",
+          "description": "If not too tired, take drive (15 min) to the night market for a quick stroll and maybe some late-night snacks.",
+          "icon": "fa-shopping-cart"
         }
       ]
     },
