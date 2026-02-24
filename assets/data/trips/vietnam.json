@@ -187,13 +187,62 @@
       ]
     },
     {
-      "day": "Wednesday, 25.02.2026 - Coffee & Pine Forests",
+      "day": "Tuesday, 24.02.2026 - Da Lat Adventure Day: Mario Kart & Datanla Thrills",
       "checkpoints": [
         {
-          "time": "10:00",
-          "title": "Local Coffee Plantation Visit",
-          "description": "Learning about Da Lat’s famous coffee culture.",
-          "icon": "fa-coffee",
+          "time": "07:30",
+          "title": "Depart → Cao Nguyen Hoa (Mario Kart)",
+          "description": "Grab (~20 min drive through scenic hills). Arrive early for short lines.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "08:00",
+          "title": "Cao Nguyen Hoa - Mario Kart Go-Karting",
+          "description": "Gravity-powered downhill tracks like real-life Mario Kart. Do 2 runs (green/red lines), control speed with brakes. Thrilling twists, views, photo stops at swings/stream. Takes ~1-1.5 hours total.",
+          "icon": "fa-car-side",
+          "class": "important"
+        },
+        {
+          "time": "09:30",
+          "title": "Travel to Datanla Waterfall",
+          "description": "Scooter/taxi back toward town then south (~30-40 min scenic route via QL20).",
+          "icon": "fa-motorcycle",
+          "class": "travel"
+        },
+        {
+          "time": "10:10",
+          "title": "Datanla Alpine Coaster",
+          "description": "Asia's long coaster (2.4 km downhill through forest at up to 40 km/h). Control your own speed, epic views, ends near waterfall. ~20-30 min ride + short wait.",
+          "icon": "fa-automobile",
+          "class": "important"
+        },
+        {
+          "time": "11:00",
+          "title": "Datanla Zipline",
+          "description": "Longest forest zipline in Asia (1.5 km total, over pines and falls). Safety briefing + thrilling glides. ~30-60 min including segments.",
+          "icon": "fa-wind",
+          "class": "important"
+        },
+        {
+          "time": "12:00",
+          "title": "Quick Waterfall View & Snack Break",
+          "description": "Short walk to see Datanla tiers. Grab coffee/tea or light bite at cafe. Relax before heading back.",
+          "icon": "fa-water",
+          "class": "relax"
+        },
+        {
+          "time": "12:30",
+          "title": "Return to Da Lat Center",
+          "description": "Travel back (~15-20 min). Arrive early to beat any 2pm rain. Rest or explore lake area.",
+          "icon": "fa-motorcycle",
+          "class": "travel"
+        },
+        {
+          "time": "13:00",
+          "title": "End of Adventure Day",
+          "description": "Free afternoon: hotel chill, lunch nearby, or indoor spots like Crazy House if rain starts. Total active time ~5 hours.",
+          "icon": "fa-flag-checkered",
           "class": "special"
         }
       ]
