@@ -60,6 +60,7 @@
       .bar-width {
         height: 100%;
         border-radius: $borderRadiusLarge;
+        background-color: $dusty-taupe;
 
         &#openness {
           @include growFromLeft(73); 

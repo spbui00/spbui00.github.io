@@ -105,7 +105,7 @@ section {
             width: $point-width;
             height: $point-width;
             background-color: transparent;
-            border: $borderWidthMedium solid $color-white;
+            border: $borderWidthMedium solid $color-text;
             border-radius: 50%;
 
             @include respond-to(sm) {
@@ -114,7 +114,7 @@ section {
             }
 
             &.full {
-              background-color: $color-white;
+              background-color: $color-text;
             }
           }
         }
@@ -132,18 +132,21 @@ section {
     &-orange {
       .item {
         background-color: $color-light-orange;
+        color: $color-text-on-accent;
       }
     }
 
     &-blue {
       .item {
         background-color: $color-light-blue;
+        color: $color-text-on-accent;
       }
     }
 
     &-purple {
       .item {
         background-color: $color-light-purple;
+        color: $color-text-on-accent;
       }
     }
   }
@@ -190,8 +193,8 @@ section {
     .item {
       @include flex-container(flex-start, flex-start, column);
       @include scrollable-y;
-      background-color: $color-light;
-      color: black;
+      background-color: $white-smoke;
+      color: $color-text;
       width: 350px;
       height: 130px;
       gap:0px;
@@ -246,7 +249,8 @@ section {
       .item {
         @include flex-container(flex-start, flex-start, column);
         @include scrollable-x;
-        background-color: $color-medium;
+        background-color: $color-dark-grey;
+        color: $color-text;
         gap: $spacing-sm;
         width: 350px; 
         height: 300px;
@@ -354,7 +358,7 @@ section {
   .item-tag {
     @include flex-container(center, center, row);
     border-radius: $borderRadiusSmall;
-    border: $borderWidthSmall solid $color-white;
+    border: $borderWidthSmall solid $color-text;
     padding: $spacing-xs - 3 $spacing-xs;
     font-size: $fontSize-sm;
   }
@@ -364,7 +368,7 @@ section {
   @include flex-container(center, center, row);
   position: fixed;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(10, 9, 8, 0.45);
   width: 100vw;
   height: 100vh;
   top: 0;

@@ -10,7 +10,7 @@ button {
   gap: 10px;
   border-radius: $borderRadiusMedium;
   background-color: $color-medium-grey;
-  color: white;
+  color: $color-text;
   font-weight: bold;
   box-shadow: $boxShadowSmall;
   transition: $transition-fast;
@@ -20,7 +20,7 @@ button {
     padding: $spacing-xs $spacing-sm;
     background-color: $color-light-orange;
     box-shadow: $boxShadowMedium;
-    color: $color-light;
+    color: $color-text-on-accent;
     opacity: 1;
     transform: scale($scale-sm);
   }

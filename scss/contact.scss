@@ -73,18 +73,18 @@
         box-sizing: border-box;
         padding: $spacing-sm;
         border-radius: $borderRadiusMedium;
-        color: $color-light;
-        background-color: $color-medium-grey;
+        color: $color-text;
+        background-color: $white-smoke;
         transition: $transition;
         border: none;
         
         &:focus {
           outline: none;
-          background-color: $color-dark-grey;
+          background-color: $color-white;
         }
 
         &::placeholder {
-          color: $color-light;
+          color: $color-text-muted;
           opacity: $opacity-low;
         }
       }
@@ -105,7 +105,7 @@
 
     p {
       font-size: 3rem;
-      color: $color-light;
+      color: $color-text;
       transition: $transition;
     }
   }

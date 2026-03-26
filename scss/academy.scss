@@ -21,7 +21,7 @@ $dot-width-larger: 24px;
       padding-right: $spacing-md;
       padding-bottom: $spacing-xl;
       margin-left: $spacing-sm;
-      border-left: $borderWidthLarge solid $color-white;
+      border-left: $borderWidthLarge solid $dusty-taupe;
 
       &.no-border {
         border-color: transparent;
@@ -35,7 +35,7 @@ $dot-width-larger: 24px;
       .dot {
         height: $dot-width;
         width: $dot-width;
-        background-color: $color-white;
+        background-color: $dusty-taupe;
         border-radius: 50%;
         position: absolute;
         margin-left: - (calc($dot-width/2) + $spacing-md + calc($borderWidthLarge / 2));
@@ -86,10 +86,10 @@ $dot-width-larger: 24px;
 }
 
 a {
-  color: $color-light;
+  color: $dusty-taupe;
   transition: $transition;
 
   &:hover, &:focus {
-    color: $color-white;
+    color: $stone-brown;
   }
 }
