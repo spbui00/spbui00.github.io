@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('../assets/data/trips/vietnam.json')
+  fetch('../assets/data/trips/varberg.json')
     .then(response => response.json())
     .then(data => {
       const mainElement = document.querySelector('main');

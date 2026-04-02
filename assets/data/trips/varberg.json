@@ -1,0 +1,61 @@
+{
+  "title": "Varberg",
+  "days": [
+    {
+      "day": "Thursday, 2nd April 2026",
+      "checkpoints": [
+        {
+          "time": "12:15",
+          "title": "Transfer to Airbnb",
+          "description": "Earlier check-in at Airbnb. Settle in and freshen up.",
+          "icon": "fa-bus",
+          "class": "travel",
+          "link": "https://www.google.com/maps/search/?api=1&query=57.1092618%2C12.2600036"
+        },
+        {
+          "time": "12:40",
+          "title": "Tickets",
+          "description": "Buy the 24h tickets or rent a car.",
+          "icon": "fa-ticket-alt"
+        },
+        {
+          "time": "13:20",
+          "title": "Take bus 15 to Getterön affären",
+          "description": "Careful, it goes once per hour!",
+          "icon": "fa-bus",
+          "class": "travel",
+          "link": "https://maps.app.goo.gl/XAxJih1cjyTMorLE8"
+        },
+        {
+          "time": "13:45",
+          "title": "Getterön Nature Reserve",
+          "description": "Explore, wach birds, buy binoculars, be old.",
+          "icon": "fa-binoculars",
+          "class": "special",
+          "link": "https://www.naturumgetteron.se/hitta-hit/"
+        },
+        {
+          "time": "16:00",
+          "title": "Early Dinner",
+          "description": "Self-search",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "17:00",
+          "title": "Asia Spa",
+          "description": "The package includes: Four hours at Asia Spa | Activity classes | Tea, fruit, and water | Loan of spa kit with yukata, slippers, and towel",
+          "icon": "fa-spa",
+          "class": "special",
+          "link": "https://maps.app.goo.gl/uF8NqEPsHVGkU5et7"
+        },
+        {
+          "time": "22:00",
+          "title": "Late night snacks",
+          "description": "Bebe will be hungry, feed time.",
+          "icon": "fa-utensils",
+          "class": "important"
+        }
+      ]
+    }
+  ]
+}
