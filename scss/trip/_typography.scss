@@ -12,7 +12,7 @@ html {
   font-weight: 600;
   font-style: normal;
   line-height: 1.5;
-  color: $color-white;
+  color: $text-color;
 
   @include respond-to(sm) {
     font-size: $fontSize-sm;
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  color: $color-white;
+  color: $text-color;
   font-family: 'Default Nutino', sans-serif;
   font-weight: 600;
   font-size: 1rem;

@@ -6,7 +6,7 @@ html {
   font-weight: 600;
   font-style: normal;
   line-height: 1.5;
-  color: #ffffff;
+  color: #FEFAE0;
 }
 @media (max-width: 576px) {
   html {
@@ -29,7 +29,7 @@ html {
   font-stretch: 1 100%;
 }
 body {
-  color: #ffffff;
+  color: #FEFAE0;
   font-family: "Default Nutino", sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -256,8 +256,8 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  background: #006AA7;
-  color: #FFFFFF;
+  background: #283618;
+  color: #FEFAE0;
   padding: 24px 16px;
   transition: all 0.2s ease-in-out;
   height: 100vh;
@@ -308,8 +308,8 @@ main {
   box-shadow: none;
   padding: 4px 10px;
   border-radius: 8px;
-  background: #00517d;
-  color: #FFFFFF;
+  background: #1E2B05;
+  color: #FEFAE0;
   opacity: 0.8;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
@@ -326,7 +326,7 @@ ul, ol, li, a {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #FFFFFF;
+  color: #fefae0;
   text-decoration: none;
 }
 
@@ -368,7 +368,7 @@ footer {
 }
 
 .green-bg {
-  background-color: #FFFFFF;
+  background-color: #FEFAE0;
 }
 
 .yellow-bg {
@@ -408,7 +408,7 @@ a:hover, a:focus {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #006AA7;
+  background: #283618;
 }
 
 .countdown-timer {
@@ -416,12 +416,12 @@ a:hover, a:focus {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 1px solid #00517d;
+  border: 1px solid #BC6C25;
   border-radius: 8px;
   padding: 8px;
   width: 100%;
-  background: #00517d;
-  color: #FFFFFF;
+  background: #BC6C25;
+  color: #fefae0;
   box-sizing: border-box;
 }
 
@@ -452,7 +452,7 @@ a:hover, a:focus {
   opacity: 0.4;
   overflow: hidden;
   transition: max-height 0.8s ease-out, opacity 0.5s ease-out;
-  color: #FFFFFF;
+  color: #FEFAE0;
 }
 .day-content.expanded {
   height: 100%;
@@ -469,7 +469,7 @@ a:hover, a:focus {
   width: 100%;
   height: 100%;
   opacity: 1;
-  color: #FFFFFF;
+  color: #FEFAE0;
 }
 .day-content-checkpoint-timeline {
   display: flex;
@@ -481,18 +481,18 @@ a:hover, a:focus {
   opacity: 0.8;
 }
 .day-content-checkpoint-timeline-time {
-  color: #FECC00;
+  color: #DDA15E;
 }
 .travel .day-content-checkpoint-timeline-time {
   opacity: 0.6;
 }
 .day-content-checkpoint-timeline-line {
   height: 100%;
-  border: 1px solid #FECC00;
+  border: 1px solid #DDA15E;
   border-radius: 4px;
 }
 .travel .day-content-checkpoint-timeline-line {
-  border: 1px dashed #FECC00;
+  border: 1px dashed #DDA15E;
   background: none;
   opacity: 0.6;
 }
@@ -532,13 +532,13 @@ a:hover, a:focus {
 }
 .day-content-checkpoint-info-infos-item {
   border: 1px solid rgba(247, 255, 136, 0.5);
-  color: #00517d;
+  color: #BC6C25;
   background: rgba(211, 211, 211, 0.1);
   padding: 2px 4px;
   border-radius: 4px;
 }
 .special .day-content-checkpoint-info {
-  background: #00517d;
+  background: #1E2B05;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 8px;
@@ -546,8 +546,8 @@ a:hover, a:focus {
 }
 .important .day-content-checkpoint-info {
   border-radius: 8px;
-  color: #FECC00;
-  border: 1px solid #FECC00;
+  color: #DDA15E;
+  border: 1px solid #DDA15E;
   padding: 8px;
   box-sizing: border-box;
 }
@@ -598,10 +598,10 @@ a:hover, a:focus {
   width: 100%;
   height: 100%;
   gap: 8px;
-  background: #00517d;
+  background: #1E2B05;
   padding: 16px 8px;
   border-radius: 12px;
-  color: #FFFFFF;
+  color: #FEFAE0;
 }
 .weather-section .weather-info .weather-item i {
   display: flex;

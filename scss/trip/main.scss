@@ -3,13 +3,6 @@
 @import '../partials/typography';
 @import '../partials/animations';
 
-$bg-color: #006AA7;
-$text-color: #FFFFFF;
-$primary-color: #00517d;
-$accent-color: #FECC00;
-$secondary-accent-color: #00517d;
-$secondary-text-color: #FFFFFF;
-
 html {
   @include flex-container(center, center, column);
   padding: $spacing-md;

@@ -1,0 +1,241 @@
+{
+  "title": "Prague",
+  "days": [
+    {
+      "day": "Tuesday, 28th April 2026 - Arrival in Prague",
+      "checkpoints": [
+        {
+          "time": "20:45",
+          "title": "Transfer to homestay",
+          "description": "Về nhà nghỉ ngơi, tắm rửa. Tải ứng dụng PID để dễ dàng di chuyển bằng phương tiện công cộng trong thành phố.",
+          "icon": "fa-tram",
+          "class": "travel",
+          "link": "https://www.google.com/maps/dir/50.0679275,14.4171379/Je%C4%8Dn%C3%A1+2031%2F13,+120+00+Nov%C3%A9+M%C4%9Bsto/@50.0718559,14.4134362,16z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x470b94f35e9315e7:0x1c85d62fb84ba399!2m2!1d14.4226978!2d50.075744!3e3?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "22:30",
+          "title": "[Optional] Night walk",
+          "description": "Đi dạo thủ đô Praha về đêm.",
+          "icon": "fa-walking"
+        }
+      ]
+    },
+    {
+      "day": "Wednesday, 29th April 2026 - Exploring Prague",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Food shopping and breakfast at homestay",
+          "description": "Mua đồ ăn nhẹ ở siêu thị và ăn sáng tại nhà nghỉ. Ăn nhẹ rohlík, bữa sáng đơn giản.",
+          "icon": "fa-shopping-cart"
+        },
+        {
+          "time": "09:00",
+          "title": "Travel to Prague Castle",
+          "description": "Đi đến Lâu đài Praha bằng phương tiện công cộng. Ngắm cảnh trên tàu điện nổi.",
+          "icon": "fa-tram",
+          "class": "travel",
+          "link": "https://www.google.com/maps/dir/50.0679244,14.4171357/Prague+Castle,+Hrad%C4%8Dany,+119+08+Praha+1/@50.0897158,14.3979284,16.08z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x470b951e6c24b7c3:0x2acf3c88af12259f!2m2!1d14.4016165!2d50.0910966!3e3?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "09:30",
+          "title": "Prague Castle",
+          "description": "Tham quan Lâu đài Praha, một trong những lâu đài lớn nhất thế giới. Khám phá lịch sử và kiến trúc độc đáo của lâu đài. Có thẻ tải trước một vài bản đồ và thông tin về lâu đài để dễ dàng tham quan.",
+          "icon": "fa-chess-rook",
+          "class": "special",
+          "link": "https://www.hrad.cz/en/prague-castle-for-visitors/castle-map",
+          "infos": [
+            { "icon": "fa-ticket", "text": "300 CZK | 15 EUR" },
+            { "icon": "fa-book", "text": "Lịch sử" }
+          ]
+        },
+        {
+          "time": "12:30",
+          "title": "Travel to Old Town Square",
+          "description": "Đi bộ hoặc sử dụng phương tiện công cộng để đến Quảng trường Lâu đài Cổ.",
+          "icon": "fa-walking",
+          "class": "travel",
+          "link": "https://www.google.com/maps/dir/50.0679783,14.4170004/Havelsk%C3%A1+Koruna,+21+a+23,+Havelsk%C3%A1+501,+Star%C3%A9+M%C4%9Bsto,+110+00+Praha+1/@50.0782925,14.4092557,15z/data=!3m1!4b1!4m18!1m7!3m6!1s0x470b94eea8fb7ff7:0xf30748d5c1b38432!2sHavelsk%C3%A1+Koruna!8m2!3d50.0855096!4d14.4216261!16s%2Fg%2F1tptp9tq!4m9!1m1!4e1!1m5!1m1!1s0x470b94eea8fb7ff7:0xf30748d5c1b38432!2m2!1d14.4216523!2d50.0854965!3e3?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at Havelska Koruna",
+          "description": "Ăn trưa tại Havelska Koruna, một nhà hàng truyền thống nổi tiếng với các món ăn đặc trưng của Séc. Thưởng thức các món như goulash, svíčková, hoặc knedlíky.",
+          "icon": "fa-utensils",
+          "link": "https://www.havelska-koruna.cz/restaurace.html",
+          "class": "important"
+        },
+        {
+          "time": "14:00",
+          "title": "Old Town Square",
+          "description": "Tham quan Quảng trường Lâu đài Cổ, nơi có nhiều công trình kiến trúc đẹp và lịch sử. Đừng quên xem đồng hồ thiên văn nổi tiếng và thưởng thức không khí sôi động của quảng trường.",
+          "icon": "fa-square",
+          "class": "special"
+        },
+        {
+          "time": "16:00",
+          "title": "Travel to Wenceslas Square",
+          "description": "Đi bộ hoặc sử dụng phương tiện công cộng để đến Quảng trường Wenceslas.",
+          "icon": "fa-walking",
+          "class": "travel",
+          "link": "https://www.google.com/maps/dir/50.0682829,14.4171457/National+Museum,+V%C3%A1clavsk%C3%A9+n%C3%A1m.+68,+110+00+Nov%C3%A9+M%C4%9Bsto/@50.0782462,14.4267233,16.25z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x470b948d824eafb9:0x428e5a03743d49a6!2m2!1d14.4309369!2d50.0789704!3e3?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "16:30",
+          "title": "Wenceslas Square",
+          "description": "Tham quan Quảng trường Wenceslas, một trong những quảng trường nổi tiếng nhất ở Praha. Đây là nơi tập trung nhiều cửa hàng, nhà hàng và điểm tham quan lịch sử.",
+          "icon": "fa-square",
+          "class": "special"
+        },
+        {
+          "time": "18:00",
+          "title": "Travel back to homestay",
+          "description": "Đi về nhà nghỉ ngơi tắm rửa chuẩn bị cho bữa tốt",
+          "icon": "fa-tram",
+          "class": "travel"
+        },
+        {
+          "time": "18:30",
+          "title": "[Optional] Brotato at Ha's place",
+          "description": "Nếu thời gian cho phép, qua nhà Hà chơi game chờ tối đi ăn.",
+          "icon": "fa-gamepad"
+        },
+        {
+          "time": "19:30",
+          "title": "Travel to restaurant Jaro",
+          "icon": "fa-car",
+          "class": "travel",
+          "link": "https://www.google.com/maps/dir/50.0682829,14.4171457/JARO+BBQ%26HOTPOT,+Sofijsk%C3%A9+n%C3%A1m.+2,+143+00+Praha+4-Mod%C5%99any/@50.0352165,14.3943431,13z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x470b913ba0da1b93:0xcc56868aaf6fdb07!2m2!1d14.4170325!2d50.0061099!3e0?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner at Jaro",
+          "description": "Ăn tối tại nhà hàng Jaro, nổi tiếng với các món nướng và lẩu đặc trưng. Thưởng thức các món như thịt nướng, lẩu cay, và các món ăn kèm hấp dẫn.",
+          "icon": "fa-utensils",
+          "class": "important"
+        }
+      ]
+    },
+    {
+      "day": "Thursday, 30th April 2026 - Viet day and sport",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Breakfast",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "09:00",
+          "title": "Walk to Charles Bridge",
+          "description": "Đi bộ đến Cầu Charles, một trong những biểu tượng nổi tiếng nhất của Praha. Thưởng thức cảnh quan tuyệt đẹp của thành phố từ cầu và chụp những bức ảnh đẹp.",
+          "icon": "fa-walking",
+          "infos": [
+            { "icon": "fa-camera", "text": "Tự sướng" }
+          ]
+        },
+        {
+          "time": "10:00",
+          "title": "Charles Bridge",
+          "description": "Tham quan Cầu Charles, một cây cầu lịch sử bắc qua sông Vltava. Trên cầu có nhiều tác phẩm điêu khắc và là nơi lý tưởng để ngắm cảnh thành phố.",
+          "icon": "fa-bridge",
+          "class": "special"
+        },
+        {
+          "time": "11:00",
+          "title": "Self exploration of Prague",
+          "description": "Tự do khám phá thành phố theo sở thích cá nhân. Có thể đi dạo quanh các con phố nhỏ, ghé thăm các cửa hàng địa phương, hoặc tìm hiểu thêm về lịch sử và văn hóa của Praha.",
+          "icon": "fa-person",
+          "class": "travel"
+        },
+        {
+          "time": "11:30",
+          "title": "Travel to Sapa - đi cùng Hà",
+          "icon": "fa-car",
+          "class": "travel",
+          "link": "https://www.google.com/maps/dir/50.0682829,14.4171457/S%C3%ADdli%C5%A1t%C4%9B+P%C3%ADsnice,+SAPA,+142+00+Praha-Libu%C5%A1/@50.0333375,14.4115069,13z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x470b910b50683397:0x5fa3406cd66f34b7!2m2!1d14.4666!2d50.0012!3e0?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch at Sapa",
+          "description": "Ăn trưa theo khẩu vị lúc đó. Bún bò Huế, phở, bánh mì, bánh quốn, bún cá Hải Phòng, v.v.",
+          "icon": "fa-utensils",
+          "class": "important"
+        },
+        {
+          "time": "15:00",
+          "title": "Travel to Žluté lázně",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "15:30",
+          "title": "Sport at Žluté lázně",
+          "description": "Chơi thể thao tại Žluté lázně, một khu vực giải trí nổi tiếng với các hoạt động thể thao như bơi lội, bóng chuyền, và các môn thể thao nước khác.",
+          "icon": "fa-swimmer",
+          "class": "special",
+          "infos": [
+            { "icon": "fa-ticket", "text": "500 CZK | 20 EUR" },
+            { "icon": "fa-shirt", "text": "Quần áo thể thao" }
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "Travel back to homestay",
+          "description": "Đi về nhà nghỉ ngơi tắm rửa chuẩn bị cho bữa tối",
+          "icon": "fa-tram",
+          "class": "travel"
+        },
+        {
+          "time": "19:30",
+          "title": "Dinner at home",
+          "description": "Ăn tối tại nhà bác Toan",
+          "icon": "fa-utensils",
+          "class": "important"
+        },
+        {
+          "time": "20:30",
+          "title": "[Optional] Night walk",
+          "description": "Đi dạo thủ đô Praha về đêm.",
+          "icon": "fa-walking"
+        }
+      ]
+    },
+    {
+      "day": "Friday, 1st May 2026 - Departure from Prague",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Breakfast at homestay or Sapa",
+          "description": "Ăn sáng ở trung tâm hoặc ra Sapa nêu thèm đồ Việt.",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "10:00",
+          "title": "[Optional] Last workout",
+          "description": "Nếu còn thời gian, có thể đi tập gym.",
+          "icon": "fa-dumbbell",
+          "infos": [
+            { "icon": "fa-ticket", "text": "Free" },
+            { "icon": "fa-shirt", "text": "Quần áo thể thao" }
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch",
+          "description": "Ăn trưa tùy địa điểm (Sapa hoặc nhà hàng khác)",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "14:10",
+          "title": "Travel to airport",
+          "description": "Đi đến sân bay để làm thủ tục và chuẩn bị cho chuyến bay về.",
+          "icon": "fa-plane",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-suitcase", "text": "Kiểm tra ví, hộ chiếu, điện thoại" }
+          ]
+        }
+      ]
+    }
+  ]
+}
