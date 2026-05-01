@@ -1,0 +1,280 @@
+{
+  "title": "A Week in Provence: Callas & Beyond",
+  "days": [
+    {
+      "day": "Friday, 1st May 2026 - Bubu and Bebe",
+      "checkpoints": [
+        {
+          "time": "18:30",
+          "title": "Rent Car from Avid",
+          "description": "Pick up car rental. 5 places, 2 drivers, full coverage.",
+          "icon": "fa-car",
+          "class": "important"
+        },
+        {
+          "time": "18:45",
+          "title": "Drive to a supermarket (eg Proxi)",
+          "description": "Toilet paper, soap, sampoo, and some snacks. The house does not have stuff.",
+          "icon": "fa-shopping-cart",
+          "class": "important"
+        },
+        {
+          "time": "19:00",
+          "title": "Travel to 25 Bd des Poilus, 83830 Callas, France.",
+          "icon": "fa-map-marker-alt",
+          "class": "travel",
+          "link": "https://www.google.com/maps/place/25+Bd+des+Poilus,+83830+Callas,+France/@43.5921672,6.5378046,17z/data=!3m1!4b1!4m6!3m5!1s0x12cea8330280b7ad:0x7330fec6a5070683!8m2!3d43.5921672!4d6.5378046!16s%2Fg%2F11c2cghrcr?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "20:00",
+          "title": "[Optional] Explore the village and have dinner.",
+          "description": "Walk to the town square and check out the restaurants. La Grotte Italienne is a suggestion from Gemini :D.",
+          "icon": "fa-walking"
+        }
+      ]
+    },
+    {
+      "day": "Saturday, 2nd May 2026 - Local Charm & Gourmet Night",
+      "checkpoints": [
+        {
+          "time": "08:30",
+          "title": "Breakfast from Clothilde",
+          "description": "Walk to the local baker, Clothilde, for heavenly baguettes and croissants to enjoy on the dining room balcony.",
+          "icon": "fa-croissant",
+          "link": "https://www.google.com/maps/place/Clotilde+Patisserie+Boulangerie/@43.5935564,6.538864,18.2z/data=!4m15!1m8!3m7!1s0x12cea981b9fa4def:0x91504760413df13f!2sClotilde+Patisserie+Boulangerie!8m2!3d43.5938767!4d6.5393527!10e5!16s%2Fg%2F11g0hn_5yl!3m5!1s0x12cea981b9fa4def:0x91504760413df13f!8m2!3d43.5938767!4d6.5393527!16s%2Fg%2F11g0hn_5yl?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "09:15",
+          "title": "Callas Saturday Market",
+          "description": "Explore the local market in Callas. Buy some fresh local produce, olives, and perhaps a cooked chicken for lunch. Or some food for the next days.",
+          "icon": "fa-store",
+          "class": "special",
+          "link": "https://www.google.com/maps/place/Pl.+Georges+Clemenceau,+83830+Callas,+France/@43.5940283,6.5282752,15z/data=!3m1!4b1!4m6!3m5!1s0x12cea8327cfaa7fb:0x440337ea2f89ae29!8m2!3d43.5940132!4d6.5385749!16s%2Fg%2F1tf62pky?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D",
+          "infos": [
+            { "icon": "fa-clock", "text": "8:00 -> 12:30" },
+            { "icon": "fa-dollar-sign", "text": "Cash only" }
+          ]
+        },
+        {
+          "time": "10:15",
+          "title": "Drive to Lake of Sainte-Croix",
+          "description": "An hour and 20 minutes drive.",
+          "icon": "fa-car",
+          "class": "travel",
+          "link": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x12cbe562cd878643:0xc32f4974ea3e789a!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA"
+        },
+        {
+          "time": "11:45",
+          "title": "Canoeing at the Lake of Sainte-Croix and picnic",
+          "description": "Rent canoe for half a day. Take the canoe across the Lac de Sainte-Croix to the Gorges du Verdon. Enjoy a picnic lunch on the shore of the lake or in the canoe. Can take break on the shore and swim.",
+          "icon": "fa-water",
+          "class": "special",
+          "infos": [
+            { "icon": "fa-dollar-sign", "text": "60€" },
+            { "icon": "fa-info-circle", "text": "Sun cream, hat, water!" }
+          ]
+        },
+        {
+          "time": "17:30",
+          "title": "Drive back to Callas",
+          "description": "Head back to Callas to freshen up before dinner.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner at La maison de campagne",
+          "description": "Great reviews and large portions, perfect after an exhausting day. Also very close to stay.",
+          "icon": "fa-utensils",
+          "link": "https://www.google.com/maps/place/La+maison+de+campagne/@43.560419,6.5094181,14z/data=!4m10!1m2!2m1!1srestaurants!3m6!1s0x12cea99debdd979d:0xf19239a4765dc42f!8m2!3d43.560419!4d6.5269276!15sCgtyZXN0YXVyYW50c1oNIgtyZXN0YXVyYW50c5IBCnJlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZOVHpCdk56ZHhjVzlwZFZGM0VBReABAPoBBAhFECI!16s%2Fg%2F11x73nr731?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "21:00",
+          "title": "[Optional] Game Night",
+          "icon": "fa-gamepad"
+        }
+      ]
+    },
+    {
+      "day": "Sunday, 3rd May 2026 - Friends pick-up",
+      "checkpoints": [
+        {
+          "time": "09:00",
+          "title": "[Optional] Morning run",
+          "description": "5km?",
+          "icon": "fa-running"
+        },
+        {
+          "time": "10:00",
+          "title": "Breakfast and Coffee at Home",
+          "description": "Enjoy a leisurely breakfast on the balcony with the pastries from Clothilde and some fresh fruit.",
+          "icon": "fa-coffee"
+        },
+        {
+          "time": "11:00",
+          "title": "Drive to Nice Airport",
+          "description": "Pick up the other couple and Sofinicka.",
+          "icon": "fa-car",
+          "class": "travel",
+          "link": "https://www.google.com/maps/place/Nice+C%C3%B4te+d'Azur+Airport/@43.6600928,7.1992258,15z/data=!4m10!1m2!2m1!1snice+airport+arrivals!3m6!1s0x12cdd11897ae99f3:0x80532b1cc923c1b4!8m2!3d43.6598704!4d7.2142012!15sChVuaWNlIGFpcnBvcnQgYXJyaXZhbHNaFyIVbmljZSBhaXJwb3J0IGFycml2YWxzkgEVaW50ZXJuYXRpb25hbF9haXJwb3J0mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU0zTm1RM2VXRlJFQUXgAQD6AQQIABBL!16zL20vMDFxbmc5?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D",
+          "infos": [
+            { "icon": "fa-utensils", "text": "Bring them lunch" }
+          ]
+        },
+        {
+          "time": "15:00",
+          "title": "Relax in the Garden/Park",
+          "description": "Take the toddler to the small communal park right next to the house for some fresh air and playtime after their travel.",
+          "icon": "fa-tree"
+        },
+        {
+          "time": "18:30",
+          "title": "BBQ at Home",
+          "description": "Use the grill outside the basement. Enjoy dinner outdoors with a bottle of local wine while the toddler safely plays nearby.",
+          "icon": "fa-fire",
+          "class": "special"
+        },
+        {
+          "time": "20:00",
+          "title": "Evening Revision & Games",
+          "description": "Revise traveling plans for the next days, discuss any changes, and maybe play some board games or card games together.",
+          "icon": "fa-brain",
+          "class": "important"
+        }
+      ]
+    },
+    {
+      "day": "Monday, 4th May 2026 - Bargemon Expedition",
+      "checkpoints": [
+        {
+          "time": "08:30",
+          "title": "Breakfast at local bakery",
+          "description": "By this time, Bubu and Bebe will probably know which places. (Maybe consider groceries shopping as well)",
+          "icon": "fa-coffee"
+        },
+        {
+          "time": "10:00",
+          "title": "Drive to Bargemon",
+          "description": "A short 5km drive up the mountain to the picturesque village of Bargemon. Very stroller friendly and easy for the toddler.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "10:30",
+          "title": "Spring Water & Sightseeing",
+          "description": "Fill up empty water bottles at the famous fountain. Walk the ancient Roman streets and snap family photos.",
+          "icon": "fa-water",
+          "class": "special"
+        },
+        {
+          "time": "12:30",
+          "title": "Lunch in the Square",
+          "description": "Grab a casual lunch at one of the lively restaurants in Bargemon's town square.",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "15:00",
+          "title": "Nap Time / Chill Time",
+          "description": "Head back to the house. Toddler naps while the adults enjoy a glass of rosé on the balcony or in the cool basement.",
+          "icon": "fa-bed"
+        },
+        {
+          "time": "18:30",
+          "title": "[Optional] Bubu and bebe dinner",
+          "description": "Bubu and Bebe can go out to dinner. The others can have a quiet night at home with the toddler.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Tuesday, 5th May 2026 - Beach Day at Sainte Maxime",
+      "checkpoints": [
+        {
+          "time": "09:00",
+          "title": "Drive to the Coast (Nartelle Beach)",
+          "description": "Drive 30 minutes to Sainte Maxime. Bring beach gear and towels.",
+          "icon": "fa-car",
+          "class": "travel",
+          "link": "https://www.google.com/maps/dir//Nartelle+Beach,+83120,+France/@43.3207542,6.6634589,16.98z/data=!4m17!1m7!3m6!1s0x12cebf2d19f49743:0xfa8b3d4d988a9ceb!2sNartelle+Beach!8m2!3d43.3208961!4d6.6649814!16s%2Fg%2F1wjwxql3!4m8!1m0!1m5!1m1!1s0x12cebf2d19f49743:0xfa8b3d4d988a9ceb!2m2!1d6.6649814!2d43.3208961!3e0?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "10:00",
+          "title": "Beach Time",
+          "icon": "fa-umbrella-beach",
+          "class": "special",
+          "infos": [
+            { "icon": "fa-sun", "text": "sun cream" },
+            { "icon": "fa-water", "text": "water and snacks" },
+            { "icon": "fa-swimmer", "text": "swimsuit and towels" }
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at WYC or elsewhere",
+          "icon": "fa-utensils",
+          "link": "https://www.google.com/maps/place/Le+WYC/@43.3182119,6.665396,15z/data=!4m15!1m8!3m7!1s0x12cebf329a9d34ef:0x91cadfc11e06f43f!2sLe+WYC!8m2!3d43.3182749!4d6.6655463!10e9!16s%2Fg%2F1tczmkqp!3m5!1s0x12cebf329a9d34ef:0x91cadfc11e06f43f!8m2!3d43.3182749!4d6.6655463!16s%2Fg%2F1tczmkqp?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "16:00",
+          "title": "Return to Callas",
+          "description": "Head back up the mountain to escape the coastal heat. Easy dinner at home with groceries from the local Proxi.",
+          "icon": "fa-house"
+        }
+      ]
+    },
+    {
+      "day": "Wednesday, 6th May 2026 - Nature & Wine",
+      "checkpoints": [
+        {
+          "time": "09:30",
+          "title": "Morning Walk (AllTrails)",
+          "description": "Use the AllTrails app to find an easy, flat walking route nearby suitable for a stroller or baby carrier.",
+          "icon": "fa-walking"
+        },
+        {
+          "time": "13:00",
+          "title": "Chateau d'Esclans Tasting",
+          "description": "Drive down the mountain toward Callas to visit the home of 'Whispering Angel' rosé. The adults can take turns tasting while the toddler explores the beautiful estate grounds.",
+          "icon": "fa-wine-bottle",
+          "class": "special",
+          "infos": [
+            { "icon": "fa-credit-card", "text": "High-end wine purchases" }
+          ]
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner at La Fontaine",
+          "description": "Dine outdoors at the hotel restaurant in Callas. Very accessible and comfortable for groups with kids.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Thursday, 7th May 2026 - Farewell to Provence",
+      "checkpoints": [
+        {
+          "time": "09:00",
+          "title": "Final Pastries",
+          "description": "One last run to Clothilde for the best baked goods in the region.",
+          "icon": "fa-cake"
+        },
+        {
+          "time": "10:00",
+          "title": "House Clean-up",
+          "description": "Empty the fridge/freezer, start the dishwasher, and take all remaining trash to the street containers.",
+          "icon": "fa-broom",
+          "infos": [
+            { "icon": "fa-exclamation-triangle", "text": "Mandatory before departure" }
+          ]
+        },
+        {
+          "time": "11:30",
+          "title": "Departure",
+          "description": "Lock the house, place the key back in Keybox no. 2, and begin the journey home.",
+          "icon": "fa-car",
+          "class": "travel"
+        }
+      ]
+    }
+  ]
+}
