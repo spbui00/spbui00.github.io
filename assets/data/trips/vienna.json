@@ -18,18 +18,21 @@
         {
           "time": "10:40",
           "title": "Head to the visa appointment",
-          "description": "Go straight to the appointment location before doing anything else — leave luggage buffer time. Confirm the exact address the night before.",
+          "description": "Go straight to the Canada Visa Application Centre before anything else — Am Stadtpark 1, Office Top M2.1.24-25. Take the U4 to Stadtpark; it's right by the station.",
           "icon": "fa-train-subway",
-          "class": "travel"
+          "class": "travel",
+          "link": "https://www.google.com/maps/search/?api=1&query=Am+Stadtpark+1+1030+Wien"
         },
         {
           "time": "11:45",
-          "title": "Visa appointment",
-          "description": "Arrive ~10 minutes early. Bring every document, the printed confirmation, passport, and copies. Once this is done, the rest of the day is free.",
+          "title": "Visa appointment — Canada VAC",
+          "description": "Canada Visa Application Centre, Am Stadtpark 1, Office Top M2.1.24-25. Arrive ~10 minutes early. Bring every document, the printed confirmation, passport, and copies. Once this is done, the rest of the day is free.",
           "icon": "fa-passport",
           "class": "important",
+          "link": "https://www.google.com/maps/search/?api=1&query=Am+Stadtpark+1+Top+M2.1.24-25+1030+Wien",
           "infos": [
             { "icon": "fa-folder-open", "text": "All paperwork + copies" },
+            { "icon": "fa-location-dot", "text": "Am Stadtpark 1, Top M2.1.24-25" },
             { "icon": "fa-clock", "text": "Be early" }
           ]
         },
