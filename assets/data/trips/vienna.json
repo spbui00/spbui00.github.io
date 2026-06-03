@@ -1,0 +1,147 @@
+{
+  "title": "Vienna: Visa, Coffee & Schönbrunn",
+  "days": [
+    {
+      "day": "Wednesday, 3rd June 2026 - Arrival & Visa (cold & rainy)",
+      "checkpoints": [
+        {
+          "time": "10:20",
+          "title": "Arrive in Vienna",
+          "description": "Today is cold and rainy — wear a warm layer and pack the umbrella in the daypack. Grab a public transport day ticket as soon as you land.",
+          "icon": "fa-plane-arrival",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-ticket", "text": "Wiener Linien day ticket ~8 EUR" },
+            { "icon": "fa-umbrella", "text": "Rain gear" }
+          ]
+        },
+        {
+          "time": "10:40",
+          "title": "Head to the visa appointment",
+          "description": "Go straight to the appointment location before doing anything else — leave luggage buffer time. Confirm the exact address the night before.",
+          "icon": "fa-train-subway",
+          "class": "travel"
+        },
+        {
+          "time": "11:45",
+          "title": "Visa appointment",
+          "description": "Arrive ~10 minutes early. Bring every document, the printed confirmation, passport, and copies. Once this is done, the rest of the day is free.",
+          "icon": "fa-passport",
+          "class": "important",
+          "infos": [
+            { "icon": "fa-folder-open", "text": "All paperwork + copies" },
+            { "icon": "fa-clock", "text": "Be early" }
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch — Figlmüller",
+          "description": "Celebrate the appointment being over with the legendary oversized Wiener Schnitzel. Cosy and indoors, perfect for the rain. Booking a table helps.",
+          "icon": "fa-utensils",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Figlm%C3%BCller+Wollzeile+Vienna"
+        },
+        {
+          "time": "14:30",
+          "title": "Kunsthistorisches Museum",
+          "description": "The perfect rainy-afternoon shelter — one of the world's great art museums (Bruegel, Vermeer, Caravaggio) in a stunning palace building. Easy to lose a few hours here.",
+          "icon": "fa-palette",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Kunsthistorisches+Museum+Wien",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~21 EUR" },
+            { "icon": "fa-clock", "text": "Until 18:00" }
+          ]
+        },
+        {
+          "time": "16:45",
+          "title": "Viennese coffee house",
+          "description": "Warm up the classic way: a Melange and a slice of Sachertorte or Apfelstrudel in a grand café like Café Central or Café Sacher.",
+          "icon": "fa-mug-saucer",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Central+Vienna"
+        },
+        {
+          "time": "18:00",
+          "title": "Check in at Nest Natur Hostel",
+          "description": "Head out to the 14th district (Penzing) and settle in. Josef-Palme-Platz 4, 1140 Wien. Dry off and rest.",
+          "icon": "fa-house",
+          "class": "travel",
+          "link": "https://www.google.com/maps/search/?api=1&query=Nest+Natur+Hostel+Josef-Palme-Platz+4+1140+Wien"
+        },
+        {
+          "time": "19:30",
+          "title": "Dinner near the hostel",
+          "description": "Easy dinner along Mariahilfer Straße or near the hostel — plenty of options a few U-Bahn stops away. Early night since tomorrow is the big day out.",
+          "icon": "fa-utensils"
+        }
+      ]
+    },
+    {
+      "day": "Thursday, 4th June 2026 - Sunshine & Schönbrunn (nice weather)",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Breakfast & check out",
+          "description": "Pack up and check out. Leave the luggage at hostel reception so the day stays hands-free — you'll grab it before leaving.",
+          "icon": "fa-coffee",
+          "infos": [
+            { "icon": "fa-suitcase-rolling", "text": "Store bags at reception" }
+          ]
+        },
+        {
+          "time": "09:00",
+          "title": "Schönbrunn Palace & Gardens",
+          "description": "It's sunny today, so head to Schönbrunn first — it's just one district over from the hostel. Wander the free gardens, walk up to the Gloriette for the city view, and tour the palace interior.",
+          "icon": "fa-crown",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Sch%C3%B6nbrunn+Palace+Vienna",
+          "infos": [
+            { "icon": "fa-ticket", "text": "Palace ~22 EUR / Gardens free" },
+            { "icon": "fa-sun", "text": "Enjoy the gardens" }
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch in the city centre",
+          "description": "Take the U4 into the centre. Grab lunch around Stephansplatz or the Naschmarkt area.",
+          "icon": "fa-utensils",
+          "class": "travel"
+        },
+        {
+          "time": "13:00",
+          "title": "Old Town stroll",
+          "description": "Enjoy the sunshine on foot — Stephansdom, the Graben, Kärntner Straße, and the Hofburg. Soak up the centre at an easy pace.",
+          "icon": "fa-person-walking",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Stephansdom+Vienna"
+        },
+        {
+          "time": "15:00",
+          "title": "Collect luggage from hostel",
+          "description": "Head back to Penzing to pick up the bags. Don't cut this close — build in buffer for the 17:36 departure.",
+          "icon": "fa-suitcase-rolling",
+          "class": "travel",
+          "link": "https://www.google.com/maps/search/?api=1&query=Nest+Natur+Hostel+Josef-Palme-Platz+4+1140+Wien"
+        },
+        {
+          "time": "15:45",
+          "title": "Travel to departure point",
+          "description": "Make your way to the airport / station with margin to spare. Check passport, tickets, and phone before you go.",
+          "icon": "fa-train",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-suitcase", "text": "Passport, tickets, phone" }
+          ]
+        },
+        {
+          "time": "17:36",
+          "title": "Depart Vienna",
+          "description": "Auf Wiedersehen, Wien!",
+          "icon": "fa-plane-departure",
+          "class": "important"
+        }
+      ]
+    }
+  ]
+}

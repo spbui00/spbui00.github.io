@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('../assets/data/trips/nice.json')
+  fetch('../assets/data/trips/vienna.json')
     .then(response => response.json())
     .then(data => {
       const mainElement = document.querySelector('main');
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Fetch weather data
   const weatherApiKey = process.env.WEATHERAPI_KEY;
-  const city = 'Callas';
+  const city = 'Vienna';
   const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${city}&aqi=no`;
 
   fetch(weatherUrl)

@@ -5,46 +5,31 @@
       "day": "Friday, 1st May 2026 - Bubu and Bebe",
       "checkpoints": [
         {
-          "time": "18:30",
-          "title": "Rent Car from Avid",
-          "description": "Pick up car rental. 5 places, 2 drivers, full coverage.",
-          "icon": "fa-car",
-          "class": "important"
-        },
-        {
-          "time": "18:45",
-          "title": "Drive to a supermarket (eg Proxi)",
-          "description": "Toilet paper, soap, sampoo, and some snacks. The house does not have stuff.",
-          "icon": "fa-shopping-cart",
-          "class": "important"
-        },
-        {
           "time": "19:00",
-          "title": "Travel to 25 Bd des Poilus, 83830 Callas, France.",
-          "icon": "fa-map-marker-alt",
-          "class": "travel",
-          "link": "https://www.google.com/maps/place/25+Bd+des+Poilus,+83830+Callas,+France/@43.5921672,6.5378046,17z/data=!3m1!4b1!4m6!3m5!1s0x12cea8330280b7ad:0x7330fec6a5070683!8m2!3d43.5921672!4d6.5378046!16s%2Fg%2F11c2cghrcr?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+          "title": "Take taxi to stay",
+          "description": "None rents care for new drivers and also does not have credit card, sad.",
+          "icon": "fa-car",
+          "class": "travel"
         },
         {
-          "time": "20:00",
-          "title": "[Optional] Explore the village and have dinner.",
-          "description": "Walk to the town square and check out the restaurants. La Grotte Italienne is a suggestion from Gemini :D.",
-          "icon": "fa-walking"
+          "time": "20:30",
+          "title": "Checkin",
+          "description": "Chill at home and revise plans for the next days.",
+          "icon": "fa-house"
         }
       ]
     },
     {
-      "day": "Saturday, 2nd May 2026 - Local Charm & Gourmet Night",
+      "day": "Saturday, 2nd May 2026 - Local Charm",
       "checkpoints": [
         {
-          "time": "08:30",
-          "title": "Breakfast from Clothilde",
-          "description": "Walk to the local baker, Clothilde, for heavenly baguettes and croissants to enjoy on the dining room balcony.",
-          "icon": "fa-croissant",
-          "link": "https://www.google.com/maps/place/Clotilde+Patisserie+Boulangerie/@43.5935564,6.538864,18.2z/data=!4m15!1m8!3m7!1s0x12cea981b9fa4def:0x91504760413df13f!2sClotilde+Patisserie+Boulangerie!8m2!3d43.5938767!4d6.5393527!10e5!16s%2Fg%2F11g0hn_5yl!3m5!1s0x12cea981b9fa4def:0x91504760413df13f!8m2!3d43.5938767!4d6.5393527!16s%2Fg%2F11g0hn_5yl?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+          "time": "11:00",
+          "title": "HALO Banh Mi at home",
+          "description": "Enjoy baggetes brought from Sapa.",
+          "icon": "fa-utensils"
         },
         {
-          "time": "09:15",
+          "time": "11:40",
           "title": "Callas Saturday Market",
           "description": "Explore the local market in Callas. Buy some fresh local produce, olives, and perhaps a cooked chicken for lunch. Or some food for the next days.",
           "icon": "fa-store",
@@ -56,37 +41,25 @@
           ]
         },
         {
-          "time": "10:15",
-          "title": "Drive to Lake of Sainte-Croix",
-          "description": "An hour and 20 minutes drive.",
-          "icon": "fa-car",
-          "class": "travel",
-          "link": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x12cbe562cd878643:0xc32f4974ea3e789a!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA"
+          "time": "14:00",
+          "title": "Hike at Callas",
+          "description": "Take a hike around the village.",
+          "icon": "fa-walking",
+          "class": "special"
         },
         {
-          "time": "11:45",
-          "title": "Canoeing at the Lake of Sainte-Croix and picnic",
-          "description": "Rent canoe for half a day. Take the canoe across the Lac de Sainte-Croix to the Gorges du Verdon. Enjoy a picnic lunch on the shore of the lake or in the canoe. Can take break on the shore and swim.",
-          "icon": "fa-water",
-          "class": "special",
-          "infos": [
-            { "icon": "fa-dollar-sign", "text": "60€" },
-            { "icon": "fa-info-circle", "text": "Sun cream, hat, water!" }
-          ]
+          "time": "16:45",
+          "title": "Nap Nap Nap",
+          "description": "Take a chill nap.",
+          "icon": "fa-bed"
         },
         {
-          "time": "17:30",
-          "title": "Drive back to Callas",
-          "description": "Head back to Callas to freshen up before dinner.",
-          "icon": "fa-car",
-          "class": "travel"
-        },
-        {
-          "time": "19:00",
-          "title": "Dinner at La maison de campagne",
-          "description": "Great reviews and large portions, perfect after an exhausting day. Also very close to stay.",
+          "time": "19:20",
+          "title": "Dinner at Le Moulin des Voisins",
+          "description": "local French restaurant with excellent Google reviews.",
           "icon": "fa-utensils",
-          "link": "https://www.google.com/maps/place/La+maison+de+campagne/@43.560419,6.5094181,14z/data=!4m10!1m2!2m1!1srestaurants!3m6!1s0x12cea99debdd979d:0xf19239a4765dc42f!8m2!3d43.560419!4d6.5269276!15sCgtyZXN0YXVyYW50c1oNIgtyZXN0YXVyYW50c5IBCnJlc3RhdXJhbnSaASNDaFpEU1VoTk1HOW5TMFZOVHpCdk56ZHhjVzlwZFZGM0VBReABAPoBBAhFECI!16s%2Fg%2F11x73nr731?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+          "class": "special",
+          "link": "https://www.google.com/maps/place/Restaurant+Le+Moulin+des+Voisins/@43.5936209,6.5335935,15.5z/data=!4m14!1m7!3m6!1s0x12cebf2d19f49743:0xfa8b3d4d988a9ceb!2sNartelle+Beach!8m2!3d43.3208961!4d6.6649814!16s%2Fg%2F1wjwxql3!3m5!1s0x12cea8327bb54719:0xa77bf6d3fe384634!8m2!3d43.5942899!4d6.5396417!16s%2Fg%2F1q6h_yz70?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D"
         },
         {
           "time": "21:00",
@@ -96,13 +69,23 @@
       ]
     },
     {
-      "day": "Sunday, 3rd May 2026 - Friends pick-up",
+      "day": "Sunday, 3rd May 2026 - Friends arrival",
       "checkpoints": [
         {
-          "time": "09:00",
+          "time": "08:40",
           "title": "[Optional] Morning run",
           "description": "5km?",
           "icon": "fa-running"
+        },
+        {
+          "time": "09:10",
+          "title": "Grocery shopping",
+          "description": "Buy grocery for the dinner and anything else that might be missing, they then close for the whole day!",
+          "icon": "fa-shopping-cart",
+          "class": "important",
+          "infos": [
+            { "icon": "fa-clock", "text": "08:00 -> 12:15" }
+          ]
         },
         {
           "time": "10:00",
@@ -112,9 +95,9 @@
         },
         {
           "time": "11:00",
-          "title": "Drive to Nice Airport",
-          "description": "Pick up the other couple and Sofinicka.",
-          "icon": "fa-car",
+          "title": "[Optional] Get to Nice Airport",
+          "description": "Pick up the other couple and Sofinicka",
+          "icon": "fa-bus",
           "class": "travel",
           "link": "https://www.google.com/maps/place/Nice+C%C3%B4te+d'Azur+Airport/@43.6600928,7.1992258,15z/data=!4m10!1m2!2m1!1snice+airport+arrivals!3m6!1s0x12cdd11897ae99f3:0x80532b1cc923c1b4!8m2!3d43.6598704!4d7.2142012!15sChVuaWNlIGFpcnBvcnQgYXJyaXZhbHNaFyIVbmljZSBhaXJwb3J0IGFycml2YWxzkgEVaW50ZXJuYXRpb25hbF9haXJwb3J0mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU0zTm1RM2VXRlJFQUXgAQD6AQQIABBL!16zL20vMDFxbmc5?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D",
           "infos": [
@@ -122,20 +105,36 @@
           ]
         },
         {
-          "time": "15:00",
-          "title": "Relax in the Garden/Park",
-          "description": "Take the toddler to the small communal park right next to the house for some fresh air and playtime after their travel.",
+          "time": "14:30",
+          "title": "Freshen up at home",
+          "description": "Settle in and freshen up.",
           "icon": "fa-tree"
         },
         {
+          "time": "15:30",
+          "title": "[Optional] Go to the beach",
+          "description": "If the not too tired, go to beach since next days will rain a lot.",
+          "class": "special",
+          "link": "https://www.google.com/maps/dir/43.5921974,6.5377121/Nartelle+Beach,+83120/@43.4523286,6.4336204,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x12cebf2d19f49743:0xfa8b3d4d988a9ceb!2m2!1d6.6649814!2d43.3208961!3e0?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D",
+          "infos": [
+            {"icon": "fa-car", "text": "45 minutes"}
+          ]
+        },
+        {
           "time": "18:30",
-          "title": "BBQ at Home",
-          "description": "Use the grill outside the basement. Enjoy dinner outdoors with a bottle of local wine while the toddler safely plays nearby.",
+          "title": "Travel back home.",
+          "class": "travel",
+          "icon": "fa-car"
+        },
+        {
+          "time": "19:30",
+          "title": "Dinner at Home",
+          "description": "Enjoy dinner with bought goods from the market with a bottle of local wine.",
           "icon": "fa-fire",
           "class": "special"
         },
         {
-          "time": "20:00",
+          "time": "20:30",
           "title": "Evening Revision & Games",
           "description": "Revise traveling plans for the next days, discuss any changes, and maybe play some board games or card games together.",
           "icon": "fa-brain",
@@ -144,7 +143,7 @@
       ]
     },
     {
-      "day": "Monday, 4th May 2026 - Bargemon Expedition",
+      "day": "Monday, 4th May 2026 - Rainy day",
       "checkpoints": [
         {
           "time": "08:30",
@@ -153,30 +152,40 @@
           "icon": "fa-coffee"
         },
         {
-          "time": "10:00",
-          "title": "Drive to Bargemon",
-          "description": "A short 5km drive up the mountain to the picturesque village of Bargemon. Very stroller friendly and easy for the toddler.",
+          "time": "09:30",
+          "title": "Drive to Grotte de Saint Cézaire",
           "icon": "fa-car",
           "class": "travel"
         },
         {
           "time": "10:30",
-          "title": "Spring Water & Sightseeing",
-          "description": "Fill up empty water bottles at the famous fountain. Walk the ancient Roman streets and snap family photos.",
-          "icon": "fa-water",
-          "class": "special"
+          "title": "Grotte de Saint Cézaire",
+          "description": "Explore the stunning underground caves of Saint Cézaire. The caves are stroller-friendly and offer a magical experience for all ages. Reviews suggest guided tour. Book the tour beforehand (recommended)",
+          "icon": "fa-mountain",
+          "class": "special",
+          "link": "https://www.grotte-saintcezaire.com/en/activites/la-grotte-d-azur/",
+          "infos": [
+            { "icon": "fa-dollar-sign", "text": "11EUR"}
+          ]
         },
         {
-          "time": "12:30",
-          "title": "Lunch in the Square",
-          "description": "Grab a casual lunch at one of the lively restaurants in Bargemon's town square.",
+          "time": "12:00",
+          "title": "Lunch in a restaurant of choice",
+          "description": "Somthing on the way back.",
           "icon": "fa-utensils"
         },
         {
-          "time": "15:00",
-          "title": "Nap Time / Chill Time",
-          "description": "Head back to the house. Toddler naps while the adults enjoy a glass of rosé on the balcony or in the cool basement.",
-          "icon": "fa-bed"
+          "time": "13:00",
+          "title": "Drive back",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "14:00",
+          "title": "Rainy chill at home",
+          "description": "Play some games, cook some stuff, watch a movie.",
+          "icon": "fa-house",
+          "class": "important"
         },
         {
           "time": "18:30",
@@ -187,7 +196,7 @@
       ]
     },
     {
-      "day": "Tuesday, 5th May 2026 - Beach Day at Sainte Maxime",
+      "day": "Tuesday, 5th May 2026 - TBU",
       "checkpoints": [
         {
           "time": "09:00",
