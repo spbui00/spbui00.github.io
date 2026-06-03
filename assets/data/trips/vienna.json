@@ -31,8 +31,6 @@
           "class": "important",
           "link": "https://www.google.com/maps/search/?api=1&query=Am+Stadtpark+1+Top+M2.1.24-25+1030+Wien",
           "infos": [
-            { "icon": "fa-folder-open", "text": "All paperwork + copies" },
-            { "icon": "fa-location-dot", "text": "Am Stadtpark 1, Top M2.1.24-25" },
             { "icon": "fa-clock", "text": "Be early" }
           ]
         },
@@ -46,23 +44,23 @@
         },
         {
           "time": "14:30",
-          "title": "Kunsthistorisches Museum",
-          "description": "The perfect rainy-afternoon shelter — one of the world's great art museums (Bruegel, Vermeer, Caravaggio) in a stunning palace building. Easy to lose a few hours here.",
+          "title": "Belvedere",
+          "description": "The perfect rainy-afternoon shelter — Klimt's 'The Kiss' and a world-class collection inside a baroque palace. A short hop from the Stadtpark/visa area.",
           "icon": "fa-palette",
           "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Kunsthistorisches+Museum+Wien",
+          "link": "https://www.google.com/maps/search/?api=1&query=Belvedere+Vienna",
           "infos": [
-            { "icon": "fa-ticket", "text": "~21 EUR" },
+            { "icon": "fa-ticket", "text": "Upper Belvedere ~17 EUR" },
             { "icon": "fa-clock", "text": "Until 18:00" }
           ]
         },
         {
           "time": "16:45",
           "title": "Viennese coffee house",
-          "description": "Warm up the classic way: a Melange and a slice of Sachertorte or Apfelstrudel in a grand café like Café Central or Café Sacher.",
+          "description": "Warm up the classic way: a Melange and a slice of Sachertorte or Apfelstrudel in a grand café like Café Landtmann, Café Sacher, or Café Demel.",
           "icon": "fa-mug-saucer",
           "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Central+Vienna"
+          "link": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Landtmann+Vienna"
         },
         {
           "time": "18:00",
@@ -86,16 +84,27 @@
         {
           "time": "08:00",
           "title": "Breakfast & check out",
-          "description": "Pack up and check out. Leave the luggage at hostel reception so the day stays hands-free — you'll grab it before leaving.",
+          "description": "Pack up and check out before the work meeting. Bags are light, so just carry them — no need to come back to the hostel.",
           "icon": "fa-coffee",
           "infos": [
-            { "icon": "fa-suitcase-rolling", "text": "Store bags at reception" }
+            { "icon": "fa-suitcase-rolling", "text": "Carry your light bags" }
           ]
         },
         {
           "time": "09:00",
+          "title": "Work meeting",
+          "description": "Take the meeting from the hostel (or a quiet café nearby). Wifi + headphones ready beforehand.",
+          "icon": "fa-laptop",
+          "class": "important",
+          "infos": [
+            { "icon": "fa-wifi", "text": "Check connection early" },
+            { "icon": "fa-headphones", "text": "Headphones" }
+          ]
+        },
+        {
+          "time": "10:00",
           "title": "Schönbrunn Palace & Gardens",
-          "description": "It's sunny today, so head to Schönbrunn first — it's just one district over from the hostel. Wander the free gardens, walk up to the Gloriette for the city view, and tour the palace interior.",
+          "description": "It's sunny today, so head to Schönbrunn after the meeting — it's just one district over from the hostel. Wander the free gardens, walk up to the Gloriette for the city view, and tour the palace interior.",
           "icon": "fa-crown",
           "class": "special",
           "link": "https://www.google.com/maps/search/?api=1&query=Sch%C3%B6nbrunn+Palace+Vienna",
@@ -105,30 +114,38 @@
           ]
         },
         {
-          "time": "12:00",
+          "time": "12:30",
           "title": "Lunch in the city centre",
           "description": "Take the U4 into the centre. Grab lunch around Stephansplatz or the Naschmarkt area.",
           "icon": "fa-utensils",
           "class": "travel"
         },
         {
-          "time": "13:00",
+          "time": "13:30",
           "title": "Old Town stroll",
-          "description": "Enjoy the sunshine on foot — Stephansdom, the Graben, Kärntner Straße, and the Hofburg. Soak up the centre at an easy pace.",
+          "description": "Enjoy the sunshine on foot — Stephansdom, the Graben, and Kärntner Straße. Soak up the centre at an easy pace.",
           "icon": "fa-person-walking",
           "class": "special",
           "link": "https://www.google.com/maps/search/?api=1&query=Stephansdom+Vienna"
         },
         {
-          "time": "15:00",
-          "title": "Collect luggage from hostel",
-          "description": "Head back to Penzing to pick up the bags. Don't cut this close — build in buffer for the 17:36 departure.",
-          "icon": "fa-suitcase-rolling",
-          "class": "travel",
-          "link": "https://www.google.com/maps/search/?api=1&query=Nest+Natur+Hostel+Josef-Palme-Platz+4+1140+Wien"
+          "time": "14:30",
+          "title": "Naschmarkt",
+          "description": "Wander Vienna's famous open-air market — food stalls, snacks, and a lively atmosphere. Great for a sweet treat or a quick bite in the sun.",
+          "icon": "fa-store",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Naschmarkt+Vienna"
         },
         {
-          "time": "15:45",
+          "time": "15:15",
+          "title": "Karlskirche & Resselpark",
+          "description": "Right by the Naschmarkt — admire the baroque Karlskirche and relax by the reflecting pool in the park. A calm, sunny finish to the trip.",
+          "icon": "fa-church",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Karlskirche+Vienna"
+        },
+        {
+          "time": "16:00",
           "title": "Travel to departure point",
           "description": "Make your way to the airport / station with margin to spare. Check passport, tickets, and phone before you go.",
           "icon": "fa-train",
