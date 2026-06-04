@@ -79,75 +79,76 @@
       ]
     },
     {
-      "day": "Thursday, 4th June 2026 - Sunshine & Schönbrunn (nice weather)",
+      "day": "Thursday, 4th June 2026 - Sunshine, Coffee & Gym (nice weather)",
       "checkpoints": [
         {
-          "time": "08:00",
-          "title": "Breakfast & check out",
-          "description": "Pack up and check out before the work meeting. Bags are light, so just carry them — no need to come back to the hostel.",
-          "icon": "fa-coffee",
-          "infos": [
-            { "icon": "fa-suitcase-rolling", "text": "Carry your light bags" }
-          ]
-        },
-        {
-          "time": "09:00",
-          "title": "Work meeting",
-          "description": "Take the meeting from the hostel (or a quiet café nearby). Wifi + headphones ready beforehand.",
-          "icon": "fa-laptop",
-          "class": "important",
-          "infos": [
-            { "icon": "fa-wifi", "text": "Check connection early" },
-            { "icon": "fa-headphones", "text": "Headphones" }
-          ]
-        },
-        {
           "time": "10:00",
-          "title": "Schönbrunn Palace & Gardens",
-          "description": "It's sunny today, so head to Schönbrunn after the meeting — it's just one district over from the hostel. Wander the free gardens, walk up to the Gloriette for the city view, and tour the palace interior.",
-          "icon": "fa-crown",
-          "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Sch%C3%B6nbrunn+Palace+Vienna",
+          "title": "Check out",
+          "description": "Pack up and check out. Bags are light, so just carry them — no need to come back to the hostel.",
+          "icon": "fa-clock",
           "infos": [
-            { "icon": "fa-ticket", "text": "Palace ~22 EUR / Gardens free" },
-            { "icon": "fa-sun", "text": "Enjoy the gardens" }
+            { "icon": "fa-suitcase-rolling", "text": "Wallet, keys, phone, chargers" }
           ]
         },
         {
-          "time": "12:30",
-          "title": "Lunch in the city centre",
-          "description": "Take the U4 into the centre. Grab lunch around Stephansplatz or the Naschmarkt area.",
-          "icon": "fa-utensils",
+          "time": "10:30",
+          "title": "Travel to Vollpension",
+          "description": "Head towards the 4th district. It's about a 45-50 minute journey across town.",
+          "icon": "fa-train-subway",
           "class": "travel"
         },
         {
-          "time": "13:30",
-          "title": "Old Town stroll",
-          "description": "Enjoy the sunshine on foot — Stephansdom, the Graben, and Kärntner Straße. Soak up the centre at an easy pace.",
-          "icon": "fa-person-walking",
+          "time": "11:15",
+          "title": "Vollpension",
+          "description": "Enjoy a late morning treat at this charming 'Granny' café. Relax and fuel up before the workout.",
+          "icon": "fa-mug-hot",
           "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Stephansdom+Vienna"
+          "link": "https://www.google.com/maps/search/?api=1&query=Vollpension+Vienna"
         },
         {
-          "time": "14:30",
-          "title": "Naschmarkt",
-          "description": "Wander Vienna's famous open-air market — food stalls, snacks, and a lively atmosphere. Great for a sweet treat or a quick bite in the sun.",
-          "icon": "fa-store",
+          "time": "12:00",
+          "title": "Head to McFIT",
+          "description": "Leave Vollpension and head towards Mariahilferstraße for the gym session.",
+          "icon": "fa-person-walking",
+          "class": "travel"
+        },
+        {
+          "time": "12:20",
+          "title": "Gym session — McFIT Neubau",
+          "description": "1h workout at McFIT Wien Neubau, Mariahilferstraße 96.",
+          "icon": "fa-dumbbell",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=McFIT+Wien+Neubau+Mariahilferstraße+96",
+          "infos": [
+            { "icon": "fa-clock", "text": "1 hour session" }
+          ]
+        },
+        {
+          "time": "13:30",
+          "title": "Head to Naschmarkt",
+          "description": "Quick walk or short U-Bahn hop to the Naschmarkt for lunch.",
+          "icon": "fa-person-walking",
+          "class": "travel"
+        },
+        {
+          "time": "13:45",
+          "title": "Lunch at Naschmarkt",
+          "description": "Grab a delicious lunch at one of the many stalls or restaurants in the market. Plenty of fresh and diverse options.",
+          "icon": "fa-utensils",
           "class": "special",
           "link": "https://www.google.com/maps/search/?api=1&query=Naschmarkt+Vienna"
         },
         {
-          "time": "15:15",
-          "title": "Karlskirche & Resselpark",
-          "description": "Right by the Naschmarkt — admire the baroque Karlskirche and relax by the reflecting pool in the park. A calm, sunny finish to the trip.",
-          "icon": "fa-church",
-          "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Karlskirche+Vienna"
+          "time": "15:00",
+          "title": "Explore the Market",
+          "description": "Wander through the rest of the Naschmarkt, check out the specialty shops and soak up the 6th district vibes.",
+          "icon": "fa-store",
+          "class": "special"
         },
         {
-          "time": "16:00",
+          "time": "16:30",
           "title": "Travel to departure point",
-          "description": "Make your way to the airport / station with margin to spare. Check passport, tickets, and phone before you go.",
+          "description": "Make your way to the station.",
           "icon": "fa-train",
           "class": "travel",
           "infos": [
@@ -155,10 +156,17 @@
           ]
         },
         {
+          "time": "17:14",
+          "title": "Arrive at station",
+          "description": "Arrival at the station with margin to spare for the 17:36 departure.",
+          "icon": "fa-clock",
+          "class": "important"
+        },
+        {
           "time": "17:36",
           "title": "Depart Vienna",
           "description": "Auf Wiedersehen, Wien!",
-          "icon": "fa-plane-departure",
+          "icon": "fa-train",
           "class": "important"
         }
       ]
