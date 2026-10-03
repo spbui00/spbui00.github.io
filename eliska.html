@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Pro Elišku 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <link rel="stylesheet" href="css/eliska.css">
+</head>
+<body>
+  <main>
+    <form id="login" class="card">
+      <div class="card-header">
+        <h1>Pro Elišku 🎂</h1>
+        <p class="muted">Zadej heslo a uvidíš, co pro tebe máme.</p>
+      </div>
+      <div class="field">
+        <label for="pw">Heslo</label>
+        <input type="password" id="pw" autofocus>
+        <p id="err" class="error" hidden>Špatné heslo 🙈</p>
+      </div>
+      <button class="btn">Pustit dál</button>
+    </form>
+
+    <section id="vouchers" class="card" hidden>
+      <div class="card-header">
+        <h1>Všechno nejlepší! 🎉</h1>
+        <p class="muted">Tady máš kupóny v hodnotě 1000 Kč. Ale bez práce nejsou koláče, takže makej!</p>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section id="redeem" class="card" hidden>
+      <div class="card-header">
+        <h1 id="redeem-title"></h1>
+        <p id="question" class="question"></p>
+      </div>
+      <div id="quiz" class="choices"></div>
+      <p id="wrong" class="error" hidden>Kdepák, zkus to znovu 😏</p>
+      <div id="reward" class="reward" hidden>
+        <p class="muted">Správně! 🎉 Klikni na tlačítko, nebo naskenuj QR z jiného zařízení.</p>
+        <div id="qr"></div>
+        <a id="claim" class="btn" target="_blank" rel="noopener">Vybrat 100 Kč 💸</a>
+        <button id="done" class="btn btn-outline">Hotovo, mám je ✅</button>
+      </div>
+      <button id="back" class="btn btn-ghost">← Zpět</button>
+    </section>
+  </main>
+
+  <script src="js/eliska.js"></script>
+</body>
+</html>

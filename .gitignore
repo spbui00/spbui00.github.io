@@ -34,3 +34,6 @@ yarn-error.log*
 
 # Ignore Thumbs.db files (Windows)
 Thumbs.db
+
+# Eliska gift: plaintext questions + Revolut links, never commit
+eliska-coupons.json
