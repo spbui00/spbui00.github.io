@@ -1,0 +1,186 @@
+{
+  "title": "Prague",
+  "days": [
+    {
+      "day": "Wednesday, 7th October 2026 - Arrival in Prague",
+      "checkpoints": [
+        {
+          "time": "22:35",
+          "title": "Transfer to Miki's house",
+          "description": "Miki picking up by car.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "23:30",
+          "title": "Rest up",
+          "description": "Rest, chill, go sleep.",
+          "icon": "fa-bed"
+        }
+      ]
+    },
+    {
+      "day": "Thursday, 8th October 2026 - Exploring Prague",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Travel to Prague Castle",
+          "description": "Travel with Miki to work and meet Han somewhere in center. Breakfast on the way.",
+          "icon": "fa-tram",
+          "class": "travel"
+        },
+        {
+          "time": "09:30",
+          "title": "Prague Castle",
+          "description": "St. Vitus Cathedral, Golden Lane and the castle gardens. Changing of the guard at the main gate every hour.",
+          "icon": "fa-chess-rook",
+          "class": "special",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~450 CZK" }
+          ]
+        },
+        {
+          "time": "11:00",
+          "title": "Walk down through Malá Strana to Charles Bridge",
+          "description": "Down the Old Castle Stairs or Nerudova street, across Charles Bridge.",
+          "icon": "fa-walking",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-camera", "text": "Photos" }
+          ]
+        },
+        {
+          "time": "12:30",
+          "title": "Lunch",
+          "description": "Miki's recommendation at some Japanese restaurant close to his work.",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "13:30",
+          "title": "Thesis time",
+          "description": "Thesis people work in Akademie Věd. Non thesis people can chill, wonder around.",
+          "icon": "fa-book"
+        },
+        {
+          "time": "15:30",
+          "title": "Old Town Square",
+          "description": "Astronomical Clock (shows on the hour), Týn Church, wander the old town streets.",
+          "icon": "fa-clock",
+          "class": "special"
+        },
+        {
+          "time": "17:00",
+          "title": "Wenceslas Square",
+          "description": "Walk up to the National Museum.",
+          "icon": "fa-walking"
+        },
+        {
+          "time": "18:30",
+          "title": "Dinner at Kantýna",
+          "description": "Very good restaurant with good meat, Czech stuff too.",
+          "icon": "fa-cutlery",
+          "class": "special",
+          "link": "Old fortress above the river, quiet and beautiful views. Sunset around 18:30."
+        },
+        {
+          "time": "20:00",
+          "title": "Back to Miki's house",
+          "icon": "fa-house",
+          "class": "travel"
+        }
+      ]
+    },
+    {
+      "day": "Friday, 9th October 2026 - Hike and beer",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Leave the house with Miki. Meet Han somewhere on the way.",
+          "icon": "fa-bus"
+        },
+        {
+          "time": "09:00",
+          "title": "Groceries",
+          "description": "Buy some food and snack for the long hike.",
+          "icon": "fa-shop"
+        },
+        {
+          "time": "09:30",
+          "title": "Going to Dikova Sarka",
+          "icon": "fa-tram",
+          "class": "travel"
+        },
+        {
+          "time": "10:30",
+          "title": "Baba - Sarka Loop",
+          "description": "The route starts at the parking lot at the Divoká Šárka swimming pool and heads to Prague Nebušice. The trail then runs along the Sanatorium and along Dolní Šárka. At the Vltava, the route turns back through the forest of Zlatnice, Jenerálk and Divoká Šárka. The road also passes the Džbán Valley Reservoir. In certain parts, this route can be a bit more demanding, but the navigation very straightforward.",
+          "icon": "fa-walking",
+          "class": "special",
+          "link": "https://www.alltrails.com/explore/trail/czech-republic/prague/okruh-baba-sarka",
+          "infos": [
+            { "icon": "fa-shirt", "text": "rain and cold" },
+            { "icon": "fa-cutlery", "text": "snacks" }
+          ]
+        },
+        {
+          "time": "15:00",
+          "title": "Travel back to the center",
+          "icon": "fa-tram"
+        },
+        {
+          "time": "16:00",
+          "title": "Thesis time",
+          "description": "Thesis people work in Akademie Věd. Non thesis people can chill, wonder around.",
+          "icon": "fa-book"
+        },
+        {
+          "time": "17:15",
+          "title": "Leave to the Escape Room",
+          "description": "You have to be there 15 min before the start.",
+          "icon": "fa-tram",
+          "class": "travel",
+          "link": "https://www.google.com/maps/place/M%C3%A1nesova+1613%2F54,+120+00+Vinohrady/@50.0775832,14.4400245,17z/data=!3m1!4b1!4m6!3m5!1s0x470b948530023623:0x78a6b9a3679a83ae!8m2!3d50.0775832!4d14.4425994!16s%2Fg%2F11pw3jsg1x?entry=ttu&g_ep=EgoyMDI2MTAwNS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "time": "18:00",
+          "title": "MORIARTY’S PHANTOM TRAP",
+          "description": "ID Rezervace: 72564",
+          "link": "https://questerland.cz/en/fantom-of-moriarty/",
+          "class": "important"
+        },
+        {
+          "time": "19:30",
+          "title": "Dinner and hang out",
+          "description": "Depending on the mood. Either picnic at Letna / Podolsky view for the view or some restaurant.",
+          "icon": "fa-utensils",
+          "class": "special"
+        }
+      ]
+    },
+    {
+      "day": "Saturday, 10th October 2026 - Sapa day and chill",
+      "checkpoints": [
+        {
+          "time": "08:00",
+          "title": "Travel to Sapa.",
+          "class": "travel",
+          "icon": "fa-car"
+        },
+        {
+          "time": "08:30",
+          "title": "Sapa breakfast",
+          "description": "Have some delicious Vietnamese food at the largest Vietnamese market in EU.",
+          "icon": "fa-utensils",
+          "class": "special"
+        },
+        {
+          "time": "11:00",
+          "title": "Han must leave to airport!",
+          "description": "Han's plane departs at 13:25 so he must be around 12:00 at the airport.",
+          "icon": "fa-car",
+          "class": "important"
+        }
+      ]
+    }
+  ]
+}
