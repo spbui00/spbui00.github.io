@@ -6,7 +6,7 @@ html {
   font-weight: 600;
   font-style: normal;
   line-height: 1.5;
-  color: #FEFAE0;
+  color: #2b2d42;
 }
 @media (max-width: 576px) {
   html {
@@ -29,7 +29,7 @@ html {
   font-stretch: 1 100%;
 }
 body {
-  color: #FEFAE0;
+  color: #2b2d42;
   font-family: "Default Nutino", sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -121,8 +121,7 @@ p {
     opacity: 1;
   }
 }
-/* mixins.scss */
-/* Typography styles */
+/* mixins.scss */ /* Typography styles */
 html {
   font-size: 14px;
   font-family: "Default Nutino", sans-serif;
@@ -256,8 +255,8 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  background: #283618;
-  color: #FEFAE0;
+  background: #fff;
+  color: #2b2d42;
   padding: 24px 16px;
   transition: all 0.2s ease-in-out;
   height: 100vh;
@@ -308,8 +307,8 @@ main {
   box-shadow: none;
   padding: 4px 10px;
   border-radius: 8px;
-  background: #1E2B05;
-  color: #FEFAE0;
+  background: #edf2f4;
+  color: #2b2d42;
   opacity: 0.8;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
@@ -326,7 +325,7 @@ ul, ol, li, a {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #fefae0;
+  color: #8d99ae;
   text-decoration: none;
 }
 
@@ -352,7 +351,7 @@ footer {
 }
 
 .grey {
-  color: rgb(225.76, 227.55, 226.55);
+  color: #e2e4e3;
 }
 
 .orange-bg {
@@ -368,11 +367,11 @@ footer {
 }
 
 .green-bg {
-  background-color: #FEFAE0;
+  background-color: #2b2d42;
 }
 
 .yellow-bg {
-  background-color: rgb(200.56, 198.08, 192.6);
+  background-color: #c9c6c1;
 }
 
 a {
@@ -408,7 +407,7 @@ a:hover, a:focus {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #283618;
+  background: #fff;
 }
 
 .countdown-timer {
@@ -416,12 +415,12 @@ a:hover, a:focus {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 1px solid #BC6C25;
+  border: 1px solid #d90429;
   border-radius: 8px;
   padding: 8px;
   width: 100%;
-  background: #BC6C25;
-  color: #fefae0;
+  background: #d90429;
+  color: #8d99ae;
   box-sizing: border-box;
 }
 
@@ -452,7 +451,7 @@ a:hover, a:focus {
   opacity: 0.4;
   overflow: hidden;
   transition: max-height 0.8s ease-out, opacity 0.5s ease-out;
-  color: #FEFAE0;
+  color: #2b2d42;
 }
 .day-content.expanded {
   height: 100%;
@@ -469,7 +468,7 @@ a:hover, a:focus {
   width: 100%;
   height: 100%;
   opacity: 1;
-  color: #FEFAE0;
+  color: #2b2d42;
 }
 .day-content-checkpoint-timeline {
   display: flex;
@@ -481,18 +480,18 @@ a:hover, a:focus {
   opacity: 0.8;
 }
 .day-content-checkpoint-timeline-time {
-  color: #DDA15E;
+  color: #ef233c;
 }
 .travel .day-content-checkpoint-timeline-time {
   opacity: 0.6;
 }
 .day-content-checkpoint-timeline-line {
   height: 100%;
-  border: 1px solid #DDA15E;
+  border: 1px solid #ef233c;
   border-radius: 4px;
 }
 .travel .day-content-checkpoint-timeline-line {
-  border: 1px dashed #DDA15E;
+  border: 1px dashed #ef233c;
   background: none;
   opacity: 0.6;
 }
@@ -532,13 +531,13 @@ a:hover, a:focus {
 }
 .day-content-checkpoint-info-infos-item {
   border: 1px solid rgba(247, 255, 136, 0.5);
-  color: #BC6C25;
+  color: #d90429;
   background: rgba(211, 211, 211, 0.1);
   padding: 2px 4px;
   border-radius: 4px;
 }
 .special .day-content-checkpoint-info {
-  background: #1E2B05;
+  background: #edf2f4;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 8px;
@@ -546,8 +545,8 @@ a:hover, a:focus {
 }
 .important .day-content-checkpoint-info {
   border-radius: 8px;
-  color: #DDA15E;
-  border: 1px solid #DDA15E;
+  color: #ef233c;
+  border: 1px solid #ef233c;
   padding: 8px;
   box-sizing: border-box;
 }
@@ -598,10 +597,10 @@ a:hover, a:focus {
   width: 100%;
   height: 100%;
   gap: 8px;
-  background: #1E2B05;
+  background: #edf2f4;
   padding: 16px 8px;
   border-radius: 12px;
-  color: #FEFAE0;
+  color: #2b2d42;
 }
 .weather-section .weather-info .weather-item i {
   display: flex;

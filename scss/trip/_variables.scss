@@ -1,6 +1,13 @@
-$bg-color: #283618;
-$text-color: #FEFAE0;
-$primary-color: #1E2B05;
-$accent-color: #DDA15E;
-$secondary-accent-color: #BC6C25;
-$secondary-text-color: #fefae0;
+// Prague palette
+$space-indigo: #2b2d42;
+$lavender-grey: #8d99ae;
+$platinum: #edf2f4;
+$punch-red: #ef233c;
+$flag-red: #d90429;
+
+$bg-color: #fff;
+$text-color: $space-indigo;
+$primary-color: $platinum;
+$accent-color: $punch-red;
+$secondary-accent-color: $flag-red;
+$secondary-text-color: $lavender-grey;
