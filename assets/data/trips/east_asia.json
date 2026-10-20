@@ -53,7 +53,7 @@
       ]
     },
     {
-      "day": "Wednesday, 2nd December 2026 - Elephants & Nimman",
+      "day": "Wednesday, 2nd December 2026 - Elephants & Doi Suthep by scooter",
       "checkpoints": [
         {
           "time": "07:30",
@@ -68,20 +68,42 @@
           ]
         },
         {
-          "time": "15:00",
-          "title": "Wat Umong",
-          "coords": [18.7831, 98.95258],
-          "description": "Quiet 700-year-old forest temple at the foot of Doi Suthep, with meditation tunnels under the chedi and 'talking trees' hung with Buddhist proverbs.",
-          "icon": "fa-tree",
-          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Umong+Chiang+Mai"
+          "time": "14:30",
+          "title": "Rent scooters",
+          "description": "Back in town, rent 125cc scooters for the ride up the mountain (passport or cash deposit). Carry an International Driving Permit (1968 convention) and your licence: police checkpoints are common, and without them travel insurance may not cover you. Helmets are the law.",
+          "icon": "fa-motorcycle",
+          "infos": [
+            { "icon": "fa-money-bill", "text": "~€5.50 a day" },
+            { "icon": "fa-id-card", "text": "IDP + licence" }
+          ]
         },
         {
-          "time": "17:00",
-          "title": "Nimman",
-          "coords": [18.80013, 98.96807],
-          "description": "The hip part of town: cafés, small design shops and One Nimman. Coffee-and-cake o'clock.",
-          "icon": "fa-mug-hot",
-          "link": "https://www.google.com/maps/search/?api=1&query=One+Nimman+Chiang+Mai"
+          "time": "15:15",
+          "title": "Wat Pha Lat",
+          "coords": [18.79912, 98.9342],
+          "description": "Mossy jungle temple by a waterfall, overlooking the city. ~5 km above the zoo, turn off at the roadside buildings and ride 330 m down. (Walking up the Monk's Trail instead now costs ~€2.50.)",
+          "icon": "fa-vihara",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Pha+Lat+Chiang+Mai"
+        },
+        {
+          "time": "16:15",
+          "title": "Wat Phra That Doi Suthep",
+          "coords": [18.80501, 98.92218],
+          "description": "Ride on up to northern Thailand's most sacred temple: the 306-step naga staircase (or the lift) to the golden chedi, the whole city below.",
+          "icon": "fa-vihara",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Phra+That+Doi+Suthep",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€1" }
+          ]
+        },
+        {
+          "time": "17:15",
+          "title": "Sunset viewpoint",
+          "coords": [18.80261, 98.8959],
+          "description": "4.5 km further up the road, 500 m below Bhubing Palace. Sunset ~17:45, then ride down slowly: steep road, in the dark.",
+          "icon": "fa-sun"
         },
         {
           "time": "19:00",
@@ -95,12 +117,148 @@
       ]
     },
     {
-      "day": "Thursday, 3rd December 2026 - Monk's Trail & cooking class",
+      "day": "Thursday, 3rd December 2026 - Doi Inthanon, Thailand's highest peak",
       "checkpoints": [
         {
-          "time": "06:45",
+          "time": "04:00",
+          "title": "Drive to Doi Inthanon",
+          "route": [[18.79023, 98.98735], [18.55581, 98.48222]],
+          "description": "Private car with driver for the day (1–4 people, ~2.5 h each way), booked a day ahead: shared tours leave at 07:00–08:00 and miss the sunrise, and on scooters it is 100 km each way and freezing before dawn. Want to camp instead? Park tents at the HQ campground (km 31) ~€6, book on nps.dnp.go.th: it adds a night but skips the 04:00 start.",
+          "icon": "fa-car",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-money-bill", "text": "~€95 per car" }
+          ]
+        },
+        {
+          "time": "06:15",
+          "title": "Sunrise on the Kew Mae Pan trail",
+          "coords": [18.55581, 98.48222],
+          "description": "A 3.2 km loop along a ridge, through cloud forest and open grassland: the classic sunrise spot (~06:45), often above a sea of mist. A local guide is required, hired at the trailhead (~€5.50 per group); opens 06:00.",
+          "icon": "fa-person-hiking",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Kew+Mae+Pan+Nature+Trail",
+          "infos": [
+            { "icon": "fa-ticket", "text": "Park ~€8" },
+            { "icon": "fa-temperature-low", "text": "Cold at dawn, bring layers" }
+          ]
+        },
+        {
+          "time": "09:00",
+          "title": "Summit, 2,565 m",
+          "coords": [18.58848, 98.48746],
+          "description": "The highest point in Thailand: a boardwalk loop through the mossy Ang Ka cloud forest and the summit marker.",
+          "icon": "fa-mountain-sun",
+          "link": "https://www.google.com/maps/search/?api=1&query=Doi+Inthanon+summit"
+        },
+        {
+          "time": "10:00",
+          "title": "Twin royal pagodas",
+          "coords": [18.55276, 98.47958],
+          "description": "Two chedis built for the King's and Queen's 60th birthdays, with flower gardens and views over the ridges.",
+          "icon": "fa-monument",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Phra+Mahathat+Naphamethanidon",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€2.50–4" }
+          ]
+        },
+        {
+          "time": "11:30",
+          "title": "Lunch at Mae Klang Luang",
+          "description": "Karen village on the way down, with rice terraces and coffee grown on the mountain.",
+          "icon": "fa-mug-hot"
+        },
+        {
+          "time": "13:00",
+          "title": "Wachirathan waterfall",
+          "coords": [18.54205, 98.59836],
+          "description": "Big, loud waterfall right by the road down; the spray reaches the viewing platform. Included in the park ticket. Back in Chiang Mai by ~15:30.",
+          "icon": "fa-water",
+          "link": "https://www.google.com/maps/search/?api=1&query=Wachirathan+Waterfall"
+        },
+        {
+          "time": "19:30",
+          "title": "[Optional] Night Bazaar & repack",
+          "coords": [18.78444, 99.00038],
+          "description": "Souvenir stroll along Chang Klan Road, then repack: the big bags go to Pai by van tomorrow, keep a daypack for the night in Chiang Dao.",
+          "icon": "fa-suitcase"
+        }
+      ]
+    },
+    {
+      "day": "Friday, 4th December 2026 - Scooters to Chiang Dao",
+      "checkpoints": [
+        {
+          "time": "09:00",
+          "title": "One-way scooters to Pai",
+          "coords": [18.80402, 98.99676],
+          "description": "Aya Service rents scooters you drop off at their Pai office, and their van takes the big bags to Pai. Collect before 12:00, rent for two days, keep a daypack for tonight and tell them you're riding via Chiang Dao.",
+          "icon": "fa-motorcycle",
+          "link": "https://www.ayaservice.com/motorcycle",
+          "infos": [
+            { "icon": "fa-money-bill", "text": "~€5.50 a day + one-way fee" },
+            { "icon": "fa-suitcase", "text": "~€2.50 a bag" }
+          ]
+        },
+        {
+          "time": "09:30",
+          "title": "Ride to Chiang Dao",
+          "route": [[18.80402, 98.99676], [19.36957, 98.96571]],
+          "description": "~75 km north on Route 107, ~1.5 h on a wide main road.",
+          "icon": "fa-motorcycle",
+          "class": "travel"
+        },
+        {
+          "time": "11:15",
+          "title": "Chiang Dao Cave",
+          "coords": [19.39413, 98.92792],
+          "description": "Kilometres of caves under the mountain. The lit part is free to wander; a lantern guide takes you into the dark chambers full of stalactites and Buddha shrines.",
+          "icon": "fa-mountain",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Chiang+Dao+Cave",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€1" },
+            { "icon": "fa-lightbulb", "text": "Guide ~€5.50 per group" }
+          ]
+        },
+        {
+          "time": "14:30",
+          "title": "Wat Tham Pha Plong",
+          "coords": [19.40217, 98.91807],
+          "description": "Quiet meditation temple ~510 steps up the mountainside, with a view across to Doi Luang Chiang Dao. Keep your voice down.",
+          "icon": "fa-vihara",
+          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Tham+Pha+Plong"
+        },
+        {
+          "time": "16:00",
+          "title": "[Optional] Chiang Dao hot spring",
+          "coords": [19.36241, 98.92264],
+          "description": "Basic hot pools are free; the Japanese-style garden costs a little more.",
+          "icon": "fa-hot-tub-person",
+          "link": "https://www.google.com/maps/search/?api=1&query=Chiang+Dao+Hot+Spring",
+          "infos": [
+            { "icon": "fa-ticket", "text": "Garden ~€2.50" }
+          ]
+        },
+        {
+          "time": "17:30",
+          "title": "Sunset at Chiang Dao Mountain View",
+          "coords": [19.39608, 98.96415],
+          "description": "Resort café facing the limestone wall of Doi Luang Chiang Dao (2,225 m), known for sunset dinners. It has rooms, so sleep here (book ahead: Thai long weekend).",
+          "icon": "fa-utensils",
+          "class": "special",
+          "link": "https://maps.google.com/?cid=11143219809111559699"
+        }
+      ]
+    },
+    {
+      "day": "Saturday, 5th December 2026 - Over the mountains to Pai",
+      "checkpoints": [
+        {
+          "time": "07:00",
           "title": "Book the Laos trains!",
-          "description": "Laos–China Railway tickets go on sale ~7 days ahead and December trains sell out. Today: Luang Prabang → Vang Vieng (10th). On the 5th: Vang Vieng → Vientiane (12th). LCR Ticket app: sign up with email, add passports, pay by Visa. Plan B: 12Go (needs passport scans).",
+          "description": "Laos–China Railway tickets go on sale ~7 days ahead and December trains sell out. Today: Luang Prabang → Vang Vieng (12th). Tomorrow: Vang Vieng → Vientiane (13th). LCR Ticket app: sign up with email, add passports, pay by Visa. Plan B: 12Go (needs passport scans).",
           "icon": "fa-mobile-screen",
           "class": "important",
           "link": "https://www.seat61.com/Laos.htm",
@@ -109,78 +267,140 @@
           ]
         },
         {
-          "time": "07:30",
-          "title": "Monk's Trail to Wat Pha Lat",
-          "coords": [18.79923, 98.934],
-          "description": "Grab to the trailhead at the end of Suthep Road, then ~40 min uphill through the forest to Wat Pha Lat, a mossy jungle temple by a waterfall overlooking the city. Start early before the heat.",
-          "icon": "fa-person-hiking",
-          "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Monks+Trail+trailhead+Chiang+Mai",
+          "time": "08:30",
+          "title": "Ride to Pai",
+          "route": [[19.39608, 98.96415], [19.35934, 98.44287]],
+          "description": "Back south to Mae Malai, then Route 1095 and its famous 762 curves over the mountains: ~130 km, 3.5–4.5 h with stops. The shorter back road via Muang Khong turns into ~27 km of rough dirt track: not on rental scooters.",
+          "icon": "fa-motorcycle",
+          "class": "travel",
           "infos": [
-            { "icon": "fa-shoe-prints", "text": "Proper shoes" },
-            { "icon": "fa-ticket", "text": "~€2.50 cash" }
+            { "icon": "fa-gas-pump", "text": "Fill up in Mae Malai" }
           ]
         },
         {
-          "time": "09:30",
-          "title": "Wat Phra That Doi Suthep",
-          "coords": [18.80501, 98.92218],
-          "description": "Continue up the steep upper trail (~1 h) or hop on a songthaew on the road. 306-step naga staircase (or the lift) to the golden chedi, northern Thailand's most sacred temple. Red songthaews take you back down.",
-          "icon": "fa-vihara",
-          "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Phra+That+Doi+Suthep",
-          "infos": [
-            { "icon": "fa-ticket", "text": "~€1.50" }
-          ]
-        },
-        {
-          "time": "12:30",
-          "title": "Lunch, laundry & free time",
-          "description": "Drop laundry today (same-day at most shops): clean clothes before five days on the move.",
+          "time": "13:00",
+          "title": "Pai: bags, check in & laundry",
+          "coords": [19.35934, 98.44287],
+          "description": "Collect the bags at Aya's Pai office and check in (book ahead, it's the long weekend). Drop laundry, same-day at most shops. Keep the scooters until tomorrow morning.",
           "icon": "fa-house"
         },
         {
-          "time": "16:00",
-          "title": "Thai cooking class",
-          "coords": [18.78966, 98.99114],
-          "description": "Market tour, pound your own curry paste, cook 4–5 dishes, eat all of it. Book a day ahead, e.g. the evening class at Asia Scenic in the Old City.",
-          "icon": "fa-pepper-hot",
-          "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Asia+Scenic+Thai+Cooking+School+Chiang+Mai"
+          "time": "14:30",
+          "title": "Land Split & Pam Bok waterfall",
+          "coords": [19.32143, 98.42345],
+          "description": "A field torn open by an earthquake, where the farmers serve roselle juice and snacks for a donation (until 17:00). Then Pam Bok, a free waterfall at the end of a narrow gorge.",
+          "icon": "fa-person-hiking",
+          "link": "https://www.google.com/maps/search/?api=1&query=Land+Split+Pai"
         },
         {
-          "time": "21:00",
-          "title": "[Optional] Night Bazaar & repack",
-          "coords": [18.78444, 99.00038],
-          "description": "Souvenir stroll along Chang Klan Road, then repack: next up are bus, border and boat.",
-          "icon": "fa-suitcase"
+          "time": "16:00",
+          "title": "Bamboo bridge (Boon Ko Ku So)",
+          "coords": [19.32293, 98.39445],
+          "description": "~800 m of bamboo walkway across the rice fields to a forest temple.",
+          "icon": "fa-shoe-prints",
+          "link": "https://www.google.com/maps/search/?api=1&query=Boon+Ko+Ku+So+Bamboo+Bridge+Pai",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€1" }
+          ]
+        },
+        {
+          "time": "17:00",
+          "title": "Sunset at Pai Canyon",
+          "coords": [19.30469, 98.4529],
+          "description": "Narrow sandstone ridges with sheer drops on both sides and no railings. Pick a ridge, wait for the sun (~17:45) and bring a torch for the walk out.",
+          "icon": "fa-sun",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Pai+Canyon"
+        },
+        {
+          "time": "19:00",
+          "title": "Walking Street",
+          "coords": [19.36033, 98.44097],
+          "description": "Chaisongkram Road becomes a night market every evening: khao soi, grilled everything, mango sticky rice, then live music in the bars.",
+          "icon": "fa-utensils",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Pai+Walking+Street"
         }
       ]
     },
     {
-      "day": "Friday, 4th December 2026 - Chiang Rai: White & Blue temples",
+      "day": "Sunday, 6th December 2026 - Pai → Chiang Rai",
       "checkpoints": [
         {
-          "time": "08:45",
+          "time": "06:15",
+          "title": "[Optional] Sunrise at Yun Lai viewpoint",
+          "coords": [19.36893, 98.39555],
+          "description": "Above the Chinese village of Santichon, often looking down on a sea of mist (sunrise ~06:45).",
+          "icon": "fa-sun",
+          "link": "https://www.google.com/maps/search/?api=1&query=Yun+Lai+Viewpoint+Pai",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€0.50" }
+          ]
+        },
+        {
+          "time": "07:00",
+          "title": "Book the Vang Vieng → Vientiane train",
+          "description": "Sales for the 13th open today in the LCR Ticket app.",
+          "icon": "fa-mobile-screen",
+          "class": "important"
+        },
+        {
+          "time": "08:15",
+          "title": "[Optional] Tha Pai hot spring",
+          "coords": [19.30741, 98.47598],
+          "description": "Steaming creek and pools in the forest, opens 08:00. Then drop the scooters at Aya.",
+          "icon": "fa-hot-tub-person",
+          "link": "https://www.google.com/maps/search/?api=1&query=Tha+Pai+Hot+Spring",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€8" }
+          ]
+        },
+        {
+          "time": "10:00",
+          "title": "Van to Chiang Mai",
+          "route": [[19.36005, 98.44191], [18.80079, 99.01724]],
+          "description": "Prempracha vans leave Pai bus station hourly for Chiang Mai's Arcade terminal (~3.5 h). Take motion-sickness pills before the 762 curves, not after. Rather skip the morning? A through van to Chiang Rai leaves at 07:00 (~6.5 h, ~€15).",
+          "icon": "fa-van-shuttle",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-money-bill", "text": "~€4" }
+          ]
+        },
+        {
+          "time": "14:30",
           "title": "Green Bus to Chiang Rai",
           "route": [[18.80045, 99.01897], [19.90467, 99.83447]],
-          "description": "From Arcade Bus Terminal 3, ~3–3.5 h, several departures each morning. Buy tickets a day or two ahead: 5 December is a Thai holiday, long weekend.",
+          "description": "From Arcade Bus Terminal 3 next door: ~13 buses a day until 18:00, 3h20–3h45. Book ahead, it's the Thai long weekend.",
           "icon": "fa-bus",
           "class": "travel",
           "link": "https://www.google.com/maps/search/?api=1&query=Chiang+Mai+Arcade+Bus+Terminal+3",
           "infos": [
-            { "icon": "fa-ticket", "text": "~€5–11" }
+            { "icon": "fa-ticket", "text": "~€7–11" }
           ]
         },
         {
-          "time": "12:30",
-          "title": "Check in & lunch",
+          "time": "18:15",
+          "title": "Check in",
           "coords": [19.90716, 99.83099],
           "description": "Sleep near the clock tower: walkable to tonight's night bazaar and tomorrow's Bus Terminal 1.",
           "icon": "fa-house"
         },
         {
-          "time": "13:30",
+          "time": "19:00",
+          "title": "Night Bazaar & clock tower show",
+          "coords": [19.90524, 99.83407],
+          "description": "Food court with a stage: try jim jum, the local clay-pot hot pot. The golden clock tower does a light-and-music show at 19:00, 20:00 and 21:00.",
+          "icon": "fa-utensils",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Chiang+Rai+Night+Bazaar"
+        }
+      ]
+    },
+    {
+      "day": "Monday, 7th December 2026 - Chiang Rai temples & Phu Chi Fa",
+      "checkpoints": [
+        {
+          "time": "08:00",
           "title": "White Temple (Wat Rong Khun)",
           "coords": [19.82388, 99.7629],
           "description": "Chalermchai Kositpipat's all-white, mirror-studded fantasy temple, 20 min south by Grab. Cross the bridge over the reaching 'hands of hell', find the pop-culture murals inside (no photos) and don't miss the golden toilet building.",
@@ -192,7 +412,7 @@
           ]
         },
         {
-          "time": "15:30",
+          "time": "10:00",
           "title": "Blue Temple (Wat Rong Suea Ten)",
           "coords": [19.92336, 99.84176],
           "description": "Sapphire-blue hall with a big white Buddha, built by one of Chalermchai's students. Free, 10 min from the centre.",
@@ -200,28 +420,7 @@
           "link": "https://www.google.com/maps/search/?api=1&query=Wat+Rong+Suea+Ten+Chiang+Rai"
         },
         {
-          "time": "18:30",
-          "title": "Night Bazaar & clock tower show",
-          "coords": [19.90524, 99.83407],
-          "description": "Food court with a stage: try jim jum, the local clay-pot hot pot. The golden clock tower does a light-and-music show at 19:00, 20:00 and 21:00.",
-          "icon": "fa-utensils",
-          "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Chiang+Rai+Night+Bazaar"
-        }
-      ]
-    },
-    {
-      "day": "Saturday, 5th December 2026 - Across the border to Laos",
-      "checkpoints": [
-        {
-          "time": "07:00",
-          "title": "Book the Vang Vieng → Vientiane train",
-          "description": "Sales for the 12th open today in the LCR Ticket app.",
-          "icon": "fa-mobile-screen",
-          "class": "important"
-        },
-        {
-          "time": "09:00",
+          "time": "11:00",
           "title": "[Optional] Black House (Baan Dam)",
           "coords": [19.99115, 99.86112],
           "description": "Thawan Duchanee's dark answer to the White Temple: ~40 black buildings full of horns, skins and bones. 20 min north by Grab, leave the bags at the hotel.",
@@ -232,19 +431,55 @@
           ]
         },
         {
-          "time": "11:30",
-          "title": "Bus to Chiang Khong",
-          "route": [[19.90467, 99.83447], [20.21611, 100.43537]],
-          "description": "Local bus from Bus Terminal 1 (frequent, ~2–2.5 h, pay on board). Say 'Friendship Bridge': they drop you at the junction where tuk-tuks run to Thai immigration.",
-          "icon": "fa-bus",
+          "time": "13:00",
+          "title": "Minivan to Phu Chi Fa",
+          "route": [[19.90467, 99.83447], [19.84769, 100.44122]],
+          "description": "One van a day, 13:00 from Bus Terminal 1 (platform 1), 3–3.5 h. Or hire a private driver (~€65 per car), who can also take you on to the border tomorrow.",
+          "icon": "fa-van-shuttle",
           "class": "travel",
-          "link": "https://www.google.com/maps/search/?api=1&query=Chiang+Rai+Bus+Terminal+1",
           "infos": [
-            { "icon": "fa-money-bill", "text": "~€2.50" }
+            { "icon": "fa-money-bill", "text": "~€4" }
           ]
         },
         {
-          "time": "14:00",
+          "time": "16:30",
+          "title": "Ban Rom Fa Thai",
+          "coords": [19.84769, 100.44122],
+          "description": "Village at the foot of Phu Chi Fa: simple bungalows, or a tent with bedding. Book ahead, the long weekend (7 Dec is the holiday in lieu) fills it and pushes prices up. Ask your host tonight to book a car to Chiang Khong for tomorrow: no bus goes there.",
+          "icon": "fa-bed",
+          "infos": [
+            { "icon": "fa-bed", "text": "Bungalow ~€16–20" },
+            { "icon": "fa-campground", "text": "Tent ~€8" }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Tuesday, 8th December 2026 - Phu Chi Fa sunrise & across to Laos",
+      "checkpoints": [
+        {
+          "time": "05:15",
+          "title": "Sunrise at Phu Chi Fa",
+          "coords": [19.85007, 100.45407],
+          "description": "Songthaew up to the car park, then ~20 min on a steep path (torch!) to the cliff tip. Sunrise ~06:45 over a sea of mist filling the valleys of Laos; the cliff itself is on the Thai side of the border.",
+          "icon": "fa-sun",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Phu+Chi+Fa",
+          "infos": [
+            { "icon": "fa-money-bill", "text": "Songthaew ~€1 each way" },
+            { "icon": "fa-temperature-low", "text": "Below 10 °C" }
+          ]
+        },
+        {
+          "time": "08:30",
+          "title": "Car to Chiang Khong",
+          "route": [[19.84769, 100.44122], [20.21611, 100.43537]],
+          "description": "74 km down to the border, ~1.5 h. No car? The morning van back to Chiang Rai (reportedly 09:00) and the hourly bus to Chiang Khong get you to the border by mid-afternoon.",
+          "icon": "fa-car",
+          "class": "travel"
+        },
+        {
+          "time": "10:30",
           "title": "Cross at Friendship Bridge IV",
           "route": [[20.21611, 100.43537], [20.21684, 100.46173]],
           "description": "Thai exit stamp → mandatory shuttle bus over the Mekong → Lao immigration. The Lao eVisa is accepted here; otherwise visa on arrival with a passport photo and clean USD notes (~€1 extra on weekends). ASEAN passports are visa-free.",
@@ -257,7 +492,7 @@
           ]
         },
         {
-          "time": "15:30",
+          "time": "12:00",
           "title": "Huay Xai: check in & get kip",
           "coords": [20.27931, 100.41222],
           "description": "Tuk-tuk into town (~15 min) and withdraw kip at a BCEL ATM, Laos runs on cash from here. Ask the guesthouse what time the boat leaves; they also sell tickets incl. the tuk-tuk to the pier for a small commission.",
@@ -274,7 +509,7 @@
       ]
     },
     {
-      "day": "Sunday, 6th December 2026 - Slow boat: Huay Xai → Pakbeng",
+      "day": "Wednesday, 9th December 2026 - Slow boat: Huay Xai → Pakbeng",
       "checkpoints": [
         {
           "time": "08:00",
@@ -313,7 +548,7 @@
       ]
     },
     {
-      "day": "Monday, 7th December 2026 - Slow boat: Pakbeng → Luang Prabang",
+      "day": "Thursday, 10th December 2026 - Slow boat: Pakbeng → Luang Prabang",
       "checkpoints": [
         {
           "time": "08:15",
@@ -354,7 +589,7 @@
       ]
     },
     {
-      "day": "Tuesday, 8th December 2026 - Luang Prabang: monks & temples",
+      "day": "Friday, 11th December 2026 - Luang Prabang: monks, falls & Phousi",
       "checkpoints": [
         {
           "time": "05:45",
@@ -373,42 +608,6 @@
           "icon": "fa-mug-hot"
         },
         {
-          "time": "09:30",
-          "title": "Wat Xieng Thong",
-          "coords": [19.89746, 102.14316],
-          "description": "The most beautiful temple in Laos (1560): roofs sweeping almost to the ground and the glass-mosaic 'tree of life' on the back wall. Then walk to the tip of the peninsula where the Nam Khan meets the Mekong and cross the seasonal bamboo bridge if it's up.",
-          "icon": "fa-vihara",
-          "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Xieng+Thong+Luang+Prabang"
-        },
-        {
-          "time": "12:30",
-          "title": "Lao lunch & siesta",
-          "description": "Try larb, mok pa (fish steamed in banana leaf) and jeow bong chili paste with sticky rice. Afternoon off: nap, café, or the herbal sauna and massage at the Lao Red Cross.",
-          "icon": "fa-utensils"
-        },
-        {
-          "time": "16:45",
-          "title": "Sunset on Mount Phousi",
-          "coords": [19.89026, 102.13694],
-          "description": "~330 steps up to the golden stupa for sunset over the Mekong and the old town. It gets crowded, be at the top by 17:15.",
-          "icon": "fa-mountain",
-          "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Mount+Phousi+Luang+Prabang"
-        },
-        {
-          "time": "21:00",
-          "title": "[Optional] Drinks at Utopia",
-          "coords": [19.88812, 102.14018],
-          "description": "Garden bar on the Nam Khan. The town shuts at ~23:00; the famous after-party is, of all places, the bowling alley.",
-          "icon": "fa-beer-mug-empty"
-        }
-      ]
-    },
-    {
-      "day": "Wednesday, 9th December 2026 - Kuang Si Falls & Royal Palace",
-      "checkpoints": [
-        {
           "time": "08:00",
           "title": "Kuang Si Falls",
           "coords": [19.74974, 101.99207],
@@ -421,10 +620,25 @@
           ]
         },
         {
-          "time": "14:30",
-          "title": "Royal Palace Museum (Haw Kham)",
+          "time": "13:00",
+          "title": "Lao lunch",
+          "description": "Try larb, mok pa (fish steamed in banana leaf) and jeow bong chili paste with sticky rice.",
+          "icon": "fa-utensils"
+        },
+        {
+          "time": "14:00",
+          "title": "Wat Xieng Thong",
+          "coords": [19.89746, 102.14316],
+          "description": "The most beautiful temple in Laos (1560): roofs sweeping almost to the ground and the glass-mosaic 'tree of life' on the back wall. Then walk to the tip of the peninsula where the Nam Khan meets the Mekong and cross the seasonal bamboo bridge if it's up.",
+          "icon": "fa-vihara",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Xieng+Thong+Luang+Prabang"
+        },
+        {
+          "time": "15:00",
+          "title": "[Optional] Royal Palace Museum (Haw Kham)",
           "coords": [19.89225, 102.13556],
-          "description": "The last Lao king's palace (1904), with the gilded Haw Pha Bang temple in its grounds. Most guides say it's closed on Tuesdays, hence today. No shorts or bare shoulders, no photos inside.",
+          "description": "The last Lao king's palace (1904), with the gilded Haw Pha Bang temple in its grounds, right below Phousi. No shorts or bare shoulders, no photos inside.",
           "icon": "fa-landmark",
           "link": "https://www.google.com/maps/search/?api=1&query=Royal+Palace+Museum+Luang+Prabang",
           "infos": [
@@ -432,11 +646,13 @@
           ]
         },
         {
-          "time": "16:30",
-          "title": "[Optional] Sunset boat on the Mekong",
-          "coords": [19.8941, 102.13739],
-          "description": "One-hour sunset cruise, boats wait along the riverbank. Skip it if two days on the slow boat were enough.",
-          "icon": "fa-ship"
+          "time": "16:45",
+          "title": "Sunset on Mount Phousi",
+          "coords": [19.89026, 102.13694],
+          "description": "~330 steps up to the golden stupa for sunset over the Mekong and the old town. It gets crowded, be at the top by 17:15.",
+          "icon": "fa-mountain",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Mount+Phousi+Luang+Prabang"
         },
         {
           "time": "19:00",
@@ -446,11 +662,18 @@
           "icon": "fa-utensils",
           "class": "special",
           "link": "https://www.google.com/maps/search/?api=1&query=Manda+de+Laos+Luang+Prabang"
+        },
+        {
+          "time": "21:00",
+          "title": "[Optional] Drinks at Utopia",
+          "coords": [19.88812, 102.14018],
+          "description": "Garden bar on the Nam Khan. The town shuts at ~23:00; the famous after-party is, of all places, the bowling alley.",
+          "icon": "fa-beer-mug-empty"
         }
       ]
     },
     {
-      "day": "Thursday, 10th December 2026 - Train to Vang Vieng",
+      "day": "Saturday, 12th December 2026 - Train to Vang Vieng",
       "checkpoints": [
         {
           "time": "08:00",
@@ -477,7 +700,7 @@
           "icon": "fa-train",
           "class": "travel",
           "infos": [
-            { "icon": "fa-clock", "text": "Arrives 13:38" }
+            { "icon": "fa-clock", "text": "Arrives 13:34" }
           ]
         },
         {
@@ -493,30 +716,7 @@
           ]
         },
         {
-          "time": "18:00",
-          "title": "Dinner by the Nam Song",
-          "coords": [18.91942, 102.44773],
-          "description": "Riverside bars and restaurants facing the karst cliffs. Book tomorrow's kayak tour tonight.",
-          "icon": "fa-utensils"
-        }
-      ]
-    },
-    {
-      "day": "Friday, 11th December 2026 - Vang Vieng: river & viewpoint",
-      "checkpoints": [
-        {
-          "time": "09:00",
-          "title": "Kayaking & water-cave tubing",
-          "coords": [19.03519, 102.42522],
-          "description": "The classic (half day is enough): pull yourself on a tube into the Tham Nam water cave, visit Elephant Cave, then kayak down the Nam Song back to town. DIY alternative: the original river tubing from the tubing office in town.",
-          "icon": "fa-life-ring",
-          "class": "special",
-          "infos": [
-            { "icon": "fa-mobile-screen", "text": "Dry bag" }
-          ]
-        },
-        {
-          "time": "16:00",
+          "time": "16:30",
           "title": "Nam Xay viewpoint",
           "coords": [18.92368, 102.38678],
           "description": "Steep 30–40 min scramble (proper shoes) to the famous motorbike on the summit, the whole karst valley below. Stay for sunset, bring a torch for the way down.",
@@ -525,15 +725,16 @@
           "link": "https://www.google.com/maps/search/?api=1&query=Nam+Xay+Viewpoint+Vang+Vieng"
         },
         {
-          "time": "19:30",
-          "title": "Last night in Vang Vieng",
-          "description": "Dinner and drinks on the main strip. Want the sunrise balloon? Book it in town tonight.",
-          "icon": "fa-beer-mug-empty"
+          "time": "19:00",
+          "title": "Dinner by the Nam Song",
+          "coords": [18.91942, 102.44773],
+          "description": "Riverside bars and restaurants facing the karst cliffs. Want the sunrise balloon? Book it in town tonight.",
+          "icon": "fa-utensils"
         }
       ]
     },
     {
-      "day": "Saturday, 12th December 2026 - Vientiane & farewell dinner",
+      "day": "Sunday, 13th December 2026 - Vientiane & goodbyes",
       "checkpoints": [
         {
           "time": "06:00",
@@ -543,6 +744,17 @@
           "class": "special",
           "infos": [
             { "icon": "fa-money-bill", "text": "~€80–135 pp" }
+          ]
+        },
+        {
+          "time": "09:00",
+          "title": "Tham Nam water-cave tubing",
+          "coords": [19.03519, 102.42522],
+          "description": "Tuk-tuk ~13 km north and pull yourself on a tube along a rope into the Tham Nam water cave (head torch included). ~2–3 h with the ride, back in time for the train. The full kayak + tubing tours take most of the day.",
+          "icon": "fa-life-ring",
+          "class": "special",
+          "infos": [
+            { "icon": "fa-mobile-screen", "text": "Dry bag" }
           ]
         },
         {
@@ -586,49 +798,197 @@
         },
         {
           "time": "19:30",
-          "title": "Farewell dinner",
+          "title": "Farewell dinner & part ways",
           "coords": [17.96481, 102.61062],
-          "description": "Last big Lao dinner together, e.g. Kualao with traditional music and dance. Parting tonight? Wattay airport is ~15 min from the centre.",
+          "description": "Last big Lao dinner together, e.g. Kualao with traditional music and dance. Flying out? Wattay airport is ~15 min from the centre. Staying a day longer? Pha That Luang, Wat Si Saket and the COPE Visitor Centre.",
           "icon": "fa-champagne-glasses",
-          "class": "special",
+          "class": "important",
           "link": "https://www.google.com/maps/search/?api=1&query=Kualao+Restaurant+Vientiane"
         }
       ]
     },
     {
-      "day": "Sunday, 13th December 2026 - Vientiane & goodbyes",
+      "day": "Extra day 1 (before or after the trip) - Bangkok: temples, bikes & boats",
       "checkpoints": [
         {
-          "time": "08:00",
-          "title": "Wat Si Saket",
-          "coords": [17.96267, 102.611],
-          "description": "Vientiane's oldest surviving temple (1818); its cloister walls hold thousands of tiny Buddha statues.",
-          "icon": "fa-vihara",
-          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Si+Saket+Vientiane"
+          "time": "07:20",
+          "title": "Night train from Vientiane",
+          "route": [[17.9575, 102.67472], [13.80398, 100.54186]],
+          "description": "After the trip: train #134 leaves Vientiane's Khamsavath station (not the Lao–China railway one, ~10 km apart) at 18:25 and gets into Krung Thep Aphiwat at 07:20. There's only one sleeper car, so book early on 12Go or the SRT D-Ticket site, or fly from Wattay (~1h15). Fill in a new TDAC arrival card first. Doing Bangkok before the trip? Fly in and do these two days before Chiang Mai.",
+          "icon": "fa-train",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-bed", "text": "2nd-class sleeper ~€21–23" }
+          ]
         },
         {
-          "time": "09:00",
-          "title": "Pha That Luang",
-          "coords": [17.97666, 102.63649],
-          "description": "The golden stupa and national symbol of Laos. Next door, Wat That Luang Tai has a giant golden reclining Buddha.",
+          "time": "08:30",
+          "title": "Grand Palace & the Emerald Buddha",
+          "coords": [13.7501, 100.492],
+          "description": "Thailand's royal compound: gilded spires, guardian giants and the small jade Emerald Buddha in Wat Phra Kaew. Go at opening, before the heat and the tour buses. Anyone outside saying it's closed today is running a scam.",
+          "icon": "fa-landmark",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Grand+Palace+Bangkok",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€13" },
+            { "icon": "fa-shirt", "text": "No shorts or sleeveless tops" }
+          ]
+        },
+        {
+          "time": "10:45",
+          "title": "Wat Pho",
+          "coords": [13.74639, 100.49361],
+          "description": "Next door: the 46 m golden reclining Buddha with mother-of-pearl soles. This is where Thai massage was codified, and the temple school still gives massages in the grounds. Lunch afterwards at the Tha Tien market by the pier.",
           "icon": "fa-vihara",
           "class": "special",
-          "link": "https://www.google.com/maps/search/?api=1&query=Pha+That+Luang+Vientiane"
+          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Pho+Bangkok",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€8" }
+          ]
         },
         {
-          "time": "10:30",
-          "title": "COPE Visitor Centre",
-          "coords": [17.95795, 102.62032],
-          "description": "Free and powerful: Laos is the most bombed country per capita in history, and COPE makes prosthetics for people still hurt by the leftover bombs.",
-          "icon": "fa-hand-holding-heart",
-          "link": "https://copelaos.org/visit-us/"
+          "time": "13:00",
+          "title": "Co van Kessel bike tour",
+          "coords": [13.75645, 100.48897],
+          "description": "Bike tours through the alleys, markets and canal-side neighbourhoods most visitors never find. They start from the old pier building at Tha Phra Chan, ~15 min walk north. CO Original: 3 h, 08:00 or 13:00; the Extended tour adds a longtail boat (4.5 h). Book on their site, free cancellation until 24 h before.",
+          "icon": "fa-bicycle",
+          "class": "special",
+          "link": "https://www.covankessel.com/our-tours",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€33 (3 h)" },
+            { "icon": "fa-ship", "text": "With the longtail ~€50" }
+          ]
+        },
+        {
+          "time": "16:20",
+          "title": "Ferry to Wat Arun",
+          "route": [[13.74579, 100.4904], [13.74361, 100.48889]],
+          "description": "Walk ~20 min south (or Grab) back to Tha Tien pier; the cross-river ferry goes every few minutes.",
+          "icon": "fa-ship",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-money-bill", "text": "~€0.10" }
+          ]
+        },
+        {
+          "time": "16:30",
+          "title": "Wat Arun",
+          "coords": [13.74361, 100.48889],
+          "description": "The Temple of Dawn: a towering prang covered in Chinese porcelain flowers, with steep steps up to a river view. Last entry 17:30, then stay by the river for sunset (~17:50).",
+          "icon": "fa-vihara",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Arun+Bangkok",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€5.50" },
+            { "icon": "fa-shirt", "text": "Cover shoulders and knees" }
+          ]
+        },
+        {
+          "time": "18:00",
+          "title": "[Optional] Boat to ICONSIAM",
+          "route": [[13.74361, 100.48889], [13.72585, 100.51198]],
+          "description": "The river is Bangkok's best public transport. The blue-flag tourist boat leaves Wat Arun pier every 30 min until ~19:40; the Chao Phraya Express runs up and down the river all day (~€0.50 a ride; orange flag only at weekday rush hours, yellow flag in the daytime).",
+          "icon": "fa-ship",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-ticket", "text": "Blue-flag day pass ~€4" }
+          ]
+        },
+        {
+          "time": "18:30",
+          "title": "[Optional] ICONSIAM",
+          "coords": [13.72682, 100.51029],
+          "description": "Riverside mega-mall. SookSiam on the ground floor is an indoor floating market with food and crafts from all 77 provinces, the River Park terrace looks back at the skyline, and the water show runs at 19:00, 20:00 and 21:00.",
+          "icon": "fa-store",
+          "link": "https://www.google.com/maps/search/?api=1&query=ICONSIAM+Bangkok"
+        },
+        {
+          "time": "19:30",
+          "title": "Chinatown street food",
+          "coords": [13.74114, 100.5083],
+          "description": "Yaowarat Road after dark: neon signs, smoking woks and plastic stools, ~15 min by Grab from ICONSIAM (or MRT to Wat Mangkon). Nai Ek's peppery rolled noodles, grilled seafood at T&K, crispy oyster omelette at Nai Mong Hoi Thod (closed Mon–Tue). Many stalls take Mondays off.",
+          "icon": "fa-utensils",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Yaowarat+Road+Bangkok"
+        }
+      ]
+    },
+    {
+      "day": "Extra day 2 - Ayutthaya day trip",
+      "checkpoints": [
+        {
+          "time": "07:30",
+          "title": "Train to Ayutthaya",
+          "route": [[13.80398, 100.54186], [14.35671, 100.58295]],
+          "description": "Rapid trains from Krung Thep Aphiwat take ~1 h: #135 07:10, #111 07:30 or #75 08:45. 3rd class is unreserved, buy at the station on the day (online sales close the day before).",
+          "icon": "fa-train",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€0.50–1.50" },
+            { "icon": "fa-clock", "text": "~1 h" }
+          ]
+        },
+        {
+          "time": "08:45",
+          "title": "Ferry & bikes into the old city",
+          "description": "Walk to the river opposite the station, take the little ferry across to the island and rent bicycles there. The ruins are spread out but the island is flat; tuk-tuks can be hired by the hour.",
+          "icon": "fa-bicycle",
+          "infos": [
+            { "icon": "fa-money-bill", "text": "Bikes ~€1–1.50 a day" },
+            { "icon": "fa-ship", "text": "Ferry ~€0.10" }
+          ]
+        },
+        {
+          "time": "09:15",
+          "title": "Wat Mahathat",
+          "coords": [14.35697, 100.56743],
+          "description": "The Buddha head grown into the roots of a tree, among rows of headless Buddhas left from the Burmese sack of 1767. Crouch for photos: your head shouldn't be higher than the Buddha's.",
+          "icon": "fa-vihara",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Mahathat+Ayutthaya",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€2, 7-temple pass ~€8" }
+          ]
+        },
+        {
+          "time": "11:00",
+          "title": "Wat Phra Si Sanphet",
+          "coords": [14.35595, 100.55852],
+          "description": "Three bell-shaped chedis in a row: the royal temple of the old capital and Ayutthaya's postcard view.",
+          "icon": "fa-monument",
+          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Phra+Si+Sanphet+Ayutthaya",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€2" }
+          ]
         },
         {
           "time": "12:30",
-          "title": "Last lunch & part ways",
-          "description": "Wattay airport is ~15 min from the centre. Crossing to Thailand overland? Stop at Buddha Park (Xieng Khuan) near Friendship Bridge I.",
-          "icon": "fa-plane-departure",
-          "class": "important"
+          "title": "Boat noodles & roti sai mai",
+          "description": "Ayutthaya's specialities: small bowls of rich boat noodles, then roti sai mai (candy-floss threads rolled in thin pancakes) for dessert. Slow afternoon in the shade.",
+          "icon": "fa-bowl-food"
+        },
+        {
+          "time": "16:30",
+          "title": "Sunset at Wat Chaiwatthanaram",
+          "coords": [14.34299, 100.54189],
+          "description": "Khmer-style towers on the riverbank west of the island, the most beautiful ruin at sunset (~17:50). Open until 18:30.",
+          "icon": "fa-sun",
+          "class": "special",
+          "link": "https://www.google.com/maps/search/?api=1&query=Wat+Chaiwatthanaram+Ayutthaya",
+          "infos": [
+            { "icon": "fa-ticket", "text": "~€2" }
+          ]
+        },
+        {
+          "time": "19:16",
+          "title": "Train back to Bangkok",
+          "route": [[14.35671, 100.58295], [13.80398, 100.54186]],
+          "description": "#102 19:16 or #22 21:21 to Krung Thep Aphiwat (~1 h). Doing Bangkok before the trip? Skip the return: sleepers #9 (19:45) and #13 (21:07) to Chiang Mai stop here and arrive at 07:15 / 08:45. Book the berths ahead.",
+          "icon": "fa-train",
+          "class": "travel",
+          "infos": [
+            { "icon": "fa-bed", "text": "Sleeper to Chiang Mai ~€20–28" }
+          ]
         }
       ]
     }
