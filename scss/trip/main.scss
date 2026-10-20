@@ -209,7 +209,7 @@ a {
       &-timeline {
         @include flex-container(center, center, column);
         position: relative;
-        height: 100%;
+        align-self: stretch;
         opacity: 0.8;
 
         &-time {
@@ -221,7 +221,7 @@ a {
         }
 
         &-line {
-          height: 100%;
+          flex-grow: 1;
           border: 1px solid $accent-color;
           border-radius: $borderRadiusSmall;
 
@@ -263,9 +263,9 @@ a {
           width: 100%;
   
           &-item {
-            border: 1px solid rgba(247, 255, 136, 0.5);
+            border: 1px solid rgba($accent-color, 0.3);
             color: $secondary-accent-color;
-            background: rgba(211, 211, 211, 0.1);
+            background: rgba($accent-color, 0.1);
             padding: 2px 4px;
             border-radius: $borderRadiusSmall;
           }
@@ -296,55 +296,104 @@ a {
     }
   }
 }
-.weather-section {
-  @include flex-container(center, center, column);
-  width: 500px;
-  transition: $transition;
-  box-sizing: border-box;
-  border-radius: $borderRadiusMedium;
-  margin-bottom: $spacing-xl;
+#itinerary {
+  width: 100%;
+}
 
-  @include respond-to(md) {
-    width: 80%;
-    margin-bottom: $spacing-lg;
+// Map view (#map): full-screen map, itinerary in a bottom drawer
+#map-view {
+  display: none;
+  position: fixed;
+  inset: 0;
+}
+
+.map-mode {
+  overflow: hidden;
+
+  main {
+    display: none;
   }
 
-  @include respond-to(sm) {
-    width: 100%;
+  #map-view {
+    display: block;
   }
 
-  .weather-info {
-    @include flex-container(space-between, start, row);
-    gap: $spacing-sm;
+  .on-map {
+    cursor: pointer;
+  }
+
+  .selected .day-content-checkpoint-info {
+    outline: 2px solid $accent-color;
+    outline-offset: 2px;
+    border-radius: $borderRadiusMedium;
+    opacity: 1;
+  }
+}
+
+#map {
+  height: 100%;
+  font: inherit;
+
+  a {
+    opacity: 1;
+  }
+}
+
+// z-index 1001: above Leaflet's panes and controls
+.map-back {
+  position: absolute;
+  top: $spacing-sm;
+  left: $spacing-sm;
+  z-index: 1001;
+  opacity: 1;
+  box-shadow: $boxShadowMedium;
+}
+
+.drawer {
+  @include flex-container(start, stretch, column);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  height: 50%;
+  max-width: 720px;
+  margin: 0 auto;
+  background: $bg-color;
+  border-radius: $borderRadiusLarge $borderRadiusLarge 0 0;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.12);
+  transition: height 0.5s cubic-bezier(0.32, 0.72, 0, 1); // vaul's easing
+
+  &.dragging {
+    transition: none;
+  }
+
+  &-handle {
+    flex-shrink: 0;
     width: 100%;
+    padding: $spacing-sm 0;
+    cursor: grab;
+    touch-action: none;
 
-    @include respond-to(md) {
-      gap: $spacing-xs;
+    &::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 8px;
+      margin: 0 auto;
+      border-radius: 999px;
+      background: rgba($secondary-text-color, 0.4);
     }
 
-    .weather-item {
-      @include flex-container(center, center, column);
-      width: 100%;
-      height: 100%;
-      gap: $spacing-xs;
-      background: $primary-color;
-      padding: $spacing-sm $spacing-xs;
-      border-radius: $borderRadiusLarge;
-      color: $text-color;
-
-      i {
-        @include flex-container(center, center, column);
-        font-size: 2rem;
-
-        @include respond-to(md) {
-          font-size: 1.7rem;
-        }
-      }
-
-      @include respond-to(md) {
-        padding: $spacing-xs; 
-      }
+    &:focus-visible {
+      outline: 2px solid $accent-color;
     }
+  }
 
+  &-body {
+    flex: 1;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0 $spacing-sm $spacing-md;
   }
 }

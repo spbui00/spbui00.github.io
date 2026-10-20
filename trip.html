@@ -11,7 +11,7 @@
   <body>
     <main>
       <div class="header" id="header">
-        <h1>Hallo...</br>Prague</h1>
+        <h1>Hello...</br>East Asia</h1>
       </div>
 
       <div class="trip-btns">
@@ -24,11 +24,28 @@
           <i class="fas fa-circle-exclamation"></i>
           Call Emergency
         </a>
+
+        <a href="#map" class="trip-btn">
+          <i class="fas fa-map"></i>
+          Map
+        </a>
       </div>
 
-      <div id="weather" class="weather-section">
-        <div id="weather-info" class="weather-info"></div>
-      </div>
+      <div id="itinerary"></div>
     </main>
+
+    <div id="map-view">
+      <div id="map"></div>
+
+      <a href="#list" class="trip-btn map-back">
+        <i class="fas fa-list"></i>
+        List
+      </a>
+
+      <div class="drawer">
+        <button class="drawer-handle" aria-label="Expand or collapse the itinerary"></button>
+        <div class="drawer-body"></div>
+      </div>
+    </div>
   </body>
 </html>
