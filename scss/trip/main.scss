@@ -420,9 +420,14 @@ a {
 #itinerary {
   width: 100%;
 
-  // long-press opens our menu, not iOS's link preview
+  // long-press opens our menu, not iOS's link preview or text selection (copy stays possible with a mouse)
   .day-content-checkpoint {
     -webkit-touch-callout: none;
+
+    @media (pointer: coarse) {
+      -webkit-user-select: none;
+      user-select: none;
+    }
   }
 }
 
