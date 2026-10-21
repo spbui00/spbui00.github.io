@@ -1137,6 +1137,7 @@ a:hover, a:focus {
 /* width */
 ::-webkit-scrollbar {
   width: 3px !important;
+  height: 3px;
 }
 
 /* Track */
@@ -1227,9 +1228,22 @@ a:hover, a:focus {
 }
 .day-content-checkpoint-timeline-time {
   color: #ef233c;
+  white-space: nowrap;
 }
 .travel .day-content-checkpoint-timeline-time {
   opacity: 0.6;
+}
+.day-content-checkpoint-timeline-time.pinned {
+  text-decoration: underline;
+}
+.day-content-checkpoint-timeline-time.late {
+  color: #d90429;
+  font-weight: 800;
+  text-decoration: underline wavy;
+}
+.day-content-checkpoint-timeline-duration {
+  font-size: 0.75rem;
+  color: #8d99ae;
 }
 .day-content-checkpoint-timeline-line {
   flex-grow: 1;
@@ -1260,6 +1274,7 @@ a:hover, a:focus {
   align-items: center;
   flex-direction: row;
   gap: 8px;
+  width: 100%;
   font-weight: 800;
 }
 .day-content-checkpoint-info-description {
@@ -1299,9 +1314,130 @@ a:hover, a:focus {
 .day-content-checkpoint:last-child .day-content-checkpoint-timeline-line {
   opacity: 0;
 }
+.day-content-checkpoint-actions {
+  display: flex;
+  margin-left: auto;
+}
+.day-content-checkpoint-actions button {
+  padding: 2px 6px;
+  color: #8d99ae;
+  font-size: 1rem;
+}
+.day-content-checkpoint-actions .drag {
+  cursor: grab;
+  touch-action: none;
+}
+.day-content-checkpoint.reordering {
+  position: relative;
+  z-index: 10;
+  cursor: grabbing;
+  background: #fff;
+  border-radius: 8px;
+}
+.day-content-checkpoint.reordering .day-content-checkpoint-info {
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(10, 9, 8, 0.1);
+}
+.day-content-checkpoint.reordering .drag {
+  cursor: grabbing;
+}
+.day-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 16px;
+  color: #8d99ae;
+}
+.day-start input {
+  font: inherit;
+  color: #ef233c;
+  border: 1px solid rgba(239, 35, 60, 0.3);
+  border-radius: 4px;
+  background: none;
+}
+.day-reset {
+  color: #8d99ae;
+  text-decoration: underline;
+}
+.day-timeline {
+  width: 100%;
+}
+.day-options {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.day-options-label {
+  color: #8d99ae;
+  margin-bottom: 8px;
+}
+.day-options-list {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+}
+.day-options-list .day-content-checkpoint {
+  flex: 0 0 min(280px, 80%);
+  scroll-snap-align: start;
+  opacity: 0.45;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.day-options-list .day-content-checkpoint:hover {
+  opacity: 0.7;
+}
+.day-options-list .day-content-checkpoint .day-content-checkpoint-timeline-time,
+.day-options-list .day-content-checkpoint .day-content-checkpoint-timeline-line,
+.day-options-list .day-content-checkpoint .day-content-checkpoint-actions {
+  display: none;
+}
+.day-options-list .day-content-checkpoint .day-content-checkpoint-timeline {
+  justify-content: start;
+}
+.day-options-list .day-content-checkpoint .day-content-checkpoint-info {
+  margin-bottom: 0;
+}
 
 #itinerary {
   width: 100%;
+}
+#itinerary .day-content-checkpoint {
+  -webkit-touch-callout: none;
+}
+
+.context-menu {
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1002;
+  min-width: 200px;
+  max-width: calc(100% - 16px);
+  padding: 4px;
+  background: #fff;
+  border: 1px solid #edf2f4;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(10, 9, 8, 0.1);
+}
+.context-menu[hidden] {
+  display: none;
+}
+.context-menu a {
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #2b2d42;
+  opacity: 1;
+}
+.context-menu a i {
+  width: 1.2em;
+  color: #ef233c;
+}
+.context-menu a:hover, .context-menu a:focus {
+  background: #edf2f4;
 }
 
 #map-view {
@@ -1323,9 +1459,10 @@ a:hover, a:focus {
   cursor: pointer;
 }
 .map-mode .selected .day-content-checkpoint-info {
-  outline: 2px solid #ef233c;
-  outline-offset: 2px;
   border-radius: 8px;
+  border: 1px solid #8d99ae;
+  padding: 8px;
+  box-sizing: border-box;
   opacity: 1;
 }
 
@@ -1393,6 +1530,29 @@ a:hover, a:focus {
   padding: 0 16px 24px;
 }
 
+@media (min-width: 769px) {
+  .drawer {
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: auto;
+    width: 420px;
+    max-width: calc(100% - 2 * 16px);
+    height: auto;
+    margin: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  }
+  .drawer-handle {
+    display: none;
+  }
+  .drawer-body {
+    padding-top: 24px;
+  }
+  .leaflet-right {
+    right: calc(420px + 16px);
+  }
+}
 nav {
   display: flex;
   justify-content: flex-start;

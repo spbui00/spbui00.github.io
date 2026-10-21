@@ -136,6 +136,7 @@ a {
 /* width */
 ::-webkit-scrollbar {
   width: 3px !important;
+  height: 3px; // horizontal ones, like the options row
 }
 
 /* Track */
@@ -214,10 +215,26 @@ a {
 
         &-time {
           color: $accent-color;
+          white-space: nowrap;
 
           .travel & {
             opacity: 0.6;
           }
+
+          &.pinned {
+            text-decoration: underline;
+          }
+
+          &.late {
+            color: $secondary-accent-color;
+            font-weight: 800;
+            text-decoration: underline wavy;
+          }
+        }
+
+        &-duration {
+          font-size: 0.75rem;
+          color: $secondary-text-color;
         }
 
         &-line {
@@ -248,6 +265,7 @@ a {
         &-title {
           @include flex-container(start, center, row);
           gap: $spacing-xs;
+          width: 100%;
           font-weight: 800;
         }
 
@@ -293,11 +311,153 @@ a {
           opacity: 0;
         }
       }
+
+      &-actions {
+        display: flex;
+        margin-left: auto;
+
+        button {
+          padding: 2px 6px;
+          color: $secondary-text-color;
+          font-size: 1rem;
+        }
+
+        .drag {
+          cursor: grab;
+          touch-action: none;
+        }
+      }
+
+      // lifted while dragged
+      &.reordering {
+        position: relative;
+        z-index: 10;
+        cursor: grabbing;
+        background: $bg-color;
+        border-radius: $borderRadiusMedium;
+
+        .day-content-checkpoint-info {
+          border-radius: $borderRadiusMedium;
+          box-shadow: $boxShadowMedium;
+        }
+
+        .drag {
+          cursor: grabbing;
+        }
+      }
+    }
+  }
+
+  &-start {
+    @include flex-container(space-between, center, row);
+    width: 100%;
+    margin-bottom: $spacing-sm;
+    color: $secondary-text-color;
+
+    input {
+      font: inherit;
+      color: $accent-color;
+      border: 1px solid rgba($accent-color, 0.3);
+      border-radius: $borderRadiusSmall;
+      background: none;
+    }
+  }
+
+  &-reset {
+    color: $secondary-text-color;
+    text-decoration: underline;
+  }
+
+  &-timeline {
+    width: 100%;
+  }
+
+  // Unpicked options: same cards, faded, in a horizontally scrolling row
+  &-options {
+    width: 100%;
+    margin-bottom: $spacing-md;
+
+    &-label {
+      color: $secondary-text-color;
+      margin-bottom: $spacing-xs;
+    }
+
+    &-list {
+      display: flex;
+      gap: $spacing-sm;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: $spacing-xs;
+
+      .day-content-checkpoint {
+        flex: 0 0 min(280px, 80%);
+        scroll-snap-align: start;
+        opacity: 0.45;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        .day-content-checkpoint-timeline-time,
+        .day-content-checkpoint-timeline-line,
+        .day-content-checkpoint-actions {
+          display: none;
+        }
+
+        .day-content-checkpoint-timeline {
+          justify-content: start;
+        }
+
+        .day-content-checkpoint-info {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
 #itinerary {
   width: 100%;
+
+  // long-press opens our menu, not iOS's link preview
+  .day-content-checkpoint {
+    -webkit-touch-callout: none;
+  }
+}
+
+// z-index 1002: above the drawer
+.context-menu {
+  @include flex-container(start, stretch, column);
+  position: fixed;
+  z-index: 1002;
+  min-width: 200px;
+  max-width: calc(100% - 16px);
+  padding: 4px;
+  background: $bg-color;
+  border: 1px solid $primary-color;
+  border-radius: $borderRadiusMedium;
+  box-shadow: $boxShadowMedium;
+
+  &[hidden] {
+    display: none;
+  }
+
+  a {
+    padding: 8px 10px;
+    border-radius: $borderRadiusSmall;
+    color: $text-color;
+    opacity: 1;
+
+    i {
+      width: 1.2em;
+      color: $accent-color;
+    }
+
+    &:hover, &:focus {
+      background: $primary-color;
+    }
+  }
 }
 
 // Map view (#map): full-screen map, itinerary in a bottom drawer
@@ -322,10 +482,12 @@ a {
     cursor: pointer;
   }
 
+  // same frame as .important, in grey
   .selected .day-content-checkpoint-info {
-    outline: 2px solid $accent-color;
-    outline-offset: 2px;
     border-radius: $borderRadiusMedium;
+    border: 1px solid $secondary-text-color;
+    padding: $spacing-xs;
+    box-sizing: border-box;
     opacity: 1;
   }
 }
@@ -395,5 +557,36 @@ a {
     overflow-y: auto;
     overscroll-behavior: contain;
     padding: 0 $spacing-sm $spacing-md;
+  }
+}
+
+// Wider screens: the drawer becomes a floating pane on the right (sidePane in trip.js)
+@media (min-width: $breakpoint-md + 1) {
+  $pane-width: 420px;
+
+  .drawer {
+    top: $spacing-sm;
+    right: $spacing-sm;
+    bottom: $spacing-sm;
+    left: auto;
+    width: $pane-width;
+    max-width: calc(100% - 2 * #{$spacing-sm});
+    height: auto;
+    margin: 0;
+    border-radius: $borderRadiusLarge;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+
+    &-handle {
+      display: none;
+    }
+
+    &-body {
+      padding-top: $spacing-md;
+    }
+  }
+
+  // keep Leaflet's zoom buttons and attribution clear of the pane
+  .leaflet-right {
+    right: calc(#{$pane-width} + #{$spacing-sm});
   }
 }
