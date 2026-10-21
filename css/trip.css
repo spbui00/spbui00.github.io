@@ -1408,7 +1408,7 @@ a:hover, a:focus {
   -webkit-touch-callout: none;
 }
 @media (pointer: coarse) {
-  #itinerary .day-content-checkpoint {
+  #itinerary .day-content-checkpoint, #itinerary .day-content-checkpoint * {
     -webkit-user-select: none;
     user-select: none;
   }

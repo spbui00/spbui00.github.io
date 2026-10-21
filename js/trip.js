@@ -232,6 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
       links.push(['fa-route', `From ${from.checkpoint.title}`, `https://maps.google.com/maps?saddr=${place(from)}&daddr=${destination}&dirflg=r${time}`]);
     }
     menu.innerHTML = links.map(([icon, text, href]) => `<a href="${href}" target="_blank" rel="noopener"><i class="fa-solid ${icon}"></i> ${text}</a>`).join('');
+    getSelection().removeAllRanges();
     menu.hidden = false;
     menu.style.left = `${Math.min(x, innerWidth - menu.offsetWidth - 8)}px`;
     menu.style.top = `${Math.min(y, innerHeight - menu.offsetHeight - 8)}px`;
@@ -250,6 +251,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const item = items.find(i => i.element.contains(event.target));
     if (!item) return;
     press = { x: event.clientX, y: event.clientY, timer: setTimeout(() => { suppressClick = true; openMenu(item, press.x, press.y); }, 500) };
+  });
+  // belt and braces for iOS, which can still start a text selection on long-press
+  itineraryElement.addEventListener('selectstart', event => {
+    if (matchMedia('(pointer: coarse)').matches) event.preventDefault();
   });
   const cancelPress = event => {
     if (!press || (event.type === 'pointermove' && Math.hypot(event.clientX - press.x, event.clientY - press.y) < 10)) return;

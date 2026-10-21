@@ -424,9 +424,12 @@ a {
   .day-content-checkpoint {
     -webkit-touch-callout: none;
 
+    // iOS Safari wants it on every element, not just the item
     @media (pointer: coarse) {
-      -webkit-user-select: none;
-      user-select: none;
+      &, * {
+        -webkit-user-select: none;
+        user-select: none;
+      }
     }
   }
 }
